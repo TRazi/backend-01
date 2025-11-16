@@ -57,15 +57,11 @@ class EmailOrUsernameBackend(ModelBackend):
             # In case of data corruption, return None (shouldn't happen with unique constraints)
             return None
 
-        # Verify password and check if user can authenticate
-        if not (user.check_password(password) and self.user_can_authenticate(user)):
-            return None
+        # Verify password
+        if user.check_password(password) and self.user_can_authenticate(user):
+            return user
 
-        # For admin access, also check is_staff
-        if request and '/admin/' in request.path and not user.is_staff:
-            return None
-
-        return user
+        return None
 
     def get_user(self, user_id):
         """

@@ -7,12 +7,15 @@ from django.db import transaction as db_transaction
 from django.utils import timezone
 import logging
 
-from .models import Transaction, TransactionTag
+from .models import Transaction, TransactionTag, TransactionAttachment
 from .serializers import (
     TransactionSerializer,
     TransactionCreateSerializer,
     TransactionTagSerializer,
     LinkTransferSerializer,
+    TransactionAttachmentSerializer,
+    TransactionAttachmentUploadSerializer,
+    ReceiptScanSerializer,
 )
 from .permissions import IsTransactionHouseholdMember
 
@@ -304,22 +307,235 @@ class TransactionViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=["post"], url_path="receipt-ocr")
     def receipt_ocr(self, request):
         """
-        Process receipt image via OCR.
+        Process receipt image via OCR and optionally create transaction.
 
-        Future implementation will integrate OCR service to extract:
-        - Merchant name
-        - Amount
-        - Date
-        - Line items
+        Accepts a receipt image, runs AWS Textract OCR, and returns structured data.
+        Can automatically create a transaction if requested.
+
+        Request (multipart/form-data):
+            - image: Receipt image file (required)
+            - auto_create_transaction: Boolean (optional, default=False)
+            - account: Account ID (required if auto_create_transaction=True)
 
         Returns:
-            200: Placeholder response
+            200: OCR data and transaction (if created)
+            400: Validation errors
+            503: OCR service unavailable
         """
-        # FUTURE: OCR service integration for automatic receipt data extraction
-        logger.info("Receipt OCR requested (stub)", extra={"user_id": request.user.id})
+        from config.utils.ocr_service import get_textract_service
+        from django.core.exceptions import ValidationError as DjangoValidationError
+
+        serializer = ReceiptScanSerializer(data=request.data)
+        if not serializer.is_valid():
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        image = serializer.validated_data["image"]
+        auto_create = serializer.validated_data.get("auto_create_transaction", False)
+        account_id = serializer.validated_data.get("account")
+
+        # Get OCR service
+        ocr_service = get_textract_service()
+
+        if not ocr_service.is_enabled():
+            logger.warning(
+                "OCR requested but service disabled", extra={"user_id": request.user.id}
+            )
+            return Response(
+                {"detail": "OCR service is not currently available"},
+                status=status.HTTP_503_SERVICE_UNAVAILABLE,
+            )
+
+        try:
+            # Read image bytes
+            image_bytes = image.read()
+
+            # Extract receipt data
+            ocr_result = ocr_service.extract_receipt_data(image_bytes)
+
+            if not ocr_result.get("success"):
+                logger.error(
+                    f"OCR processing failed: {ocr_result.get('error')}",
+                    extra={"user_id": request.user.id},
+                )
+                return Response(
+                    {
+                        "detail": "Failed to process receipt image",
+                        "error": ocr_result.get("error"),
+                    },
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
+
+            response_data = {
+                "ocr_data": {
+                    "merchant_name": ocr_result.get("merchant_name"),
+                    "total_amount": ocr_result.get("total_amount"),
+                    "date": ocr_result.get("date"),
+                    "tax_amount": ocr_result.get("tax_amount"),
+                    "items": ocr_result.get("items", []),
+                    "confidence_scores": ocr_result.get("confidence_scores", {}),
+                },
+                "transaction_created": False,
+            }
+
+            # Auto-create transaction if requested
+            if auto_create and account_id:
+                from accounts.models import Account
+
+                try:
+                    account = Account.objects.get(
+                        id=account_id, household=request.user.household
+                    )
+                except Account.DoesNotExist:
+                    return Response(
+                        {"detail": "Account not found in your household"},
+                        status=status.HTTP_400_BAD_REQUEST,
+                    )
+
+                # Create transaction from OCR data
+                transaction_data = {
+                    "account": account,
+                    "transaction_type": "expense",
+                    "amount": abs(float(ocr_result.get("total_amount") or 0)),
+                    "description": ocr_result.get("merchant_name") or "Receipt scan",
+                    "merchant": ocr_result.get("merchant_name") or "",
+                    "date": ocr_result.get("date") or timezone.now(),
+                    "transaction_source": "receipt_ocr",
+                    "status": "pending",  # User can review and confirm
+                }
+
+                transaction = Transaction.objects.create(**transaction_data)
+
+                # Save receipt image as attachment
+                from django.core.files.base import ContentFile
+
+                TransactionAttachment.objects.create(
+                    transaction=transaction,
+                    file=ContentFile(image_bytes, name=image.name),
+                    file_name=image.name,
+                    file_size=len(image_bytes),
+                    file_type=image.name.split(".")[-1].lower(),
+                    ocr_processed=True,
+                    ocr_text=ocr_result.get("full_text", ""),
+                    ocr_data=ocr_result,
+                    ocr_confidence=ocr_result.get("confidence_scores", {}).get("total"),
+                    ocr_processed_at=timezone.now(),
+                    uploaded_by=request.user,
+                )
+
+                response_data["transaction_created"] = True
+                response_data["transaction"] = TransactionSerializer(
+                    transaction, context={"request": request}
+                ).data
+
+                logger.info(
+                    f"Transaction created from OCR: {transaction.id}",
+                    extra={
+                        "user_id": request.user.id,
+                        "transaction_id": transaction.id,
+                        "merchant": ocr_result.get("merchant_name"),
+                        "amount": ocr_result.get("total_amount"),
+                    },
+                )
+
+            return Response(response_data, status=status.HTTP_200_OK)
+
+        except DjangoValidationError as e:
+            logger.error(
+                f"Validation error in OCR: {str(e)}",
+                extra={"user_id": request.user.id},
+                exc_info=True,
+            )
+            return Response(
+                {"detail": str(e)},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+        except Exception as e:
+            logger.error(
+                f"Error processing receipt: {str(e)}",
+                extra={"user_id": request.user.id},
+                exc_info=True,
+            )
+            return Response(
+                {"detail": "Failed to process receipt. Please try again."},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            )
+
+    @action(detail=True, methods=["post"], url_path="upload-receipt")
+    def upload_receipt(self, request, uuid=None):
+        """
+        Upload a receipt image for an existing transaction.
+
+        Processes the image with OCR and attaches it to the transaction.
+
+        Request (multipart/form-data):
+            - file: Receipt image file
+            - file_name: Optional custom filename
+
+        Returns:
+            201: Attachment created with OCR data
+            400: Validation errors
+        """
+        from config.utils.ocr_service import get_textract_service
+
+        transaction = self.get_object()
+
+        serializer = TransactionAttachmentUploadSerializer(
+            data=request.data, context={"request": request}
+        )
+
+        if not serializer.is_valid():
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        # Create attachment
+        attachment = serializer.save(transaction=transaction)
+
+        # Process with OCR if enabled
+        ocr_service = get_textract_service()
+        if ocr_service.is_enabled():
+            try:
+                attachment.file.seek(0)
+                image_bytes = attachment.file.read()
+
+                ocr_result = ocr_service.extract_receipt_data(image_bytes)
+
+                if ocr_result.get("success"):
+                    attachment.ocr_processed = True
+                    attachment.ocr_data = ocr_result
+                    attachment.ocr_text = ocr_result.get("full_text", "")
+                    attachment.ocr_confidence = ocr_result.get(
+                        "confidence_scores", {}
+                    ).get("total")
+                    attachment.ocr_processed_at = timezone.now()
+                else:
+                    attachment.ocr_error = ocr_result.get("error", "Unknown error")
+
+                attachment.save()
+
+                logger.info(
+                    f"Receipt uploaded and processed for transaction {transaction.id}",
+                    extra={
+                        "user_id": request.user.id,
+                        "transaction_id": transaction.id,
+                        "attachment_id": attachment.id,
+                    },
+                )
+            except Exception as e:
+                logger.error(
+                    f"OCR processing failed for attachment: {str(e)}",
+                    extra={
+                        "user_id": request.user.id,
+                        "attachment_id": attachment.id,
+                    },
+                    exc_info=True,
+                )
+                attachment.ocr_error = str(e)
+                attachment.save()
+
         return Response(
-            {"message": "OCR processing placeholder - coming soon"},
-            status=status.HTTP_200_OK,
+            TransactionAttachmentSerializer(
+                attachment, context={"request": request}
+            ).data,
+            status=status.HTTP_201_CREATED,
         )
 
     @action(detail=False, methods=["post"], url_path="voice")

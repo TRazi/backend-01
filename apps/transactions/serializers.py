@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from typing import Optional
-from .models import Transaction, TransactionTag
+from django.utils import timezone
+from .models import Transaction, TransactionTag, TransactionAttachment, TransactionSplit
 
 # Error message constants
 ERR_ACCOUNT_NOT_IN_HOUSEHOLD = "Account does not belong to your household."
@@ -186,3 +187,213 @@ class LinkTransferSerializer(serializers.Serializer):
         required=False,
         help_text="Transfer amount (defaults to source transaction amount)",
     )
+
+
+class TransactionAttachmentSerializer(serializers.ModelSerializer):
+    """
+    Serializer for TransactionAttachment model.
+
+    Handles receipt uploads and OCR processing results.
+    Provides read access to OCR data and processing status.
+    """
+
+    file_url = serializers.SerializerMethodField()
+    uploaded_by_name = serializers.CharField(
+        source="uploaded_by.get_full_name", read_only=True, allow_null=True
+    )
+
+    class Meta:
+        model = TransactionAttachment
+        fields = [
+            "id",
+            "transaction",
+            "file",
+            "file_url",
+            "file_name",
+            "file_size",
+            "file_type",
+            "ocr_processed",
+            "ocr_text",
+            "ocr_data",
+            "ocr_confidence",
+            "ocr_processed_at",
+            "ocr_error",
+            "uploaded_by",
+            "uploaded_by_name",
+            "created_at",
+            "updated_at",
+        ]
+        read_only_fields = [
+            "id",
+            "file_url",
+            "ocr_processed",
+            "ocr_text",
+            "ocr_data",
+            "ocr_confidence",
+            "ocr_processed_at",
+            "ocr_error",
+            "uploaded_by_name",
+            "created_at",
+            "updated_at",
+        ]
+
+    def get_file_url(self, obj):
+        """Get absolute URL for the receipt image."""
+        if obj.file:
+            request = self.context.get("request")
+            if request:
+                return request.build_absolute_uri(obj.file.url)
+            return obj.file.url
+        return None
+
+
+class TransactionAttachmentUploadSerializer(serializers.ModelSerializer):
+    """
+    Serializer for uploading receipt images.
+
+    Validates file size and type before upload.
+    Triggers OCR processing if enabled.
+    """
+
+    class Meta:
+        model = TransactionAttachment
+        fields = [
+            "id",
+            "file",
+            "file_name",
+        ]
+        read_only_fields = ["id"]
+
+    def validate_file(self, value):
+        """Validate uploaded file."""
+        from django.conf import settings
+
+        # Check file size
+        max_size = settings.RECEIPT_MAX_SIZE_MB * 1024 * 1024
+        if value.size > max_size:
+            raise serializers.ValidationError(
+                f"File size ({value.size} bytes) exceeds maximum allowed size ({max_size} bytes)"
+            )
+
+        # Check file type
+        file_ext = value.name.split(".")[-1].lower()
+        if file_ext not in settings.RECEIPT_ALLOWED_FORMATS:
+            raise serializers.ValidationError(
+                f"File type '{file_ext}' not allowed. "
+                f"Allowed formats: {', '.join(settings.RECEIPT_ALLOWED_FORMATS)}"
+            )
+
+        return value
+
+    def create(self, validated_data):
+        """Create attachment with metadata."""
+        file = validated_data.get("file")
+
+        # Extract metadata
+        if not validated_data.get("file_name"):
+            validated_data["file_name"] = file.name
+
+        validated_data["file_size"] = file.size
+        validated_data["file_type"] = file.name.split(".")[-1].lower()
+
+        # Set uploaded_by from request context
+        request = self.context.get("request")
+        if request and hasattr(request, "user"):
+            validated_data["uploaded_by"] = request.user
+
+        return super().create(validated_data)
+
+
+class ReceiptScanSerializer(serializers.Serializer):
+    """
+    Serializer for scanning receipt images and extracting transaction data.
+
+    Accepts an image file and returns structured OCR data that can be used
+    to pre-populate a transaction.
+    """
+
+    image = serializers.ImageField(
+        required=True, help_text="Receipt image to scan (JPG, PNG, or PDF)"
+    )
+
+    auto_create_transaction = serializers.BooleanField(
+        default=False, help_text="Automatically create transaction from OCR data"
+    )
+
+    account = serializers.IntegerField(
+        required=False, help_text="Account ID for auto-created transaction"
+    )
+
+    def validate_image(self, value):
+        """Validate image file."""
+        from django.conf import settings
+
+        # Check file size
+        max_size = settings.RECEIPT_MAX_SIZE_MB * 1024 * 1024
+        if value.size > max_size:
+            raise serializers.ValidationError(
+                f"Image size exceeds maximum allowed size of {settings.RECEIPT_MAX_SIZE_MB}MB"
+            )
+
+        # Check file type
+        file_ext = value.name.split(".")[-1].lower()
+        if file_ext not in settings.RECEIPT_ALLOWED_FORMATS:
+            raise serializers.ValidationError(
+                f"File type '{file_ext}' not allowed. "
+                f"Allowed formats: {', '.join(settings.RECEIPT_ALLOWED_FORMATS)}"
+            )
+
+        return value
+
+    def validate(self, attrs):
+        """Validate that account is provided if auto_create_transaction is True."""
+        if attrs.get("auto_create_transaction") and not attrs.get("account"):
+            raise serializers.ValidationError(
+                {"account": "Account is required when auto_create_transaction is True"}
+            )
+        return attrs
+
+
+class TransactionSplitSerializer(serializers.ModelSerializer):
+    """
+    Serializer for TransactionSplit model.
+
+    Handles splitting transactions across multiple categories or members.
+    Useful for grocery bills, shared expenses, etc.
+    """
+
+    category_name = serializers.CharField(
+        source="category.name", read_only=True, allow_null=True
+    )
+
+    member_name = serializers.CharField(
+        source="member.get_full_name", read_only=True, allow_null=True
+    )
+
+    class Meta:
+        model = TransactionSplit
+        fields = [
+            "id",
+            "transaction",
+            "category",
+            "category_name",
+            "amount",
+            "description",
+            "member",
+            "member_name",
+            "created_at",
+            "updated_at",
+        ]
+        read_only_fields = [
+            "id",
+            "category_name",
+            "member_name",
+            "created_at",
+            "updated_at",
+        ]
+
+    def validate_amount(self, value):
+        """Ensure amount is not zero."""
+        if value == 0:
+            raise serializers.ValidationError("Split amount cannot be zero")
+        return value

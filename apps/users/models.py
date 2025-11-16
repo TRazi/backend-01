@@ -358,3 +358,64 @@ class EmailVerification(BaseModel):
     def __str__(self):
         status = "Verified" if self.is_verified() else "Pending"
         return f"{status} - {self.user.email}"
+
+
+class AccountUnlockToken(BaseModel):
+    """
+    One-time use tokens for self-service account unlock after Axes lockout.
+
+    Features:
+    - 1-hour expiration for security
+    - One-time use (deleted after successful unlock)
+    - Tied to email (not user object, since user may not exist)
+    """
+
+    email = models.EmailField(
+        db_index=True, help_text="Email address of the locked account"
+    )
+    token = models.UUIDField(
+        unique=True,
+        default=uuid.uuid4,
+        editable=False,
+        db_index=True,
+        help_text="Unique unlock token (UUID)",
+    )
+    expires_at = models.DateTimeField(
+        db_index=True, help_text="Token expiration timestamp"
+    )
+    used_at = models.DateTimeField(
+        null=True,
+        blank=True,
+        help_text="Timestamp when token was used (null if not used)",
+    )
+    ip_address = models.GenericIPAddressField(
+        null=True, blank=True, help_text="IP address that triggered the lockout"
+    )
+
+    class Meta:
+        db_table = "account_unlock_tokens"
+        verbose_name = "Account Unlock Token"
+        verbose_name_plural = "Account Unlock Tokens"
+        indexes = [
+            models.Index(fields=["email", "expires_at"]),
+            models.Index(fields=["token", "used_at"]),
+        ]
+
+    def save(self, *args, **kwargs):
+        """Set expiration to 1 hour from now if not already set."""
+        if not self.expires_at:
+            self.expires_at = timezone.now() + timedelta(hours=1)
+        super().save(*args, **kwargs)
+
+    def is_valid(self):
+        """Check if token is still valid (not expired, not used)."""
+        return self.used_at is None and self.expires_at > timezone.now()
+
+    def mark_as_used(self):
+        """Mark token as used (one-time use)."""
+        self.used_at = timezone.now()
+        self.save(update_fields=["used_at", "updated_at"])
+
+    def __str__(self):
+        status = "Valid" if self.is_valid() else "Used/Expired"
+        return f"{status} - {self.email}"

@@ -2,6 +2,10 @@
 
 HOUSEHOLD_TYPE_CHOICES = [
     ("fam", "Family"),
+    ("couple", "Couple"),
+    ("student", "Student Flat"),
+    ("single", "Individual"),
+    # Legacy/deprecated values for backwards compatibility
     ("cpl", "Couple"),
     ("stud", "Student Flat"),
     ("ind", "Individual"),

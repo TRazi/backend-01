@@ -35,12 +35,16 @@ class Household(BaseModel):
         help_text="Unique identifier for API and external integrations",
     )
 
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, blank=False)
     household_type = models.CharField(
-        max_length=10, choices=HOUSEHOLD_TYPE_CHOICES, default="fam"
+        max_length=10,
+        choices=HOUSEHOLD_TYPE_CHOICES,
+        default="fam",
+        blank=False,
+        null=False,
     )
     budget_cycle = models.CharField(
-        max_length=1, choices=BUDGET_CYCLE_CHOICES, default="m"
+        max_length=1, choices=BUDGET_CYCLE_CHOICES, default="m", blank=False, null=False
     )
 
     class Meta:
@@ -50,6 +54,31 @@ class Household(BaseModel):
         indexes = [
             models.Index(fields=["uuid"]),
         ]
+
+    def clean(self):
+        """Validate household fields."""
+        super().clean()
+
+        # Ensure name is not empty or just whitespace
+        if not self.name or not self.name.strip():
+            raise ValidationError({"name": "Household name cannot be blank."})
+
+        # Ensure household_type is set
+        if not self.household_type:
+            raise ValidationError(
+                {"household_type": "Household type must be selected."}
+            )
+
+        # Ensure budget_cycle is set
+        if not self.budget_cycle:
+            raise ValidationError({"budget_cycle": "Budget cycle must be selected."})
+
+    def save(self, *args, **kwargs):
+        """Strip whitespace from name before saving."""
+        if self.name:
+            self.name = self.name.strip()
+        self.full_clean()
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.name

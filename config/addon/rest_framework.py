@@ -8,6 +8,10 @@ REST_FRAMEWORK = {
         "django_filters.rest_framework.DjangoFilterBackend",
     ],
     "DEFAULT_THROTTLE_RATES": {
-        "session_ping": "30/min",  # Rate limit for session keep-alive endpoint
+        "session_ping": "30/min",  # Session keep-alive endpoint
+        "auth": "10/min",  # Authentication endpoints (increased from 5 to 10)
+        "token_refresh": "10/min",  # Token refresh endpoint
+        "registration": "3/hour",  # User registration
     },
+    "EXCEPTION_HANDLER": "config.utils.exception_handlers.custom_exception_handler",
 }

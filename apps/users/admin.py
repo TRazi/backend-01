@@ -5,7 +5,7 @@ from django.utils.html import format_html
 from django.utils import timezone
 from unfold.admin import ModelAdmin
 from unfold.forms import AdminPasswordChangeForm, UserChangeForm, UserCreationForm
-from users.models import EmailOTP, EmailVerification
+from users.models import EmailOTP, EmailVerification, AccountUnlockToken
 
 
 def get_user_model_lazy():
@@ -407,3 +407,137 @@ class EmailVerificationAdmin(ModelAdmin):
             )
 
     time_since_creation.short_description = "Time Since Creation"
+
+
+@admin.register(AccountUnlockToken)
+class AccountUnlockTokenAdmin(ModelAdmin):
+    """Admin interface for Account Unlock Tokens."""
+
+    list_display = [
+        "email",
+        "token_preview",
+        "status_badge",
+        "ip_address",
+        "time_until_expiry",
+        "created_at",
+    ]
+
+    list_filter = [
+        "used_at",
+        "created_at",
+    ]
+
+    search_fields = [
+        "email",
+        "token",
+        "ip_address",
+    ]
+
+    ordering = ["-created_at"]
+
+    readonly_fields = [
+        "email",
+        "token",
+        "expires_at",
+        "used_at",
+        "ip_address",
+        "created_at",
+        "status_badge",
+        "time_until_expiry",
+    ]
+
+    fieldsets = (
+        (
+            "Unlock Token Details",
+            {
+                "fields": (
+                    "email",
+                    "token",
+                    "status_badge",
+                )
+            },
+        ),
+        (
+            "Status & Expiry",
+            {
+                "fields": (
+                    "used_at",
+                    "expires_at",
+                    "time_until_expiry",
+                )
+            },
+        ),
+        (
+            "Security",
+            {
+                "fields": ("ip_address",),
+            },
+        ),
+        (
+            "Timestamps",
+            {
+                "fields": ("created_at",),
+                "classes": ("collapse",),
+            },
+        ),
+    )
+
+    def has_add_permission(self, request):
+        # Prevent manual creation of unlock tokens in admin
+        return False
+
+    def has_change_permission(self, request, obj=None):
+        # Make all fields read-only
+        return False
+
+    def token_preview(self, obj):
+        """Display first 8 characters of token for security."""
+        token_str = str(obj.token)
+        return format_html(
+            '<code style="font-size: 12px;">{}&hellip;</code>', token_str[:8]
+        )
+
+    token_preview.short_description = "Token"
+
+    def status_badge(self, obj):
+        """Display colored status badge based on token validity."""
+        if obj.used_at:
+            return format_html(
+                '<span style="background-color: #6c757d; color: white; padding: 3px 10px; '
+                'border-radius: 3px; font-size: 11px; font-weight: bold;">USED</span>'
+            )
+        elif obj.is_valid():
+            return format_html(
+                '<span style="background-color: #28a745; color: white; padding: 3px 10px; '
+                'border-radius: 3px; font-size: 11px; font-weight: bold;">VALID</span>'
+            )
+        else:
+            return format_html(
+                '<span style="background-color: #dc3545; color: white; padding: 3px 10px; '
+                'border-radius: 3px; font-size: 11px; font-weight: bold;">EXPIRED</span>'
+            )
+
+    status_badge.short_description = "Status"
+
+    def time_until_expiry(self, obj):
+        """Display time remaining until token expires or time since expiry."""
+        now = timezone.now()
+        if obj.used_at:
+            return "N/A (Used)"
+
+        if now < obj.expires_at:
+            delta = obj.expires_at - now
+            minutes = int(delta.total_seconds() / 60)
+            return format_html(
+                '<span style="color: #28a745; font-weight: bold;">{} min remaining</span>',
+                minutes,
+            )
+        else:
+            delta = now - obj.expires_at
+            minutes = int(delta.total_seconds() / 60)
+            return format_html(
+                '<span style="color: #dc3545; font-weight: bold;">Expired {} min ago</span>',
+                minutes,
+            )
+
+    time_until_expiry.short_description = "Time Until Expiry"

@@ -1,7 +1,7 @@
 # KinWise Backend — Developer Guide
 
-**Version**: 2.7  
-**Last Updated**: December 2025  
+**Version**: 2.8  
+**Last Updated**: November 2025  
 **Status**: Production-Ready (97.25% Test Coverage Achieved)
 
 This document provides an in-depth, repo-accurate guide for the KinWise backend. It covers architecture, configuration, domain models, security posture, operations, and development workflows.
@@ -62,6 +62,61 @@ Key goals
 
 ---
 
+## Target Market & ICPs (Ideal Customer Profiles)
+
+KinWise serves diverse household types across New Zealand with tailored features for each segment:
+
+### Consumer Market (B2C)
+
+**ICP1: Family Households**
+- **Profile**: 2+ adults, 1-3 kids (ages 8-19), household income $60k-$120k
+- **Location**: Urban/suburban NZ
+- **Pain Points**: Living paycheck to paycheck, no spending visibility, kids' financial education gap
+- **Motivation**: Peace of mind, teaching kids money skills, kids' future
+- **Key Features**: Shared dashboards, kids' rewards/stickers, family goals, role-based access (parent, teen, child)
+
+**ICP2: DINK Couples (Double Income, No Kids)**
+- **Profile**: 2 adults, household income $100k-$200k combined
+- **Location**: Urban centres
+- **Pain Points**: "Yours, mine, ours" confusion, lifestyle creep, different spending philosophies, unequal incomes (70/30 split)
+- **Motivation**: Travel, investments, early retirement, aligned financial goals
+- **Key Features**: Proportional expense splitting, investment tracking, joint goal setting, bill automation
+
+**ICP3: SINK Couples (Single Income, No Kids)**
+- **Profile**: 2 adults, household income $50k-$100k single income
+- **Location**: Anywhere in NZ
+- **Pain Points**: Single income pressure, non-earner guilt, job loss fear, transition periods (maternity, study, redundancy)
+- **Motivation**: Stability, emergency fund building, maximizing single income, strict budget discipline
+- **Key Features**: Budget discipline tools, spending accountability, savings goals, category tracking
+
+**ICP4: Student Flats**
+- **Profile**: 3-5 flatmates, university students (Auckland, Wellington, Otago, Canterbury)
+- **Pain Points**: Bill splitting chaos, StudyLink budgeting, tight budgets, irregular income, flat money drama
+- **Motivation**: Avoid flat drama, stretch StudyLink allowance, learn budgeting basics
+- **Key Features**: TransactionSplit for bill splitting, flatmate role permissions, simple tracking, mobile-first UX
+
+**ICP5: Individuals (Solo Users)**
+- **Profile**: Single person, ages 16-45, learning to budget or managing personal finances
+- **Pain Points**: No financial education, want independence, tracking personal spending
+- **Motivation**: Personal goals, financial independence, building good habits
+- **Key Features**: Simple tracking, goal setting, lessons/education content, privacy controls
+
+### Business Market (B2B - "Whānau Works")
+
+**ICP6: Corporate/Organizations**
+- **Profile**: Businesses, non-profits, schools, clubs, government departments
+- **Organisation Types**: Corporate, non-profit, education, government, club
+- **Use Cases**: Employee expense management, team budgets, department tracking, community group finances
+- **Key Features**: Organisation model, member capacity management, org-level billing, multiple admins, financial year configuration
+- **Subscription Tiers**: ww_starter (up to 50 members), ww_growth, ww_enterprise
+
+### Pricing Alignment
+- **B2C (Families/Couples/Students/Individuals)**: $5.99/month Plus tier
+- **B2B (Organizations)**: $50-$500/month org tiers based on member count
+- **Free Tier**: 1 household admin, manual entry, 30-day history, 2 accounts (acquisition/trial)
+
+---
+
 ## Architecture
 
 High-level
@@ -72,26 +127,40 @@ High-level
 
  Request flow (current)
 1. HTTP → Nginx/ASGI/WSGI (deployment-specific)
-2. `corsheaders.middleware.CorsMiddleware` (CORS headers - positioned first for preflight)
-3. `django.middleware.security.SecurityMiddleware`
-4. `config.middleware.security.SecurityHeadersMiddleware` (server/meta headers)
-5. `config.middleware.csp_custom.CustomCSPMiddleware` (Route-based Content-Security-Policy)
-6. Sessions, CSRF, Auth, Messages, XFrameOptions, Locale
-7. Admin site routes and API v1 routes (see `config/api_v1_urls.py`)
+2. `django.middleware.security.SecurityMiddleware`
+3. `whitenoise.middleware.WhiteNoiseMiddleware` (Static files with security headers)
+4. `config.middleware.security.SecurityHeadersMiddleware` (X-Content-Type-Options, Referrer-Policy, Permissions-Policy)
+5. `corsheaders.middleware.CorsMiddleware` (CORS headers - before CommonMiddleware)
+6. `django.contrib.sessions.middleware.SessionMiddleware`
+7. `django.middleware.common.CommonMiddleware`
+8. `django.middleware.csrf.CsrfViewMiddleware`
+9. `axes.middleware.AxesMiddleware` (Login attempt tracking)
+10. `config.middleware.csp_custom.CustomCSPMiddleware` (Route-based Content-Security-Policy)
+11. `django.contrib.auth.middleware.AuthenticationMiddleware`
+12. `config.middleware.security.CookieSecurityMiddleware` (HttpOnly, SameSite enforcement)
+13. `config.middleware.session.IdleTimeoutMiddleware` (Session timeout with grace period)
+14. `django.contrib.messages.middleware.MessageMiddleware`
+15. `django.middleware.clickjacking.XFrameOptionsMiddleware`
+16. `django.middleware.locale.LocaleMiddleware`
+17. `config.utils.ratelimit.AdminLoginRateLimitMiddleware` (Rate limiting for admin login)
+18. Admin site routes and API v1 routes (see `config/api_v1_urls.py`)
 
 ---
 
 ## Technology Stack
 
 - Django 5.2, Python 3.10+
-- Django REST Framework 3.15.2 (present, not yet wired in URLs)
+- Django REST Framework 3.15.2 (fully integrated with JWT authentication)
 - Auth/Security: `django-axes`, `django-csp`, `django-otp`, `pyotp`, `django-ratelimit`, `djangorestframework-simplejwt`, `django-cors-headers`
 - Caching/Stores: `django-redis` (Redis), SQLite (local), Postgres via `dj-database-url` when `DATABASE_URL` is set
-- Admin: `django-unfold`
-- Static: `whitenoise` (with security headers)
+- Admin: `django-unfold` 0.69.0
+- Static: `whitenoise` 6.11.0 (with security headers)
+- Task Queue: `celery` 5.4.0 with `django-celery-beat` 2.8.1 and `django-celery-results` 2.6.0
+- Cloud Services: `boto3` (AWS S3, Textract for OCR)
+- Email: Django email with HTML templates
 - Logging/Observability: `python-json-logger`, `sentry-sdk` (available)
 - Health: `django-health-check` (available)
-- Tooling: `black`, `flake8`, `mypy`, `pytest`, `pytest-django`
+- Tooling: `black`, `flake8`, `mypy`, `pytest`, `pytest-django`, `safety` (security scanning)
 
 See `requirements.txt` for exact versions.
 
@@ -173,6 +242,11 @@ Environment variables (examples)
 - `REDIS_URL_RATELIMIT` (optional, separate store for rate limiting)
 - `DJANGO_LOG_LEVEL`
 - `AWS_STORAGE_BUCKET_NAME` (CSP allow-list for S3 assets)
+- `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND` (Redis URLs for Celery)
+- `FRONTEND_URL` (for email verification links, default: `http://localhost:3000`)
+- `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION` (for S3 and Textract OCR)
+- `AWS_TEXTRACT_ENABLED` (enable receipt OCR, default: False)
+- `EMAIL_BACKEND`, `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD` (email configuration)
 
 ---
 
@@ -227,11 +301,31 @@ CORS (Cross-Origin Resource Sharing)
 - **Testing**: See `config/tests/test_cors.py` for comprehensive CORS validation
 
 Auth & lockout
-- Backends: `axes.backends.AxesStandaloneBackend` then Django `ModelBackend`.
-- Tests validate login lockout after failure limit (see `config/tests/test_security_headers.py`).
+- **Authentication Backends** (in order):
+  1. `users.backends.EmailOrUsernameBackend` - Custom backend supporting email OR username login
+  2. `axes.backends.AxesStandaloneBackend` - Brute-force protection with lockout
+  3. `django.contrib.auth.backends.ModelBackend` - Django default fallback
+- **Lockout Testing**: Tests validate login lockout after failure limit (see `config/tests/test_security_headers.py`)
+
+Session Timeout (Idle Timeout)
+- **Implementation**: `config.middleware.session.IdleTimeoutMiddleware`
+- **SOC 2 Compliance**: Automatic session expiration after inactivity period
+- **Configuration**:
+  - `IDLE_TIMEOUT_SECONDS = 15 * 60` (15 minutes of inactivity)
+  - `IDLE_GRACE_SECONDS = 2 * 60` (2 minutes grace period)
+- **Behavior**:
+  - **Idle window** (< 15 min): Activity extends session automatically
+  - **Grace window** (15-17 min): Only `/session/ping/` POST extends session
+  - **Hard expiry** (> 17 min): Automatic logout with redirect
+- **Client Integration**:
+  - Response headers: `X-Session-Timeout`, `X-Session-Grace`, `X-Session-Remaining`
+  - Frontend countdown timer support
+  - Session ping endpoint: `POST /api/v1/session/ping/`
+- **Testing**: See `config/middleware/session.py` for implementation details
 
 Cookies & CSRF
 - `SESSION_COOKIE_SECURE/HTTPONLY/SAMESITE`, `CSRF_COOKIE_SECURE/HTTPONLY/SAMESITE` tuned per environment.
+- `CookieSecurityMiddleware` enforces HttpOnly and SameSite=Strict on session/CSRF cookies.
 
 Security tests (CI expectations)
 - Admin responses include `Content-Security-Policy`, `X-Content-Type-Options=nosniff`, `Referrer-Policy=strict-origin-when-cross-origin`.
@@ -331,35 +425,80 @@ Action types
   - Auto-managed `created_at` (indexed) and `updated_at` timestamps
   - Base for all domain models ensuring consistent audit trail
 
-#### Users (`apps/users`) - Authentication & Authorizationlete with MFA support
-- **Models**: `User`
+#### Users (`apps/users`) - Authentication & Authorization
+- **Status**: ✅ Complete with MFA, Email Verification, and OTP support
+- **Models**: `User`, `UserMFADevice`, `EmailOTP`, `EmailVerification`
 - **Features**:
-  - Email-based authentication (no username)
-  - Email verification system
-  - Role-based access control (6 roles: admin, parent, teen, child, flatmate, observer)
-  - Multi-locale support (en-nz, en-au, mi-nz, etc.)
-  - Optional household FK for primary household
-  - Phone number validation (international format)
-  - MFA (Time-based OTP) support via django-otp
-- **API Endpoints**: `/api/v1/users/`, `/api/v1/auth/`
-- **Serializers**: `UserSerializer`, `MFATokenObtainPairSerializer`
-- **ViewSets**: `UserViewSet` (read-only for non-staff)
+  - **Flexible Authentication**: Email OR username login via custom `EmailOrUsernameBackend`
+  - **Email Verification**: Token-based email verification for new registrations (24-hour expiry)
+  - **Passwordless Login**: Email OTP (One-Time Password) for secure passwordless authentication (10-minute expiry)
+  - **MFA Support**: Time-based OTP (TOTP) via django-otp with backup codes
+  - **User Model Features**:
+    - UUID for external API references (prevents ID enumeration)
+    - Email uniqueness (case-insensitive, normalized to lowercase)
+    - Username support (optional, case-insensitive unique)
+    - Role-based access control (6 roles: admin, parent, teen, child, flatmate, observer)
+    - Multi-locale support (en-nz, en-au, mi-nz, etc.)
+    - Optional household FK for primary household
+    - Phone number validation (international format)
+    - Rate limiting on account creation (prevents automated attacks)
+- **Authentication Backends**:
+  - `users.backends.EmailOrUsernameBackend` (custom, supports email OR username)
+  - `axes.backends.AxesStandaloneBackend` (brute-force protection)
+  - `django.contrib.auth.backends.ModelBackend` (fallback)
+- **API Endpoints**: 
+  - `/api/v1/users/` - User management
+  - `/api/v1/auth/token/` - JWT authentication (with MFA support)
+  - `/api/v1/auth/register/` - User registration
+  - `/api/v1/auth/verify-email/` - Email verification
+  - `/api/v1/auth/resend-verification/` - Resend verification email
+  - `/api/v1/auth/otp/` - Email OTP endpoints
+- **Serializers**: `UserSerializer`, `MFATokenObtainPairSerializer`, `UserRegistrationSerializer`
+- **ViewSets**: `UserViewSet`, `EmailOTPViewSet`
+- **Celery Tasks**: 
+  - `send_verification_email` - Async email verification
+  - `send_otp_email` - OTP code delivery
+  - `send_welcome_email` - Post-verification welcome
+- **Email Templates**: 
+  - `templates/emails/verify_email.html`
+  - `templates/emails/login_otp.html`
+  - `templates/emails/welcome.html`
 - **Security**:
-  - Password normalization
+  - Password normalization and validation (min 12 chars)
   - Email case-insensitive uniqueness
-  - Indexed on `(email, is_active)`
+  - Username case-insensitive uniqueness
+  - Indexed on `(email, is_active)` and `(username, is_active)`
   - Full audit logging integration
+  - Rate limiting on registration endpoints
 
 #### Households (`apps/households`) - Multi-Tenancy Core
 - **Status**: ✅ Complete with service layer
 - **Models**: `Household`, `Membership`
+- **Purpose**: Core multi-tenant architecture enabling collaborative financial management for diverse household types
 - **Features**:
-  - Multi-household membership per user
-  - Primary household designation
-  - Household types: family, couple, student, individual
-  - Budget cycle configuration (weekly, fortnightly, monthly, etc.)
-  - Membership tiers and billing tracking
-  - Organisation linkage for B2B support
+  - **Household Types** (aligned with ICPs):
+    - `family` - Family households (ICP1: 2+ adults, kids ages 8-19, $60k-$120k income)
+    - `couple` - DINK/SINK couples (ICP2/3: Dual or single income, no kids, $50k-$200k)
+    - `student` - Student flats (ICP4: 3-5 flatmates, university students, bill splitting)
+    - `individual` - Solo users (ICP5: Single person budgeting, personal finance tracking)
+  - **Multi-Household Membership**:
+    - Users can belong to multiple households (e.g., family + work team)
+    - Primary household designation (automatic on first join)
+    - Membership roles per household (admin, parent, teen, child, flatmate, observer)
+    - Status lifecycle: active → cancelled/expired
+  - **Budget Configuration**:
+    - Configurable budget cycles (weekly, fortnightly, monthly, quarterly, yearly, custom)
+    - Aligned with income frequency (e.g., fortnightly for most NZ salaries)
+  - **Membership & Billing**:
+    - Subscription tiers (free, plus, premium)
+    - Organisation linkage for B2B/"Whānau Works" members
+    - Auto-set `ended_at` on cancellation
+  - **ICP-Specific Use Cases**:
+    - **Families (ICP1)**: Shared goals, kids' financial education, allowance tracking
+    - **DINK Couples (ICP2)**: Proportional expense splitting (70/30), travel funds, investment tracking
+    - **SINK Couples (ICP3)**: Single-income budget discipline, emergency fund building
+    - **Student Flats (ICP4)**: Bill splitting, StudyLink tracking, irregular income management
+    - **Individuals (ICP5)**: Personal goals, simple tracking, learning budgeting basics
 - **Service Layer**: `membership_set_primary()`, `membership_create()`, `membership_deactivate()`
 - **API Endpoints**: `/api/v1/households/` (via `households.apis`)
 - **Serializers**: `HouseholdSerializer`, `HouseholdCreateSerializer`, `MembershipSerializer`
@@ -368,6 +507,9 @@ Action types
   - Strict membership status lifecycle (active → cancelled/expired)
   - Auto-set `ended_at` on cancellation
   - Validation prevents inactive primary memberships
+- **Target Markets**:
+  - **Consumer (B2C)**: Families, couples, students, individuals ($5.99/month Plus tier)
+  - **Business (B2B)**: Organizations via "Whānau Works" subscription ($50-$500/month org tiers)
 
 #### Accounts (`apps/accounts`) - Financial Accounts
 - **Status**: ✅ Complete
@@ -393,28 +535,41 @@ Action types
   - `calculated_balance` (opening + sum of transactions)
 
 #### Transactions (`apps/transactions`) - Financial Transaction Tracking
-- **Status**: ✅ Complete with service layer and audit integration
-- **Models**: `Transaction`, `TransactionTag`
+- **Status**: ✅ Complete with service layer, audit integration, and OCR support
+- **Models**: `Transaction`, `TransactionTag`, `TransactionAttachment`, `TransactionSplit`
 - **Features**:
-  - Explicit transaction types (income, expense, transfer)
-  - Status tracking (pending, completed, failed, cancelled)
-  - Multiple entry methods (manual, voice, receipt OCR, bank import)
-  - Receipt image storage
-  - Flexible tagging system (M2M)
-  - Category assignment
-  - Goal and budget linkage
-  - Transfer pairing via `linked_transaction`
-  - Merchant tracking
-  - Recurring transaction flag
+  - **Transaction Model**:
+    - UUID for external API/webhook identification
+    - Explicit transaction types (income, expense, transfer)
+    - Status tracking (pending, completed, failed, cancelled)
+    - Multiple entry sources (manual, voice, receipt, import)
+    - Category assignment and flexible tagging (M2M)
+    - Goal and budget linkage
+    - Transfer pairing via `linked_transaction`
+    - Merchant tracking
+    - Recurring transaction flag
+  - **TransactionAttachment Model**:
+    - Receipt image storage (`upload_to='receipts/%Y/%m/'`)
+    - OCR processing support via AWS Textract
+    - OCR status tracking, confidence scores, and error logging
+    - Structured OCR data (merchant, amount, date, items)
+    - File validation (size, type)
+    - 12-month retention as per spec
+    - Uploaded by user tracking
+  - **TransactionSplit Model**:
+    - Multi-category transaction splitting
+    - Household member expense allocation (e.g., flatmate bill splitting)
+    - Per-split descriptions and amounts
 - **Service Layer**: `transaction_create()`, `transaction_update()`, `transaction_delete()` with audit logging
 - **API Endpoints**: `/api/v1/transactions/`
 - **ViewSets**: `TransactionViewSet` with custom actions:
   - `link_transfer` - Create paired transfer transaction
   - `add_tags` - Add multiple tags
   - `remove_tag` - Remove tag
-  - `receipt_ocr` - OCR processing endpoint (placeholder)
-  - `voice_input` - Voice entry endpoint (placeholder)
-- **Serializers**: `TransactionSerializer`, `TransactionCreateSerializer`, `TransactionTagSerializer`
+  - `receipt_ocr` - OCR processing endpoint (AWS Textract integration)
+  - `upload_receipt` - Receipt image upload with validation
+  - `voice_input` - Voice entry endpoint (NLP placeholder)
+- **Serializers**: `TransactionSerializer`, `TransactionCreateSerializer`, `TransactionTagSerializer`, `TransactionAttachmentSerializer`, `TransactionSplitSerializer`
 - **Permissions**: `IsTransactionHouseholdMember`
 - **Mixins**: `AuditLoggingMixin` for automatic CRUD audit logging
 - **Validation**:
@@ -423,7 +578,13 @@ Action types
   - Income must have positive amount
   - Transfer requires linked_transaction
   - Budget/goal must belong to same household
-- **Indexing**: Optimized for date-based queries and household filtering
+  - Receipt file size limit (10MB default, configurable via `RECEIPT_MAX_SIZE_MB`)
+  - Receipt file formats: jpg, jpeg, png, pdf
+- **Indexing**: Optimized for date-based queries, household filtering, OCR processing status
+- **AWS Integration**:
+  - S3 storage for receipt images (optional)
+  - Textract OCR processing (configurable via `AWS_TEXTRACT_ENABLED`)
+  - Timeout and file size limits configurable
 
 #### Categories (`apps/categories`) - Transaction Classification
 - **Status**: ✅ Complete with service layer
@@ -522,7 +683,7 @@ Action types
   - `total_contributed` - Sum via GoalProgress
 
 #### Bills (`apps/bills`) - Recurring Bill Management
-- **Status**: ✅ Complete
+- **Status**: ✅ Complete with document upload support
 - **Models**: `Bill`
 - **Features**:
   - Multiple frequencies (weekly, fortnightly, monthly, quarterly, yearly, one_time)
@@ -533,10 +694,14 @@ Action types
   - Reminder system (days before)
   - Auto-pay flag
   - Recurring bill generation
+  - Document/bill image upload with OCR support
 - **API Endpoints**: `/api/v1/bills/`
 - **ViewSets**: `BillViewSet` with custom actions:
   - `mark_paid` - Record payment
   - `upcoming` - Bills due soon
+  - `overdue` - Overdue bills
+  - `scan_bill` - Bill document OCR processing
+  - `upload_document` - Upload bill images/PDFs
 - **Serializers**: `BillSerializer`
 - **Permissions**: `IsBillHouseholdMember`
 - **Validation**:
@@ -570,25 +735,56 @@ Action types
   - `is_active` - Active status check
   - `is_high_priority` - High/urgent check
 
-#### Organisations (`apps/organisations`) - B2B Support
+#### Organisations (`apps/organisations`) - B2B/Community Support ("Whānau Works")
 - **Status**: ✅ Complete (Admin-only)
 - **Models**: `Organisation`
+- **Purpose**: Enable B2B and community group financial management for corporate expense tracking, educational institutions, non-profits, and clubs
 - **Features**:
-  - Organisation types (corporate, non-profit, education, government, club)
-  - Subscription tiers (starter, growth, enterprise)
-  - Financial year configuration
-  - Multi-currency support
-  - Member capacity management
-  - Billing cycle tracking
+  - **Organisation Types**:
+    - `corporate` - Corporate expense tracking and employee benefits
+    - `non-profit` - Community groups, charities, NGOs
+    - `education` - Schools, universities, educational institutions
+    - `government` - Government departments and agencies
+    - `club` - Sports clubs, social clubs, community organizations
+  - **Subscription Management**:
+    - Subscription tiers: `ww_starter`, `ww_growth`, `ww_enterprise`
+    - Organisation-level billing (not per-member)
+    - Payment status tracking (trial, active, overdue, cancelled, suspended)
+    - Billing cycle configuration (weekly, monthly, quarterly, yearly)
+    - Next billing date tracking
+  - **Member Management**:
+    - Owner field (legal/billing responsibility, PROTECT on delete)
+    - Multiple admins via Membership.role system
+    - Member capacity limits (default 50, configurable by tier)
+    - Active member count tracking
+  - **Financial Configuration**:
+    - Financial year start (MM-DD format, e.g., '04-01' for April 1st)
+    - Default budget cycle for organisation
+    - Multi-currency support (NZD, AUD, USD, GBP, EUR)
+  - **Contact & Details**:
+    - Primary contact email
+    - Optional phone number, address, website
+- **Target ICPs**:
+  - **Corporate**: Employee expense management, team budgets, department financial tracking
+  - **Education**: School clubs, university societies, student organization budgeting
+  - **Non-Profit**: Community groups, charity financial management
+  - **Clubs**: Sports teams, social clubs, hobby groups with shared expenses
 - **API Endpoints**: `/api/v1/organisations/`
 - **ViewSets**: `OrganisationViewSet` (admin-only access)
 - **Serializers**: `OrganisationSerializer`
 - **Permissions**: `IsAdminOnly`
+- **Validation**:
+  - Financial year start must be valid MM-DD format
+  - Owner cannot be deleted while owning active organisations
 - **Computed Properties**:
-  - `current_member_count` - Active members
-  - `has_capacity` - Can add members
+  - `current_member_count` - Active members count
+  - `has_capacity` - Can add more members (current < max)
   - `is_trial` - Trial period check
-  - `is_paid_up` - Subscription status
+  - `is_paid_up` - Subscription in good standing (payment_status='active')
+- **Business Rules**:
+  - Organisation-wide settings cascade to all member households
+  - Owner has ultimate authority over organisation
+  - Admins manage day-to-day operations via Membership roles
 
 #### Rewards (`apps/rewards`) - Gamification Engine
 - **Status**: ✅ Complete (Read-only API)
@@ -665,7 +861,7 @@ Action types
 
 **Financial Management** (5 apps)
 - ✅ Accounts - Multi-type account management
-- ✅ Transactions - Income/expense/transfer tracking with OCR/voice placeholders
+- ✅ Transactions - Income/expense/transfer tracking with OCR support and receipt attachments
 - ✅ Categories - Hierarchical classification with defaults
 - ✅ Budgets - Period-based planning with category breakdown
 - ✅ Bills - Recurring payment tracking
@@ -674,7 +870,7 @@ Action types
 - ✅ Goals - Savings goals with milestone gamification
 
 **User & Access Management** (3 apps)
-- ✅ Users - Email auth with MFA support
+- ✅ Users - Email/username auth with MFA, OTP, and email verification
 - ✅ Households - Multi-tenant membership system
 - ✅ Organisations - B2B/enterprise support
 
@@ -702,8 +898,13 @@ All API routes are centralized in `config/api_v1_urls.py` and mounted at `/api/v
 ### Authentication Endpoints
 - **`POST /api/v1/auth/token/`** – Obtain JWT access/refresh tokens (supports MFA)
 - **`POST /api/v1/auth/token/refresh/`** – Refresh JWT access token
+- **`POST /api/v1/auth/register/`** – User registration with email verification
+- **`POST /api/v1/auth/verify-email/`** – Verify email with token
+- **`POST /api/v1/auth/resend-verification/`** – Resend verification email
+- **`POST /api/v1/auth/otp/request/`** – Request OTP for passwordless login
+- **`POST /api/v1/auth/otp/verify/`** – Verify OTP code
 - **`/api/v1/auth/`** – Additional auth endpoints (defined in `users.auth_urls`)
-- **`GET /api/v1/session/ping/`** – Session health check
+- **`GET /api/v1/session/ping/`** – Session health check (extends session during grace period)
 
 ### Developer Tools
 - **`GET /api/v1/schema/`** – OpenAPI 3 schema (drf-spectacular)
@@ -762,7 +963,80 @@ python manage.py collectstatic --noinput
 
 Access points
 - Admin: http://localhost:8000/admin/
-- (APIs) To be added under `/api/` when views/routers are introduced.
+- API: http://localhost:8000/api/v1/
+- API Documentation: http://localhost:8000/api/v1/docs/
+
+Celery setup (for async tasks)
+```powershell
+# Ensure Redis is running (required for Celery broker)
+# Install Redis on Windows or use Docker
+
+# Start Celery worker (in separate terminal)
+celery -A config worker -l info
+
+# Start Celery beat for scheduled tasks (in separate terminal)
+celery -A config beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+```
+
+---
+
+## Async Task Queue (Celery)
+
+KinWise uses Celery for asynchronous task processing, enabling non-blocking operations for email delivery, OCR processing, and scheduled jobs.
+
+### Configuration
+- **Broker**: Redis (default: `redis://localhost:6379/0`)
+- **Result Backend**: Redis (stores task results)
+- **Serialization**: JSON (secure, cross-language compatible)
+- **Scheduler**: django-celery-beat (database-backed scheduling)
+- **Task Routing**: Organized by app (users, bills, goals queues)
+
+### Implemented Tasks
+
+**User Tasks** (`users.tasks`)
+- `send_verification_email(user_id, verification_token)` - Email verification links
+- `send_otp_email(user_id, otp_code)` - OTP codes for passwordless login
+- `send_welcome_email(user_id)` - Post-verification welcome emails
+- **Features**: Retry with exponential backoff, HTML email templates, error handling
+
+**Scheduled Tasks** (via Celery Beat)
+- `bills.tasks.send_bill_reminders` - Daily at 9 AM (bill payment reminders)
+- `goals.tasks.check_goal_milestones` - Daily at 10 AM (goal progress notifications)
+
+### Task Management
+```python
+# Queue a task
+from users.tasks import send_verification_email
+result = send_verification_email.delay(user_id=123, verification_token="abc-123")
+
+# Check task status
+result.status  # 'PENDING', 'STARTED', 'SUCCESS', 'FAILURE'
+
+# Get result (blocks until complete)
+result.get(timeout=10)
+```
+
+### Monitoring
+- **Admin Interface**: `/admin/django_celery_beat/` for scheduled task management
+- **Task Results**: Stored in `django_celery_results_taskresult` table
+- **Flower** (optional): Real-time Celery monitoring dashboard
+
+### Configuration Settings
+```python
+# config/settings/base.py
+CELERY_BROKER_URL = "redis://localhost:6379/0"
+CELERY_RESULT_BACKEND = "redis://localhost:6379/0"
+CELERY_TASK_TIME_LIMIT = 30 * 60  # 30 minutes max
+CELERY_TASK_SOFT_TIME_LIMIT = 25 * 60  # 25 minutes soft limit
+CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
+
+# Task routes by app
+CELERY_TASK_ROUTES = {
+    "users.tasks.*": {"queue": "users"},
+    "bills.tasks.*": {"queue": "bills"},
+    "goals.tasks.*": {"queue": "goals"},
+}
+```
 
 ---
 
@@ -984,6 +1258,164 @@ Fixtures (optional)
 python manage.py dumpdata > backup.json
 python manage.py loaddata backup.json
 ```
+
+---
+
+## Known Issues & User Feedback Analysis
+
+Based on user feedback and production monitoring, the following issues have been identified and prioritized for resolution:
+
+### Critical Severity Issues (Immediate Action Required)
+
+**1. Login Issues** - 28 mentions
+- **Symptoms**: Users unable to authenticate, token expiration errors, session loss
+- **Backend Implications**:
+  - Session timeout (15 min idle + 2 min grace) may be too aggressive for some users
+  - JWT token rotation causing frontend sync issues
+  - Email/username backend case-sensitivity edge cases
+  - Rate limiting (4 attempts/min) blocking legitimate users on slow connections
+- **Recommended Fixes**:
+  - Add configurable session timeout per user preference
+  - Implement token refresh grace period for frontend
+  - Add detailed error messages to JWT authentication responses
+  - Review rate limiting thresholds (consider 10/min for token endpoints)
+  - Add login attempt analytics to identify patterns
+- **Related Code**: `users.backends.EmailOrUsernameBackend`, `users.views_auth.MFATokenObtainPairView`, `config/middleware/session.py`
+
+**2. Account Lockout** - 2 mentions
+- **Symptoms**: Users locked out after failed attempts, unclear recovery process
+- **Backend Implications**:
+  - Axes lockout (5 failures, 1 hour cooldown) with no self-service unlock
+  - No email notification on lockout
+  - Admin-only unlock capability
+- **Recommended Fixes**:
+  - Implement automated email notification on lockout with unlock link
+  - Add "Forgot Password" flow to reset lockout counter
+  - Provide user-facing lockout status API endpoint
+  - Consider reducing cooldown to 30 minutes for first offense
+  - Add Celery task to email admins on repeated lockouts
+- **Related Code**: `axes.middleware.AxesMiddleware`, `config/security.py` (AXES_FAILURE_LIMIT, AXES_COOLOFF_TIME)
+
+**3. App Crashes** - 14 mentions
+- **Symptoms**: Unexpected application termination, error screens
+- **Backend Implications**:
+  - Unhandled exceptions in API endpoints
+  - Database transaction rollback failures
+  - OCR processing (AWS Textract) timeouts causing 500 errors
+  - Celery task failures not gracefully handled
+- **Recommended Fixes**:
+  - Add comprehensive exception handling to all ViewSets
+  - Implement circuit breaker pattern for AWS Textract calls
+  - Add timeout handling for Celery tasks (currently 30 min max)
+  - Improve error responses with user-friendly messages
+  - Set up Sentry error tracking for production monitoring
+- **Related Code**: All ViewSets, `transactions.viewsets` (OCR endpoints), `config/celery.py`
+
+### High Severity Issues (Next Sprint)
+
+**4. UI/UX Problems** - 50 mentions
+- **Symptoms**: Confusing interfaces, unclear workflows, accessibility issues
+- **Backend Implications**:
+  - API responses lack sufficient metadata for UI state management
+  - Serializers not providing computed properties needed for frontend
+  - Permissions errors return generic 403 without context
+- **Recommended Fixes**:
+  - Add `_meta` field to all list responses (pagination, filters, counts)
+  - Include `available_actions` array in serializers based on user permissions
+  - Enhance error responses with `error_code`, `user_message`, `dev_details`
+  - Add API documentation examples to Swagger UI
+  - Implement preflight endpoint to check permissions before form submission
+- **Related Code**: All serializers, `config/addon/rest_framework.py`, DRF exception handlers
+
+**5. Loading Problems** - 22 mentions
+- **Symptoms**: Slow page loads, API timeouts, infinite spinners
+- **Backend Implications**:
+  - N+1 query issues in nested serializers
+  - Missing database indexes on frequently queried fields
+  - Large payload sizes (no pagination on some endpoints)
+  - OCR processing blocks response (should be async)
+- **Recommended Fixes**:
+  - Add `select_related()` and `prefetch_related()` to all ViewSets
+  - Implement cursor-based pagination for transaction lists
+  - Add database indexes on foreign keys and date fields
+  - Move OCR processing to Celery background task (return task ID)
+  - Enable response compression (gzip middleware)
+  - Add query performance logging in development
+- **Related Code**: All ViewSets (querysets), `transactions.viewsets`, database indexes
+
+**6. Performance** - 12 mentions
+- **Symptoms**: Slow API responses, delayed notifications, laggy dashboards
+- **Backend Implications**:
+  - Redis caching underutilized (only for rate limiting)
+  - No caching on frequently accessed endpoints (categories, lessons, rewards)
+  - Computed properties recalculated on every request
+  - Large SQL queries not optimized
+- **Recommended Fixes**:
+  - Implement Django cache decorators on read-only ViewSets
+  - Cache category tree, lessons, rewards (invalidate on update)
+  - Add Redis caching for Budget utilization calculations
+  - Optimize SQL with `only()` and `defer()` for large querysets
+  - Add database connection pooling (pgbouncer for Postgres)
+  - Implement API response caching with ETags
+- **Related Code**: `config/addon/cache.py`, all ViewSets, computed properties
+
+### Medium Severity Issues (Backlog)
+
+**7. Feature Limitations** - 49 mentions
+- **Symptoms**: Missing functionality, workarounds required, incomplete features
+- **Backend Status**: Many features have backend support but need frontend implementation
+- **Areas to Review**:
+  - Voice input (NLP endpoint exists but not connected)
+  - Receipt OCR (AWS Textract configured but needs async processing)
+  - Bill payment automation (structure exists, needs scheduling)
+  - Goal milestone notifications (Celery task exists, needs trigger logic)
+  - Transaction splits (model exists, needs UI/API integration)
+- **Recommended Actions**:
+  - Audit existing API endpoints vs frontend feature usage
+  - Document placeholder endpoints that need implementation
+  - Prioritize by ICP needs (family goals > student splits > DINK investments)
+- **Related Code**: `transactions.viewsets.voice_input`, `bills.viewsets.scan_bill`, `config/celery.py`
+
+**8. Browser Issues** - 44 mentions
+- **Symptoms**: Cross-browser compatibility, cookie issues, CORS errors
+- **Backend Implications**:
+  - SameSite=Strict cookies blocking some legitimate cross-site scenarios
+  - CORS preflight failures on OPTIONS requests
+  - Session cookie domain mismatch (localhost vs 127.0.0.1)
+  - Browser-specific CSP violations
+- **Recommended Fixes**:
+  - Review SameSite cookie policy (consider Lax for session cookies)
+  - Ensure CORS middleware handles all HTTP methods
+  - Add environment-specific cookie domain configuration
+  - Test CSP directives across Chrome, Firefox, Safari, Edge
+  - Add browser detection for troubleshooting logs
+- **Related Code**: `config/security.py` (cookie settings), `config/addon/cors.py`, `config/middleware/csp_custom.py`
+
+### Action Plan
+
+**Immediate (This Week)**
+1. Add detailed logging to login flow for debugging
+2. Implement lockout email notifications via Celery
+3. Add comprehensive exception handling to crash-prone endpoints
+
+**Short-term (This Sprint)**
+4. Optimize database queries with select_related/prefetch_related
+5. Implement Redis caching on read-heavy endpoints
+6. Add API response metadata for better frontend UX
+
+**Medium-term (Next Sprint)**
+7. Move OCR processing to async Celery tasks
+8. Implement feature completion (voice, OCR, splits)
+9. Add performance monitoring and alerting
+
+### Monitoring & Metrics
+
+**Recommended Additions:**
+- **Error Tracking**: Integrate Sentry for production error monitoring
+- **Performance Monitoring**: Add Django Debug Toolbar for development, New Relic for production
+- **User Analytics**: Track login success rates, session duration, API endpoint usage
+- **Database Monitoring**: Add slow query logging, connection pool metrics
+- **Celery Monitoring**: Set up Flower dashboard for task queue visibility
 
 ---
 

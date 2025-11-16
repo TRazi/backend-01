@@ -5,6 +5,7 @@ from django.contrib.auth.signals import (
     user_login_failed,
 )
 from django.dispatch import receiver
+from axes.signals import user_locked_out
 
 audit_logger = logging.getLogger("kinwise.audit")
 
@@ -123,4 +124,77 @@ def log_user_login_failed(sender, credentials, request, **kwargs):
         ip_address=ip,
         user_agent=_get_ua(request),
         request_path=getattr(request, "path", None) if request else None,
+    )
+
+
+@receiver(user_locked_out)
+def handle_user_locked_out(sender, request, username, **kwargs):
+    """
+    Handle Axes lockout event by sending notification email with unlock token.
+
+    This is triggered when a user exceeds the maximum login attempts (5 failures).
+    """
+    from apps.users.models import AccountUnlockToken
+    from apps.users.tasks import send_lockout_notification
+    from django.conf import settings
+
+    ip_address = _get_ip(request)
+
+    audit_logger.warning(
+        "user_locked_out",
+        extra={
+            "event": "user_locked_out",
+            "username": username,
+            "ip_address": ip_address,
+            "user_agent": _get_ua(request),
+            "path": getattr(request, "path", None) if request else None,
+        },
+    )
+
+    # Create database audit record
+    from audit.models import AuditLog
+
+    AuditLog.objects.create(
+        user=None,
+        action_type="ACCOUNT_LOCKED",
+        action_description=f"Account locked due to too many failed login attempts: {username}",
+        ip_address=ip_address,
+        user_agent=_get_ua(request),
+        request_path=getattr(request, "path", None) if request else None,
+        request_method="POST",
+        success=False,
+        metadata={
+            "username": username,
+            "reason": "Too many failed login attempts",
+        },
+    )
+
+    # Create unlock token for self-service unlock
+    unlock_token = AccountUnlockToken.objects.create(
+        email=username,  # Axes uses username field which is email in our case
+        ip_address=ip_address,
+    )
+
+    # Send lockout notification email asynchronously
+    # Get lockout duration from settings (default 60 minutes)
+    lockout_duration = getattr(settings, "AXES_COOLOFF_TIME", 1)  # In hours
+    if isinstance(lockout_duration, int):
+        lockout_duration_minutes = lockout_duration * 60
+    else:
+        lockout_duration_minutes = 60
+
+    send_lockout_notification.delay(
+        user_email=username,
+        ip_address=ip_address,
+        lockout_duration_minutes=lockout_duration_minutes,
+        unlock_token=str(unlock_token.token),
+    )
+
+    audit_logger.info(
+        "lockout_notification_queued",
+        extra={
+            "event": "lockout_notification_queued",
+            "email": username,
+            "unlock_token_id": unlock_token.id,
+        },
     )

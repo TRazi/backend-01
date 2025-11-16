@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Locked - KinWise</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #4A90E2;
+        }
+        .alert-icon {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        h1 {
+            color: #e74c3c;
+            font-size: 24px;
+            margin: 20px 0 10px 0;
+        }
+        .info-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .unlock-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #4A90E2;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .unlock-button:hover {
+            background-color: #357ABD;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        .security-tips {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .security-tips ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">KinWise</div>
+        </div>
+        
+        <div style="text-align: center;">
+            <div class="alert-icon">🔒</div>
+            <h1>Your Account Has Been Temporarily Locked</h1>
+        </div>
+        
+        <p>Hi there,</p>
+        
+        <p>We've detected multiple failed login attempts on your KinWise account. To protect your account and financial data, we've temporarily locked access.</p>
+        
+        <div class="info-box">
+            <strong>Lockout Details:</strong>
+            <p style="margin: 5px 0;">
+                <strong>Email:</strong> {{ user_email }}<br>
+                <strong>IP Address:</strong> {{ ip_address }}<br>
+                <strong>Duration:</strong> {{ lockout_duration_minutes }} minutes
+            </p>
+        </div>
+        
+        {% if unlock_url %}
+        <div style="text-align: center; margin: 30px 0;">
+            <p><strong>Was this you?</strong></p>
+            <p>If you recognize this activity, you can unlock your account immediately:</p>
+            <a href="{{ unlock_url }}" class="unlock-button">Unlock My Account</a>
+            <p style="font-size: 12px; color: #666; margin-top: 10px;">
+                This link expires in 1 hour.
+            </p>
+        </div>
+        {% else %}
+        <p style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-radius: 4px;">
+            Your account will automatically unlock after <strong>{{ lockout_duration_minutes }} minutes</strong>. 
+            You can try logging in again at that time.
+        </p>
+        {% endif %}
+        
+        <div class="security-tips">
+            <strong>🛡️ Security Tips:</strong>
+            <ul>
+                <li>If this wasn't you, change your password immediately after unlocking</li>
+                <li>Make sure you're using a strong, unique password</li>
+                <li>Enable Multi-Factor Authentication (MFA) for extra security</li>
+                <li>Check for Caps Lock when entering your password</li>
+                <li>Never share your password with anyone</li>
+            </ul>
+        </div>
+        
+        <p><strong>Didn't try to log in?</strong></p>
+        <p>If you didn't attempt to access your account, someone may be trying to gain unauthorized access. Please:</p>
+        <ol>
+            <li>Change your password immediately after unlocking</li>
+            <li>Review your recent account activity</li>
+            <li>Contact our support team at <a href="mailto:support@kinwise.com">support@kinwise.com</a></li>
+        </ol>
+        
+        <div class="footer">
+            <p>This is an automated security notification from KinWise.</p>
+            <p>© 2025 KinWise. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                If you have questions, contact us at 
+                <a href="mailto:support@kinwise.com">support@kinwise.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

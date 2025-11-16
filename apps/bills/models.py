@@ -225,3 +225,119 @@ class Bill(BaseModel):
         if transaction:
             self.transaction = transaction
         self.save(update_fields=["status", "paid_date", "transaction", "updated_at"])
+
+
+class BillAttachment(BaseModel):
+    """
+    Stores bill/invoice images and documents.
+    Supports OCR processing for automatic bill data extraction.
+    """
+
+    bill = models.ForeignKey(
+        Bill,
+        on_delete=models.CASCADE,
+        related_name="attachments",
+        help_text="Bill this attachment belongs to",
+    )
+
+    file = models.FileField(
+        upload_to="bills/%Y/%m/",
+        help_text="Bill or invoice document",
+    )
+
+    file_name = models.CharField(
+        max_length=255,
+        help_text="Original filename",
+    )
+
+    file_size = models.IntegerField(
+        help_text="File size in bytes",
+    )
+
+    file_type = models.CharField(
+        max_length=10,
+        help_text="File extension (jpg, png, pdf)",
+    )
+
+    # OCR processing status
+    ocr_processed = models.BooleanField(
+        default=False,
+        help_text="Whether OCR has been run on this document",
+    )
+
+    ocr_text = models.TextField(
+        blank=True,
+        help_text="Extracted text from OCR",
+    )
+
+    ocr_data = models.JSONField(
+        default=dict,
+        blank=True,
+        help_text="Structured OCR data (provider, amount, due_date, account_number)",
+    )
+
+    ocr_confidence = models.DecimalField(
+        max_digits=5,
+        decimal_places=2,
+        null=True,
+        blank=True,
+        help_text="Average confidence score from OCR (0-100)",
+    )
+
+    ocr_processed_at = models.DateTimeField(
+        null=True,
+        blank=True,
+        help_text="When OCR processing completed",
+    )
+
+    ocr_error = models.TextField(
+        blank=True,
+        help_text="Error message if OCR failed",
+    )
+
+    # Metadata
+    uploaded_by = models.ForeignKey(
+        "users.User",
+        on_delete=models.SET_NULL,
+        null=True,
+        related_name="uploaded_bills",
+        help_text="User who uploaded this bill",
+    )
+
+    class Meta:
+        db_table = "bill_attachments"
+        verbose_name = "Bill Attachment"
+        verbose_name_plural = "Bill Attachments"
+        indexes = [
+            models.Index(fields=["bill", "created_at"]),
+            models.Index(fields=["ocr_processed", "created_at"]),
+        ]
+        ordering = ["-created_at"]
+
+    def __str__(self):
+        return f"{self.file_name} for {self.bill}"
+
+    def clean(self):
+        """Validate attachment."""
+        super().clean()
+
+        from django.conf import settings
+
+        # Validate file size
+        if self.file and hasattr(self.file, "size"):
+            max_size = settings.RECEIPT_MAX_SIZE_MB * 1024 * 1024  # Convert to bytes
+            if self.file.size > max_size:
+                raise ValidationError(
+                    f"File size ({self.file.size} bytes) exceeds maximum allowed "
+                    f"size ({max_size} bytes)"
+                )
+
+        # Validate file type
+        if (
+            self.file_type
+            and self.file_type.lower() not in settings.RECEIPT_ALLOWED_FORMATS
+        ):
+            raise ValidationError(
+                f"File type '{self.file_type}' not allowed. "
+                f"Allowed formats: {', '.join(settings.RECEIPT_ALLOWED_FORMATS)}"
+            )

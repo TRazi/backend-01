@@ -47,6 +47,12 @@ class HouseholdAdmin(ModelAdmin):
 
     readonly_fields = ["created_at", "updated_at"]
 
+    def formfield_for_choice_field(self, db_field, request, **kwargs):
+        """Customize choice fields to remove blank option."""
+        if db_field.name in ["household_type", "budget_cycle"]:
+            kwargs["empty_label"] = None
+        return super().formfield_for_choice_field(db_field, request, **kwargs)
+
     def member_count(self, obj):
         return obj.memberships.filter(status="active").count()
 
