@@ -21,8 +21,7 @@ class TestAccountSerializer:
         serializer = AccountSerializer()
 
         expected_fields = [
-            "id",
-            "household",
+            "uuid",
             "name",
             "account_type",
             "balance",
