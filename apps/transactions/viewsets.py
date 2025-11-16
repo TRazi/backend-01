@@ -1,3 +1,4 @@
+from decimal import Decimal
 from rest_framework import viewsets, permissions, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -7,7 +8,7 @@ from django.db import transaction as db_transaction
 from django.utils import timezone
 import logging
 
-from .models import Transaction, TransactionTag, TransactionAttachment
+from .models import Transaction, TransactionTag, TransactionAttachment, TransactionSplit
 from .serializers import (
     TransactionSerializer,
     TransactionCreateSerializer,
@@ -16,6 +17,9 @@ from .serializers import (
     TransactionAttachmentSerializer,
     TransactionAttachmentUploadSerializer,
     ReceiptScanSerializer,
+    TransactionSplitSerializer,
+    TransactionSplitCreateSerializer,
+    BulkSplitSerializer,
 )
 from .permissions import IsTransactionHouseholdMember
 
@@ -558,3 +562,238 @@ class TransactionViewSet(viewsets.ModelViewSet):
             {"message": "Voice processing placeholder - coming soon"},
             status=status.HTTP_200_OK,
         )
+
+    @action(detail=True, methods=["get", "post"], url_path="splits")
+    def splits(self, request, uuid=None):
+        """
+        Manage transaction splits.
+
+        GET: List all splits for this transaction
+        POST: Create a new split
+
+        Request Body (POST):
+            {
+                "category": 123,  // Optional: Category ID
+                "amount": "50.00",  // Required: Split amount
+                "description": "My share of groceries",  // Optional
+                "member": 456  // Optional: Assign to specific member
+            }
+
+        Returns:
+            GET 200: List of splits with totals
+            POST 201: Created split
+            POST 400: Validation errors
+        """
+        from django.db.models import Sum
+
+        transaction = self.get_object()
+
+        if request.method == "GET":
+            splits = TransactionSplit.objects.filter(
+                transaction=transaction
+            ).select_related("category", "member")
+
+            total_split = (
+                splits.aggregate(total=Sum("amount"))["total"] or 0
+            )
+            remaining = abs(transaction.amount) - abs(total_split)
+
+            serializer = TransactionSplitSerializer(
+                splits, many=True, context={"request": request}
+            )
+
+            return Response(
+                {
+                    "count": splits.count(),
+                    "total_split": total_split,
+                    "remaining": remaining,
+                    "splits": serializer.data,
+                }
+            )
+
+        elif request.method == "POST":
+            serializer = TransactionSplitCreateSerializer(
+                data=request.data,
+                context={"request": request, "transaction": transaction},
+            )
+
+            if not serializer.is_valid():
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+            split = serializer.save(transaction=transaction)
+
+            logger.info(
+                f"Split created for transaction {transaction.id}: ${split.amount}",
+                extra={
+                    "user_id": request.user.id,
+                    "transaction_id": transaction.id,
+                    "split_id": split.id,
+                    "amount": float(split.amount),
+                },
+            )
+
+            return Response(
+                TransactionSplitSerializer(split, context={"request": request}).data,
+                status=status.HTTP_201_CREATED,
+            )
+
+    @action(detail=True, methods=["post"], url_path="split-equally")
+    def split_equally(self, request, uuid=None):
+        """
+        Split transaction equally or proportionally across household members.
+
+        Convenience endpoint for common use case: splitting bills equally
+        among flatmates or family members.
+
+        Request Body:
+            {
+                "members": [123, 456, 789],  // User IDs to split between
+                "split_type": "equal"  // or "proportional"
+                "proportions": {  // Required if split_type=proportional
+                    "123": 70.00,
+                    "456": 30.00
+                }
+            }
+
+        Example (Equal Split):
+            POST /api/v1/transactions/{uuid}/split-equally/
+            {
+                "members": [1, 2, 3],
+                "split_type": "equal"
+            }
+
+            Result: $300 bill → $100 per person
+
+        Example (Proportional Split - DINK 70/30):
+            POST /api/v1/transactions/{uuid}/split-equally/
+            {
+                "members": [1, 2],
+                "split_type": "proportional",
+                "proportions": {
+                    "1": 70.00,
+                    "2": 30.00
+                }
+            }
+
+            Result: $1000 rent → $700 (person 1), $300 (person 2)
+
+        Returns:
+            201: Created splits
+            400: Validation errors
+        """
+        from users.models import User
+
+        transaction = self.get_object()
+        serializer = BulkSplitSerializer(data=request.data)
+
+        if not serializer.is_valid():
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        member_ids = serializer.validated_data["members"]
+        split_type = serializer.validated_data.get("split_type", "equal")
+        proportions = serializer.validated_data.get("proportions", {})
+
+        # Validate members belong to household
+        members = User.objects.filter(
+            id__in=member_ids, household=transaction.account.household
+        )
+
+        if members.count() != len(member_ids):
+            return Response(
+                {"detail": "All members must belong to transaction's household"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        # Delete existing splits (fresh start)
+        TransactionSplit.objects.filter(transaction=transaction).delete()
+
+        # Calculate split amounts
+        splits_created = []
+
+        with db_transaction.atomic():
+            if split_type == "equal":
+                # Equal split
+                split_amount = abs(transaction.amount) / len(members)
+
+                for member in members:
+                    split = TransactionSplit.objects.create(
+                        transaction=transaction,
+                        member=member,
+                        amount=split_amount,
+                        description=f"{member.get_full_name()}'s share (equal split)",
+                        category=transaction.category,
+                    )
+                    splits_created.append(split)
+
+            else:  # proportional
+                # Proportional split (e.g., 70/30 for DINK couples)
+                for member in members:
+                    percentage = proportions.get(str(member.id), 0)
+                    split_amount = abs(transaction.amount) * (Decimal(str(percentage)) / Decimal('100'))
+
+                    split = TransactionSplit.objects.create(
+                        transaction=transaction,
+                        member=member,
+                        amount=split_amount,
+                        description=f"{member.get_full_name()}'s share ({percentage}%)",
+                        category=transaction.category,
+                    )
+                    splits_created.append(split)
+
+        logger.info(
+            f"Transaction {transaction.id} split {split_type} "
+            f"across {len(members)} members",
+            extra={
+                "user_id": request.user.id,
+                "transaction_id": transaction.id,
+                "split_type": split_type,
+                "member_count": len(members),
+            },
+        )
+
+        return Response(
+            {
+                "message": f"Transaction split {split_type} across {len(members)} members",
+                "splits": TransactionSplitSerializer(
+                    splits_created, many=True, context={"request": request}
+                ).data,
+            },
+            status=status.HTTP_201_CREATED,
+        )
+
+    @action(
+        detail=True,
+        methods=["delete"],
+        url_path="splits/(?P<split_id>[0-9]+)",
+    )
+    def delete_split(self, request, uuid=None, split_id=None):
+        """
+        Delete a specific split.
+
+        DELETE /api/v1/transactions/{uuid}/splits/{split_id}/
+
+        Returns:
+            204: Split deleted
+            404: Split not found
+        """
+        transaction = self.get_object()
+
+        try:
+            split = TransactionSplit.objects.get(id=split_id, transaction=transaction)
+            split.delete()
+
+            logger.info(
+                f"Split {split_id} deleted from transaction {transaction.id}",
+                extra={
+                    "user_id": request.user.id,
+                    "transaction_id": transaction.id,
+                    "split_id": split_id,
+                },
+            )
+
+            return Response(status=status.HTTP_204_NO_CONTENT)
+
+        except TransactionSplit.DoesNotExist:
+            return Response(
+                {"detail": "Split not found"}, status=status.HTTP_404_NOT_FOUND
+            )

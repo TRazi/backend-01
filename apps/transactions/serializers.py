@@ -397,3 +397,103 @@ class TransactionSplitSerializer(serializers.ModelSerializer):
         if value == 0:
             raise serializers.ValidationError("Split amount cannot be zero")
         return value
+
+
+class TransactionSplitCreateSerializer(serializers.ModelSerializer):
+    """
+    Serializer for creating/updating transaction splits.
+
+    Validates that split amounts don't exceed transaction total.
+    """
+
+    class Meta:
+        model = TransactionSplit
+        fields = ["category", "amount", "description", "member"]
+
+    def validate_amount(self, value):
+        """Ensure amount is not zero."""
+        if value == 0:
+            raise serializers.ValidationError("Split amount cannot be zero")
+        return value
+
+    def validate(self, attrs):
+        """Validate split doesn't exceed transaction amount."""
+        from django.db.models import Sum
+
+        transaction = self.context.get("transaction")
+
+        if not transaction:
+            raise serializers.ValidationError("Transaction context required")
+
+        # Calculate total existing splits
+        existing_total = (
+            TransactionSplit.objects.filter(transaction=transaction).aggregate(
+                total=Sum("amount")
+            )["total"]
+            or 0
+        )
+
+        new_amount = attrs.get("amount", 0)
+
+        if abs(existing_total + new_amount) > abs(transaction.amount):
+            raise serializers.ValidationError(
+                f"Total splits (${existing_total + new_amount}) cannot exceed "
+                f"transaction amount (${transaction.amount})"
+            )
+
+        return attrs
+
+
+class BulkSplitSerializer(serializers.Serializer):
+    """
+    Serializer for splitting transaction equally or proportionally across members.
+
+    Supports:
+    - Equal split (50/50, 33/33/33, etc.)
+    - Proportional split (70/30, 60/40, custom ratios)
+    """
+
+    members = serializers.ListField(
+        child=serializers.IntegerField(),
+        help_text="List of member user IDs to split between",
+    )
+
+    split_type = serializers.ChoiceField(
+        choices=["equal", "proportional"],
+        default="equal",
+        help_text="How to split: equal (50/50) or proportional (custom ratios)",
+    )
+
+    proportions = serializers.DictField(
+        child=serializers.DecimalField(max_digits=5, decimal_places=2),
+        required=False,
+        help_text="For proportional splits: {user_id: percentage} e.g. {1: 70.00, 2: 30.00}",
+    )
+
+    def validate(self, attrs):
+        """Validate split configuration."""
+        split_type = attrs.get("split_type")
+        proportions = attrs.get("proportions", {})
+        members = attrs.get("members", [])
+
+        if split_type == "proportional":
+            if not proportions:
+                raise serializers.ValidationError(
+                    "Proportions required for proportional split"
+                )
+
+            # Validate proportions sum to 100
+            total = sum(float(v) for v in proportions.values())
+            if abs(total - 100) > 0.01:  # Allow for floating point errors
+                raise serializers.ValidationError(
+                    f"Proportions must sum to 100% (current: {total}%)"
+                )
+
+            # Validate all members have proportions
+            for member_id in members:
+                if str(member_id) not in proportions:
+                    raise serializers.ValidationError(
+                        f"Member {member_id} missing from proportions"
+                    )
+
+        return attrs
