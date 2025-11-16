@@ -1,0 +1,1173 @@
+[
+    {
+        "model": "accounts.Account",
+        "pk": 1,
+        "fields": {
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "household": 1,
+            "name": "Family Checking Account",
+            "institution": "ANZ Bank",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "5240.50",
+            "available_credit": null,
+            "credit_limit": null
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 2,
+        "fields": {
+            "household": 1,
+            "name": "Family Savings",
+            "institution": "ANZ Bank",
+            "account_type": "savings",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "12500.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 3,
+        "fields": {
+            "household": 1,
+            "name": "Visa Credit Card",
+            "institution": "ANZ Bank",
+            "account_type": "credit",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "-1250.00",
+            "available_credit": "3750.00",
+            "credit_limit": "5000.00",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 4,
+        "fields": {
+            "household": 2,
+            "name": "Patel Joint Account",
+            "institution": "Westpac",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "6850.75",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 5,
+        "fields": {
+            "household": 2,
+            "name": "Emergency Fund",
+            "institution": "Westpac",
+            "account_type": "savings",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "8500.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 6,
+        "fields": {
+            "household": 3,
+            "name": "Alex Checking",
+            "institution": "ASB",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "3200.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 7,
+        "fields": {
+            "household": 3,
+            "name": "Mei Checking",
+            "institution": "ASB",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "2950.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 8,
+        "fields": {
+            "household": 3,
+            "name": "Joint Savings",
+            "institution": "ASB",
+            "account_type": "savings",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "15000.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 9,
+        "fields": {
+            "household": 4,
+            "name": "Rodriguez Checking",
+            "institution": "Kiwibank",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "4100.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 10,
+        "fields": {
+            "household": 5,
+            "name": "Flat Account",
+            "institution": "BNZ",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "1850.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 11,
+        "fields": {
+            "household": 6,
+            "name": "Student Flat Account",
+            "institution": "Kiwibank",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "980.50",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 12,
+        "fields": {
+            "household": 7,
+            "name": "Wellington Flatmates",
+            "institution": "ANZ Bank",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "1250.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "accounts.Account",
+        "pk": 13,
+        "fields": {
+            "household": 8,
+            "name": "Daniel Personal",
+            "institution": "ASB",
+            "account_type": "checking",
+            "currency": "NZD",
+            "include_in_totals": true,
+            "balance": "3500.00",
+            "available_credit": null,
+            "credit_limit": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.TransactionTag",
+        "pk": 1,
+        "fields": {
+            "household": 1,
+            "name": "Tax Deductible",
+            "color": "#10B981",
+            "description": "Expenses that can be claimed on taxes",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.TransactionTag",
+        "pk": 2,
+        "fields": {
+            "household": 1,
+            "name": "Reimbursable",
+            "color": "#3B82F6",
+            "description": "Work expenses to be reimbursed",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.TransactionTag",
+        "pk": 3,
+        "fields": {
+            "household": 2,
+            "name": "Medical",
+            "color": "#EF4444",
+            "description": "Health-related expenses",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.TransactionTag",
+        "pk": 4,
+        "fields": {
+            "household": 3,
+            "name": "Vacation Fund",
+            "color": "#F59E0B",
+            "description": "Savings for upcoming vacation",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.TransactionTag",
+        "pk": 5,
+        "fields": {
+            "household": 5,
+            "name": "Shared Expense",
+            "color": "#8B5CF6",
+            "description": "Expenses split among flatmates",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 1,
+        "fields": {
+            "account": 1,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "income",
+            "status": "completed",
+            "amount": "5200.00",
+            "description": "Sarah Salary - November",
+            "date": "2025-11-01T00:00:00Z",
+            "category": 1,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Auckland Tech Solutions",
+            "notes": "Monthly salary",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 2,
+        "fields": {
+            "account": 1,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "income",
+            "status": "completed",
+            "amount": "4800.00",
+            "description": "James Salary - November",
+            "date": "2025-11-01T00:00:00Z",
+            "category": 1,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Auckland Tech Solutions",
+            "notes": "Monthly salary",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 3,
+        "fields": {
+            "account": 1,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "expense",
+            "status": "completed",
+            "amount": "-250.50",
+            "description": "Countdown Grocery Shopping",
+            "date": "2025-11-05T14:30:00Z",
+            "category": 11,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "manual",
+            "merchant": "Countdown Supermarket",
+            "notes": "Weekly groceries",
+            "is_recurring": false,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 4,
+        "fields": {
+            "account": 1,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "expense",
+            "status": "completed",
+            "amount": "-89.99",
+            "description": "Power Bill",
+            "date": "2025-11-10T00:00:00Z",
+            "category": 10,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Vector Energy",
+            "notes": "Monthly electricity",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 5,
+        "fields": {
+            "account": 1,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "expense",
+            "status": "completed",
+            "amount": "-1800.00",
+            "description": "Monthly Rent",
+            "date": "2025-11-01T00:00:00Z",
+            "category": 9,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Property Manager",
+            "notes": "November rent",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 6,
+        "fields": {
+            "account": 3,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "expense",
+            "status": "completed",
+            "amount": "-45.00",
+            "description": "Family Dinner at Denny's",
+            "date": "2025-11-12T19:00:00Z",
+            "category": 12,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "manual",
+            "merchant": "Denny's Restaurant",
+            "notes": "Weekend family dinner",
+            "is_recurring": false,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 7,
+        "fields": {
+            "account": 2,
+            "goal": 1,
+            "budget": null,
+            "transaction_type": "income",
+            "status": "completed",
+            "amount": "500.00",
+            "description": "Transfer to Emergency Fund",
+            "date": "2025-11-05T00:00:00Z",
+            "category": 1,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "manual",
+            "merchant": "",
+            "notes": "Monthly emergency fund contribution",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 8,
+        "fields": {
+            "account": 4,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "income",
+            "status": "completed",
+            "amount": "5500.00",
+            "description": "Priya Salary - November",
+            "date": "2025-11-01T00:00:00Z",
+            "category": 1,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Wellington Community Centre",
+            "notes": "Monthly salary",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 9,
+        "fields": {
+            "account": 4,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "income",
+            "status": "completed",
+            "amount": "6200.00",
+            "description": "Raj Salary - November",
+            "date": "2025-11-01T00:00:00Z",
+            "category": 1,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Auckland Tech Solutions",
+            "notes": "Monthly salary",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 10,
+        "fields": {
+            "account": 4,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "expense",
+            "status": "completed",
+            "amount": "-320.75",
+            "description": "New World Groceries",
+            "date": "2025-11-08T16:00:00Z",
+            "category": 11,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "manual",
+            "merchant": "New World",
+            "notes": "Weekly shop",
+            "is_recurring": false,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 11,
+        "fields": {
+            "account": 6,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "income",
+            "status": "completed",
+            "amount": "7500.00",
+            "description": "Alex Salary - November",
+            "date": "2025-11-01T00:00:00Z",
+            "category": 1,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Auckland Tech Solutions",
+            "notes": "Software engineer salary",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 12,
+        "fields": {
+            "account": 7,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "income",
+            "status": "completed",
+            "amount": "7200.00",
+            "description": "Mei Salary - November",
+            "date": "2025-11-01T00:00:00Z",
+            "category": 1,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Auckland Tech Solutions",
+            "notes": "Data analyst salary",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 13,
+        "fields": {
+            "account": 6,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "expense",
+            "status": "completed",
+            "amount": "-180.00",
+            "description": "Gym Membership",
+            "date": "2025-11-03T00:00:00Z",
+            "category": 7,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "Les Mills",
+            "notes": "Monthly gym fee",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 14,
+        "fields": {
+            "account": 10,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "expense",
+            "status": "completed",
+            "amount": "-450.00",
+            "description": "Weekly Rent Share",
+            "date": "2025-11-04T00:00:00Z",
+            "category": 9,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "manual",
+            "merchant": "Landlord",
+            "notes": "Split 6 ways",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "transactions.Transaction",
+        "pk": 15,
+        "fields": {
+            "account": 11,
+            "goal": null,
+            "budget": null,
+            "transaction_type": "income",
+            "status": "completed",
+            "amount": "450.00",
+            "description": "Student Allowance",
+            "date": "2025-11-07T00:00:00Z",
+            "category": 1,
+            "receipt_image": null,
+            "voice_entry_flag": false,
+            "transaction_source": "bank_import",
+            "merchant": "StudyLink",
+            "notes": "Fortnightly payment",
+            "is_recurring": true,
+            "linked_transaction": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.Budget",
+        "pk": 1,
+        "fields": {
+            "household": 1,
+            "name": "November 2025 Budget",
+            "start_date": "2025-11-01",
+            "end_date": "2025-11-30",
+            "cycle_type": "monthly",
+            "total_amount": "8000.00",
+            "status": "active",
+            "alert_threshold": "80.00",
+            "rollover_enabled": false,
+            "notes": "Family monthly budget",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.Budget",
+        "pk": 2,
+        "fields": {
+            "household": 2,
+            "name": "November 2025 Budget",
+            "start_date": "2025-11-01",
+            "end_date": "2025-11-30",
+            "cycle_type": "monthly",
+            "total_amount": "9500.00",
+            "status": "active",
+            "alert_threshold": "85.00",
+            "rollover_enabled": true,
+            "notes": "Patel family budget",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.Budget",
+        "pk": 3,
+        "fields": {
+            "household": 3,
+            "name": "November 2025 Budget",
+            "start_date": "2025-11-01",
+            "end_date": "2025-11-30",
+            "cycle_type": "monthly",
+            "total_amount": "6000.00",
+            "status": "active",
+            "alert_threshold": "75.00",
+            "rollover_enabled": false,
+            "notes": "DINK couple budget",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.Budget",
+        "pk": 4,
+        "fields": {
+            "household": 5,
+            "name": "Week of Nov 4-10",
+            "start_date": "2025-11-04",
+            "end_date": "2025-11-10",
+            "cycle_type": "weekly",
+            "total_amount": "800.00",
+            "status": "completed",
+            "alert_threshold": "80.00",
+            "rollover_enabled": false,
+            "notes": "Weekly flatmates budget",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.Budget",
+        "pk": 5,
+        "fields": {
+            "household": 6,
+            "name": "Week of Nov 4-10",
+            "start_date": "2025-11-04",
+            "end_date": "2025-11-10",
+            "cycle_type": "weekly",
+            "total_amount": "600.00",
+            "status": "completed",
+            "alert_threshold": "90.00",
+            "rollover_enabled": false,
+            "notes": "Student flat budget",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.BudgetItem",
+        "pk": 1,
+        "fields": {
+            "budget": 1,
+            "name": "Housing Costs",
+            "amount": "2000.00",
+            "category": 2,
+            "notes": "Rent and utilities",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.BudgetItem",
+        "pk": 2,
+        "fields": {
+            "budget": 1,
+            "name": "Food & Dining",
+            "amount": "1200.00",
+            "category": 3,
+            "notes": "Groceries and eating out",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.BudgetItem",
+        "pk": 3,
+        "fields": {
+            "budget": 1,
+            "name": "Transportation",
+            "amount": "500.00",
+            "category": 4,
+            "notes": "Fuel and vehicle costs",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.BudgetItem",
+        "pk": 4,
+        "fields": {
+            "budget": 1,
+            "name": "Entertainment",
+            "amount": "400.00",
+            "category": 5,
+            "notes": "Family activities",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.BudgetItem",
+        "pk": 5,
+        "fields": {
+            "budget": 2,
+            "name": "Housing",
+            "amount": "2500.00",
+            "category": 2,
+            "notes": "Mortgage and rates",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.BudgetItem",
+        "pk": 6,
+        "fields": {
+            "budget": 2,
+            "name": "Groceries",
+            "amount": "1500.00",
+            "category": 11,
+            "notes": "Weekly shopping",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.BudgetItem",
+        "pk": 7,
+        "fields": {
+            "budget": 3,
+            "name": "Rent",
+            "amount": "2200.00",
+            "category": 9,
+            "notes": "CBD apartment",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "budgets.BudgetItem",
+        "pk": 8,
+        "fields": {
+            "budget": 3,
+            "name": "Dining Out",
+            "amount": "800.00",
+            "category": 12,
+            "notes": "No kids = more restaurant budget!",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "goals.Goal",
+        "pk": 1,
+        "fields": {
+            "household": 1,
+            "name": "Emergency Fund",
+            "goal_type": "emergency_fund",
+            "target_amount": "15000.00",
+            "current_amount": "12500.00",
+            "due_date": "2026-06-30",
+            "icon": "🛟",
+            "color": "#EF4444",
+            "description": "6 months expenses safety net",
+            "auto_contribute": true,
+            "contribution_percentage": "5.00",
+            "milestone_amount": "3000.00",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "active"
+        }
+    },
+    {
+        "model": "goals.Goal",
+        "pk": 2,
+        "fields": {
+            "household": 2,
+            "name": "Family Vacation to Fiji",
+            "goal_type": "purchase",
+            "target_amount": "8000.00",
+            "current_amount": "3500.00",
+            "due_date": "2026-01-15",
+            "icon": "✈️",
+            "color": "#F59E0B",
+            "description": "Dream family holiday",
+            "auto_contribute": true,
+            "contribution_percentage": "10.00",
+            "milestone_amount": "2000.00",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "active"
+        }
+    },
+    {
+        "model": "goals.Goal",
+        "pk": 3,
+        "fields": {
+            "household": 3,
+            "name": "House Deposit",
+            "goal_type": "savings",
+            "target_amount": "100000.00",
+            "current_amount": "45000.00",
+            "due_date": "2027-12-31",
+            "icon": "🏡",
+            "color": "#10B981",
+            "description": "First home deposit",
+            "auto_contribute": true,
+            "contribution_percentage": "15.00",
+            "milestone_amount": "10000.00",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "active"
+        }
+    },
+    {
+        "model": "goals.Goal",
+        "pk": 4,
+        "fields": {
+            "household": 6,
+            "name": "Graduate Debt Free",
+            "goal_type": "debt_payoff",
+            "target_amount": "15000.00",
+            "current_amount": "2500.00",
+            "due_date": "2028-12-31",
+            "icon": "🎓",
+            "color": "#6366F1",
+            "description": "Pay off student loan early",
+            "auto_contribute": false,
+            "contribution_percentage": "0.00",
+            "milestone_amount": "5000.00",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "active"
+        }
+    },
+    {
+        "model": "bills.Bill",
+        "pk": 1,
+        "fields": {
+            "household": 1,
+            "account": 1,
+            "category": 9,
+            "name": "Monthly Rent",
+            "amount": "1800.00",
+            "due_date": "2025-12-01",
+            "frequency": "monthly",
+            "paid_date": null,
+            "is_recurring": true,
+            "notes": "Due on 1st of each month",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "pending",
+            "auto_pay_enabled": true,
+            "reminder_days_before": 3
+        }
+    },
+    {
+        "model": "bills.Bill",
+        "pk": 2,
+        "fields": {
+            "household": 1,
+            "account": 1,
+            "category": 10,
+            "name": "Power Bill",
+            "amount": "89.99",
+            "due_date": "2025-11-15",
+            "frequency": "monthly",
+            "paid_date": "2025-11-10",
+            "is_recurring": true,
+            "notes": "Vector Energy",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "paid",
+            "auto_pay_enabled": true,
+            "reminder_days_before": 5
+        }
+    },
+    {
+        "model": "bills.Bill",
+        "pk": 3,
+        "fields": {
+            "household": 2,
+            "account": 4,
+            "category": 10,
+            "name": "Internet Bill",
+            "amount": "99.00",
+            "due_date": "2025-11-20",
+            "frequency": "monthly",
+            "paid_date": null,
+            "is_recurring": true,
+            "notes": "Spark Fibre",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "pending",
+            "auto_pay_enabled": false,
+            "reminder_days_before": 7
+        }
+    },
+    {
+        "model": "bills.Bill",
+        "pk": 4,
+        "fields": {
+            "household": 3,
+            "account": 6,
+            "category": 9,
+            "name": "Apartment Rent",
+            "amount": "2200.00",
+            "due_date": "2025-12-01",
+            "frequency": "monthly",
+            "paid_date": null,
+            "is_recurring": true,
+            "notes": "CBD apartment",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "pending",
+            "auto_pay_enabled": true,
+            "reminder_days_before": 3
+        }
+    },
+    {
+        "model": "bills.Bill",
+        "pk": 5,
+        "fields": {
+            "household": 5,
+            "account": 10,
+            "category": 9,
+            "name": "Weekly Rent",
+            "amount": "450.00",
+            "due_date": "2025-11-18",
+            "frequency": "weekly",
+            "paid_date": null,
+            "is_recurring": true,
+            "notes": "Split 6 ways",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "pending",
+            "auto_pay_enabled": false,
+            "reminder_days_before": 2
+        }
+    },
+    {
+        "model": "bills.Bill",
+        "pk": 6,
+        "fields": {
+            "household": 6,
+            "account": 11,
+            "category": 9,
+            "name": "Student Flat Rent",
+            "amount": "350.00",
+            "due_date": "2025-11-18",
+            "frequency": "weekly",
+            "paid_date": null,
+            "is_recurring": true,
+            "notes": "Dunedin student accommodation",
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "status": "pending",
+            "auto_pay_enabled": false,
+            "reminder_days_before": 2
+        }
+    },
+    {
+        "model": "alerts.Alert",
+        "pk": 1,
+        "fields": {
+            "household": 1,
+            "alert_type": "budget_warning",
+            "priority": "medium",
+            "title": "Budget Alert: 75% Spent",
+            "message": "You've spent 75% of your November budget. $2,000 remaining.",
+            "status": "active",
+            "dismissed_by": null,
+            "dismissed_at": null,
+            "action_url": "/budgets/1/",
+            "sent_via_email": true,
+            "sent_via_push": false,
+            "related_budget": 1,
+            "related_bill": null,
+            "related_account": null,
+            "related_goal": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "alerts.Alert",
+        "pk": 2,
+        "fields": {
+            "household": 2,
+            "alert_type": "bill_reminder",
+            "priority": "high",
+            "title": "Bill Due: Internet",
+            "message": "Your Internet bill of $99.00 is due in 3 days (Nov 20).",
+            "status": "active",
+            "dismissed_by": null,
+            "dismissed_at": null,
+            "action_url": "/bills/3/",
+            "sent_via_email": true,
+            "sent_via_push": true,
+            "related_budget": null,
+            "related_bill": 3,
+            "related_account": null,
+            "related_goal": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "alerts.Alert",
+        "pk": 3,
+        "fields": {
+            "household": 3,
+            "alert_type": "goal_milestone",
+            "priority": "low",
+            "title": "Goal Milestone Reached!",
+            "message": "Congratulations! You've reached $40,000 towards your house deposit goal.",
+            "status": "dismissed",
+            "dismissed_by": 13,
+            "dismissed_at": "2025-11-10T10:00:00Z",
+            "action_url": "/goals/3/",
+            "sent_via_email": true,
+            "sent_via_push": true,
+            "related_budget": null,
+            "related_bill": null,
+            "related_account": null,
+            "related_goal": 3,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "rewards.Reward",
+        "pk": 1,
+        "fields": {
+            "user": 5,
+            "reward_type": "milestone",
+            "description": "Saved your first $10",
+            "points": 50,
+            "icon": "🎉",
+            "badge_image": null,
+            "is_visible": true,
+            "related_goal": null,
+            "related_budget": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "title": "First Savings!",
+            "earned_on": "2025-01-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "rewards.Reward",
+        "pk": 2,
+        "fields": {
+            "user": 11,
+            "reward_type": "streak",
+            "description": "Stayed under budget for 7 consecutive days",
+            "points": 100,
+            "icon": "🔥",
+            "badge_image": null,
+            "is_visible": true,
+            "related_goal": null,
+            "related_budget": 2,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "title": "7-Day Budget Streak",
+            "earned_on": "2025-01-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "rewards.Reward",
+        "pk": 3,
+        "fields": {
+            "user": 13,
+            "reward_type": "goal_reached",
+            "description": "Reached house deposit milestone of $40,000",
+            "points": 500,
+            "icon": "🏆",
+            "badge_image": null,
+            "is_visible": true,
+            "related_goal": 3,
+            "related_budget": null,
+            "created_at": "2025-01-15T10:00:00Z",
+            "updated_at": "2025-11-15T10:00:00Z",
+            "title": "Goal Master",
+            "earned_on": "2025-01-15T10:00:00Z"
+        }
+    }
+]
