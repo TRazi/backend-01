@@ -9,11 +9,11 @@ from rest_framework import status
 from decimal import Decimal
 from datetime import timedelta
 
-from users.models import User
-from households.models import Household
-from accounts.models import Account
-from categories.models import Category
-from bills.models import Bill
+from apps.users.models import User
+from apps.households.models import Household
+from apps.accounts.models import Account
+from apps.categories.models import Category
+from apps.bills.models import Bill
 
 
 @pytest.mark.django_db

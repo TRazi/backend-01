@@ -11,8 +11,8 @@ from rest_framework import status
 from rest_framework.permissions import AllowAny
 from django.core.exceptions import ValidationError
 
-from users.models import User, EmailVerification
-from audit.services import log_action
+from apps.users.models import User, EmailVerification
+from apps.audit.services import log_action
 
 
 class VerifyEmailView(APIView):

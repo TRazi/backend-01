@@ -7,19 +7,19 @@ from datetime import datetime, timedelta
 from decimal import Decimal
 from django.utils import timezone
 
-from reports.services import (
+from apps.reports.services import (
     _get_household_for_user,
     generate_spending_report,
     export_household_snapshot,
     ReportAccessError,
 )
-from households.models import Household, Membership
-from transactions.models import Transaction
-from budgets.models import Budget
-from goals.models import Goal
-from accounts.models import Account
-from categories.models import Category
-from users.models import User
+from apps.households.models import Household, Membership
+from apps.transactions.models import Transaction
+from apps.budgets.models import Budget
+from apps.goals.models import Goal
+from apps.accounts.models import Account
+from apps.categories.models import Category
+from apps.users.models import User
 
 
 @pytest.mark.django_db

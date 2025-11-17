@@ -4,7 +4,7 @@ from django.db import transaction
 from django.core.exceptions import ValidationError
 from django.utils import timezone
 
-from households.models import Membership, Household
+from apps.households.models import Membership, Household
 
 
 def get_user_model_lazy():

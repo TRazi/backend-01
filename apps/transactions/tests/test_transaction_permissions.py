@@ -8,11 +8,11 @@ from datetime import date
 from unittest.mock import Mock
 from django.contrib.auth import get_user_model
 
-from transactions.permissions import IsTransactionHouseholdMember
-from transactions.models import Transaction
-from accounts.models import Account
-from households.models import Household
-from categories.models import Category
+from apps.transactions.permissions import IsTransactionHouseholdMember
+from apps.transactions.models import Transaction
+from apps.accounts.models import Account
+from apps.households.models import Household
+from apps.categories.models import Category
 
 User = get_user_model()
 

@@ -10,7 +10,7 @@ from rest_framework import status
 from rest_framework.throttling import AnonRateThrottle
 from django.utils import timezone
 
-from users.models import AccountUnlockToken
+from apps.users.models import AccountUnlockToken
 
 logger = logging.getLogger(__name__)
 

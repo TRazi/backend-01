@@ -4,7 +4,7 @@ Reference guide for implementing audit logging across the application.
 """
 
 from django.http import HttpRequest
-from audit.services import log_action, log_model_change, log_data_export
+from apps.audit.services import log_action, log_model_change, log_data_export
 
 
 # ============================================================================

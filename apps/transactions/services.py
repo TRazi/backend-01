@@ -7,8 +7,8 @@ from decimal import Decimal
 from django.db import transaction
 from django.http import HttpRequest
 
-from transactions.models import Transaction
-from audit.services import log_model_change
+from apps.transactions.models import Transaction
+from apps.audit.services import log_model_change
 
 
 @transaction.atomic

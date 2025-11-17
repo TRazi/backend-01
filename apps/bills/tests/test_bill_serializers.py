@@ -7,10 +7,10 @@ from django.utils import timezone
 from decimal import Decimal
 from datetime import timedelta
 
-from users.models import User
-from households.models import Household
-from bills.models import Bill
-from bills.serializers import BillSerializer
+from apps.users.models import User
+from apps.households.models import Household
+from apps.bills.models import Bill
+from apps.bills.serializers import BillSerializer
 from rest_framework.test import APIRequestFactory
 
 

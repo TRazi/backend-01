@@ -5,7 +5,7 @@ from django.utils.html import format_html
 from django.utils import timezone
 from unfold.admin import ModelAdmin
 from unfold.forms import AdminPasswordChangeForm, UserChangeForm, UserCreationForm
-from users.models import EmailOTP, EmailVerification, AccountUnlockToken
+from apps.users.models import EmailOTP, EmailVerification, AccountUnlockToken
 
 
 def get_user_model_lazy():

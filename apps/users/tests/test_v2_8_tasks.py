@@ -11,8 +11,8 @@ from django.core import mail
 from unittest.mock import patch, MagicMock
 from celery.exceptions import Retry
 
-from users.tasks import send_verification_email, send_otp_email, send_welcome_email
-from users.models import EmailVerification, EmailOTP
+from apps.users.tasks import send_verification_email, send_otp_email, send_welcome_email
+from apps.users.models import EmailVerification, EmailOTP
 
 User = get_user_model()
 

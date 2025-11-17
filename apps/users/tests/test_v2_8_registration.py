@@ -12,8 +12,8 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from unittest.mock import patch, MagicMock
 
-from users.models import EmailVerification
-from users.serializers import UserRegistrationSerializer
+from apps.users.models import EmailVerification
+from apps.users.serializers import UserRegistrationSerializer
 
 User = get_user_model()
 

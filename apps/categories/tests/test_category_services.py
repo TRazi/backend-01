@@ -4,9 +4,9 @@ Tests for categories service functions.
 
 import pytest
 
-from categories.models import Category
-from categories.services import create_default_categories, category_soft_delete
-from households.models import Household
+from apps.categories.models import Category
+from apps.categories.services import create_default_categories, category_soft_delete
+from apps.households.models import Household
 
 
 @pytest.mark.django_db

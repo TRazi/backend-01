@@ -7,10 +7,10 @@ import pytest
 from decimal import Decimal
 from django.utils import timezone
 
-from categories.models import Category
-from households.models import Household
-from accounts.models import Account
-from transactions.models import Transaction
+from apps.categories.models import Category
+from apps.households.models import Household
+from apps.accounts.models import Account
+from apps.transactions.models import Transaction
 
 
 @pytest.mark.django_db

@@ -11,9 +11,9 @@ from django.test import RequestFactory
 from django.utils import timezone
 from django.utils.html import strip_tags
 
-from users.admin import UserAdmin, EmailOTPAdmin, EmailVerificationAdmin
-from users.models import EmailOTP, EmailVerification
-from households.models import Household
+from apps.users.admin import UserAdmin, EmailOTPAdmin, EmailVerificationAdmin
+from apps.users.models import EmailOTP, EmailVerification
+from apps.households.models import Household
 
 User = get_user_model()
 

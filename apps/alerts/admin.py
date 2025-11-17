@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 
-from alerts.models import Alert
+from apps.alerts.models import Alert
 
 
 @admin.register(Alert)

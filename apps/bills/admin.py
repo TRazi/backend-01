@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 
-from bills.models import Bill
+from apps.bills.models import Bill
 
 
 @admin.register(Bill)

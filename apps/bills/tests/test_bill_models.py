@@ -8,8 +8,8 @@ from datetime import date, timedelta
 from django.utils import timezone
 from django.core.exceptions import ValidationError
 
-from bills.models import Bill
-from households.models import Household
+from apps.bills.models import Bill
+from apps.households.models import Household
 
 
 @pytest.mark.django_db

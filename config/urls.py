@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from common.views import SessionPingView, admin_logout
+from apps.common.views import SessionPingView, admin_logout
 from config.views.app import app_view
 
 urlpatterns = [

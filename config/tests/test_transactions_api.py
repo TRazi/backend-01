@@ -2,9 +2,9 @@ import pytest
 from datetime import datetime
 from django.urls import reverse
 from django.utils import timezone
-from accounts.models import Account
-from transactions.models import Transaction
-from households.models import Household, Membership
+from apps.accounts.models import Account
+from apps.transactions.models import Transaction
+from apps.households.models import Household, Membership
 
 
 @pytest.mark.django_db

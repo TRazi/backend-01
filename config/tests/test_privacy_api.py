@@ -1,7 +1,7 @@
 import pytest
 from django.urls import reverse
 
-from households.models import Household, Membership
+from apps.households.models import Household, Membership
 
 
 @pytest.mark.django_db

@@ -8,7 +8,7 @@ from django.utils import timezone
 from django.contrib.auth import get_user_model
 
 # If you have audit logging, uncomment this:
-from audit.services import log_event
+from apps.audit.services import log_event
 
 User = get_user_model()
 

@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin, TabularInline
 
-from budgets.models import Budget, BudgetItem
+from apps.budgets.models import Budget, BudgetItem
 
 
 class BudgetItemInline(TabularInline):

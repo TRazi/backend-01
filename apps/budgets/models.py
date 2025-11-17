@@ -4,8 +4,8 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 from django.db.models import Sum
 
-from common.models import BaseModel
-from budgets.enums import BUDGET_STATUS_CHOICES, BUDGET_PERIOD_CHOICES
+from apps.common.models import BaseModel
+from apps.budgets.enums import BUDGET_STATUS_CHOICES, BUDGET_PERIOD_CHOICES
 
 
 class Budget(BaseModel):

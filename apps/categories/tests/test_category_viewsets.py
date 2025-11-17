@@ -7,9 +7,9 @@ from django.utils import timezone
 from rest_framework.test import APIClient
 from rest_framework import status
 
-from users.models import User
-from households.models import Household
-from categories.models import Category
+from apps.users.models import User
+from apps.households.models import Household
+from apps.categories.models import Category
 
 
 @pytest.mark.django_db

@@ -9,9 +9,9 @@ from django.contrib.auth import get_user_model
 from django.urls import reverse
 from decimal import Decimal
 
-from audit.admin import AuditLogAdmin, FailedLoginAttemptAdmin, DataExportLogAdmin
-from audit.models import AuditLog, FailedLoginAttempt, DataExportLog
-from households.models import Household
+from apps.audit.admin import AuditLogAdmin, FailedLoginAttemptAdmin, DataExportLogAdmin
+from apps.audit.models import AuditLog, FailedLoginAttempt, DataExportLog
+from apps.households.models import Household
 
 User = get_user_model()
 

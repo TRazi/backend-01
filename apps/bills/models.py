@@ -4,8 +4,8 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 from datetime import timedelta
 
-from common.models import BaseModel
-from bills.enums import BILL_STATUS_CHOICES, BILL_FREQUENCY_CHOICES
+from apps.common.models import BaseModel
+from apps.bills.enums import BILL_STATUS_CHOICES, BILL_FREQUENCY_CHOICES
 
 
 class Bill(BaseModel):

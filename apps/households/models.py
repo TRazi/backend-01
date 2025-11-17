@@ -6,15 +6,15 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from django.utils import timezone
 
-from common.models import BaseModel
-from households.enums import (
+from apps.common.models import BaseModel
+from apps.households.enums import (
     HOUSEHOLD_TYPE_CHOICES,
     BUDGET_CYCLE_CHOICES,
     MEMBERSHIP_TYPE_CHOICES,
     MEMBERSHIP_STATUS_CHOICES,
     PAYMENT_STATUS_CHOICES,
 )
-from users.enums import ROLE_CHOICES
+from apps.users.enums import ROLE_CHOICES
 
 
 class Household(BaseModel):

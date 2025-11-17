@@ -5,7 +5,7 @@ Audit logging mixins for DRF views.
 from rest_framework import status
 from rest_framework.response import Response
 
-from audit.services import log_model_change
+from apps.audit.services import log_model_change
 
 
 class AuditLoggingMixin:

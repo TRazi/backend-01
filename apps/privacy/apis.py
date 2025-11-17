@@ -7,7 +7,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from privacy.services import (
+from apps.privacy.services import (
     export_user_data,
     request_data_deletion,
     get_data_deletion_status,

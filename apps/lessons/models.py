@@ -1,8 +1,8 @@
 # apps/lessons/models.py
 from django.db import models
 
-from common.models import BaseModel
-from lessons.enums import AGE_GROUP_CHOICES, LESSON_DIFFICULTY_CHOICES
+from apps.common.models import BaseModel
+from apps.lessons.enums import AGE_GROUP_CHOICES, LESSON_DIFFICULTY_CHOICES
 
 
 class FinancialLesson(BaseModel):

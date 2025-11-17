@@ -6,10 +6,10 @@ import pytest
 from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
-from users.models import User
-from households.models import Household
-from bills.models import Bill
-from bills.permissions import IsBillHouseholdMember
+from apps.users.models import User
+from apps.households.models import Household
+from apps.bills.models import Bill
+from apps.bills.permissions import IsBillHouseholdMember
 
 
 @pytest.mark.django_db

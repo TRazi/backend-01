@@ -5,8 +5,8 @@ from django.utils import timezone
 from django.db.models import Sum
 from decimal import Decimal
 
-from common.models import BaseModel
-from goals.enums import GOAL_STATUS_CHOICES, GOAL_TYPE_CHOICES
+from apps.common.models import BaseModel
+from apps.goals.enums import GOAL_STATUS_CHOICES, GOAL_TYPE_CHOICES
 
 
 class Goal(BaseModel):

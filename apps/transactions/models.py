@@ -3,8 +3,8 @@ import uuid
 from django.db import models
 from django.core.exceptions import ValidationError
 
-from common.models import BaseModel
-from transactions.enums import (
+from apps.common.models import BaseModel
+from apps.transactions.enums import (
     TRANSACTION_TYPE_CHOICES,
     TRANSACTION_STATUS_CHOICES,
     TRANSACTION_SOURCE_CHOICES,

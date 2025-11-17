@@ -8,8 +8,8 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from unittest.mock import patch, MagicMock
 
-from households.models import Household, Membership
-from privacy.services import HouseholdAccessError
+from apps.households.models import Household, Membership
+from apps.privacy.services import HouseholdAccessError
 
 User = get_user_model()
 

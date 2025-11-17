@@ -7,9 +7,9 @@ import pytest
 from unittest.mock import Mock
 from django.contrib.auth import get_user_model
 
-from accounts.permissions import IsAccountHouseholdMember
-from accounts.models import Account
-from households.models import Household
+from apps.accounts.permissions import IsAccountHouseholdMember
+from apps.accounts.models import Account
+from apps.households.models import Household
 
 User = get_user_model()
 

@@ -10,9 +10,9 @@ from unittest.mock import Mock
 from django.contrib.auth import get_user_model
 from django.utils import timezone
 
-from goals.models import Goal, GoalProgress
-from goals.serializers import GoalSerializer, GoalProgressSerializer
-from households.models import Household
+from apps.goals.models import Goal, GoalProgress
+from apps.goals.serializers import GoalSerializer, GoalProgressSerializer
+from apps.households.models import Household
 
 User = get_user_model()
 

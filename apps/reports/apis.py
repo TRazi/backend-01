@@ -9,7 +9,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from reports.services import (
+from apps.reports.services import (
     generate_spending_report,
     export_household_snapshot,
     ReportAccessError,

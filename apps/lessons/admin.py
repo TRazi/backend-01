@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 
-from lessons.models import FinancialLesson
+from apps.lessons.models import FinancialLesson
 
 
 @admin.register(FinancialLesson)

@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 
-from transactions.models import Transaction, TransactionTag
+from apps.transactions.models import Transaction, TransactionTag
 
 
 @admin.register(Transaction)

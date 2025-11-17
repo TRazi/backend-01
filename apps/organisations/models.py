@@ -2,8 +2,8 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 
-from common.models import BaseModel
-from organisations.enums import (
+from apps.common.models import BaseModel
+from apps.organisations.enums import (
     ORGANISATION_TYPE_CHOICES,
     ORGANISATION_SUBSCRIPTION_CHOICES,
     ORG_BUDGET_CYCLE_CHOICES,

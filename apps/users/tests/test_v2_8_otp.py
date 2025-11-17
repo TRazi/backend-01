@@ -14,8 +14,8 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from unittest.mock import patch, MagicMock
 
-from users.models import EmailOTP
-from users.serializers import EmailOTPRequestSerializer, EmailOTPVerifySerializer
+from apps.users.models import EmailOTP
+from apps.users.serializers import EmailOTPRequestSerializer, EmailOTPVerifySerializer
 
 User = get_user_model()
 

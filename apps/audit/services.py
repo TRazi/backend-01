@@ -8,8 +8,8 @@ from django.http import HttpRequest
 from django.contrib.auth import get_user_model
 from django.db import transaction
 
-from audit.models import AuditLog, DataExportLog
-from audit.enums import ACTION_CHOICES
+from apps.audit.models import AuditLog, DataExportLog
+from apps.audit.enums import ACTION_CHOICES
 
 
 def get_user_model_lazy():

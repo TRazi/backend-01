@@ -6,8 +6,8 @@ from decimal import Decimal
 import pytest
 from django.utils import timezone
 
-from bills.models import Bill
-from households.models import Household
+from apps.bills.models import Bill
+from apps.households.models import Household
 
 
 @pytest.mark.django_db

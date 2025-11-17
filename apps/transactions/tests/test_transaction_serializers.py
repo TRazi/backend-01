@@ -9,16 +9,16 @@ from unittest.mock import Mock
 from django.contrib.auth import get_user_model
 from django.utils import timezone
 
-from transactions.models import Transaction, TransactionTag
-from transactions.serializers import (
+from apps.transactions.models import Transaction, TransactionTag
+from apps.transactions.serializers import (
     TransactionSerializer,
     TransactionCreateSerializer,
     TransactionTagSerializer,
     LinkTransferSerializer,
 )
-from households.models import Household
-from accounts.models import Account
-from categories.models import Category
+from apps.households.models import Household
+from apps.accounts.models import Account
+from apps.categories.models import Category
 
 User = get_user_model()
 

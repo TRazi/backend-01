@@ -8,16 +8,16 @@ from datetime import date
 from unittest.mock import Mock
 from django.utils import timezone
 
-from transactions.models import Transaction
-from transactions.services import (
+from apps.transactions.models import Transaction
+from apps.transactions.services import (
     transaction_create,
     transaction_update,
     transaction_delete,
 )
-from accounts.models import Account
-from categories.models import Category
-from households.models import Household
-from users.models import User
+from apps.accounts.models import Account
+from apps.categories.models import Category
+from apps.households.models import Household
+from apps.users.models import User
 
 
 @pytest.mark.django_db

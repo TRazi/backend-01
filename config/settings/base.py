@@ -13,8 +13,7 @@ env = environ.Env()
 # Read .env file
 env.read_env(os.path.join(BASE_DIR, ".env"))
 
-# Add apps to Python path
-sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("DJANGO_SECRET_KEY")
@@ -40,23 +39,23 @@ DJANGO_APPS = [
 ]
 
 CUSTOM_APPS = [
-    "users.apps.UsersConfig",
-    "audit",
-    "common",
-    "households",
-    "organisations",
-    "accounts",
-    "transactions",
-    "categories",
-    "budgets",
-    "goals",
-    "bills",
-    "rewards",
-    "alerts",
-    "lessons",
-    "reports",
-    "privacy",
-    # "apps.ml",  # Temporarily disabled - requires clean venv with proper numpy/statsmodels
+    "apps.users.apps.UsersConfig",
+    "apps.audit.apps.AuditConfig",
+    "apps.common.apps.CommonConfig",
+    "apps.households.apps.HouseholdsConfig",
+    "apps.organisations.apps.OrganisationsConfig",
+    "apps.accounts.apps.AccountsConfig",
+    "apps.transactions.apps.TransactionsConfig",
+    "apps.categories.apps.CategoriesConfig",
+    "apps.budgets.apps.BudgetsConfig",
+    "apps.goals.apps.GoalsConfig",
+    "apps.bills.apps.BillsConfig",
+    "apps.rewards.apps.RewardsConfig",
+    "apps.alerts.apps.AlertsConfig",
+    "apps.lessons.apps.LessonsConfig",
+    "apps.reports.apps.ReportsConfig",
+    "apps.privacy.apps.PrivacyConfig",
+    # "apps.ml.apps.MlConfig",  # Temporarily disabled - requires clean venv with proper numpy/statsmodels
 ]
 
 THIRD_PARTY_APPS = [

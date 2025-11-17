@@ -9,8 +9,8 @@ from rest_framework import status
 from unittest.mock import patch
 from datetime import datetime
 
-from households.models import Household
-from reports.services import ReportAccessError
+from apps.households.models import Household
+from apps.reports.services import ReportAccessError
 
 User = get_user_model()
 

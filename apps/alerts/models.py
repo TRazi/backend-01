@@ -2,8 +2,8 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 
-from common.models import BaseModel
-from alerts.enums import (
+from apps.common.models import BaseModel
+from apps.alerts.enums import (
     ALERT_TYPE_CHOICES,
     ALERT_PRIORITY_CHOICES,
     ALERT_STATUS_CHOICES,

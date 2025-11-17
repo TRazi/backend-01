@@ -8,12 +8,12 @@ from django.utils import timezone
 from datetime import timedelta
 from decimal import Decimal
 
-from households.models import Household
-from accounts.models import Account
-from transactions.models import Transaction, TransactionTag
-from categories.models import Category
-from budgets.models import Budget
-from goals.models import Goal
+from apps.households.models import Household
+from apps.accounts.models import Account
+from apps.transactions.models import Transaction, TransactionTag
+from apps.categories.models import Category
+from apps.budgets.models import Budget
+from apps.goals.models import Goal
 
 
 @pytest.mark.django_db

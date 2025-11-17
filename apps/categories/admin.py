@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 
-from categories.models import Category
+from apps.categories.models import Category
 
 
 @admin.register(Category)

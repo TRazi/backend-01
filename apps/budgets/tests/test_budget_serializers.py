@@ -9,14 +9,14 @@ from datetime import date, timedelta
 from unittest.mock import Mock
 from django.contrib.auth import get_user_model
 
-from budgets.models import Budget, BudgetItem
-from budgets.serializers import (
+from apps.budgets.models import Budget, BudgetItem
+from apps.budgets.serializers import (
     BudgetSerializer,
     BudgetItemSerializer,
     BudgetItemCreateSerializer,
 )
-from households.models import Household, Membership
-from categories.models import Category
+from apps.households.models import Household, Membership
+from apps.categories.models import Category
 
 User = get_user_model()
 

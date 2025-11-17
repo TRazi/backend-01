@@ -14,9 +14,9 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from django.db import transaction
 from django.utils import timezone
 
-from users.models import User, EmailOTP
-from users.serializers import EmailOTPRequestSerializer, EmailOTPVerifySerializer
-from audit.services import log_action
+from apps.users.models import User, EmailOTP
+from apps.users.serializers import EmailOTPRequestSerializer, EmailOTPVerifySerializer
+from apps.audit.services import log_action
 
 
 # NOTE: Throttling to be re-enabled after DRF upgrade with proper rate format support

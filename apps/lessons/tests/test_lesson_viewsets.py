@@ -6,8 +6,8 @@ import pytest
 from rest_framework.test import APIClient
 from rest_framework import status
 
-from users.models import User
-from lessons.models import FinancialLesson
+from apps.users.models import User
+from apps.lessons.models import FinancialLesson
 
 
 @pytest.mark.django_db

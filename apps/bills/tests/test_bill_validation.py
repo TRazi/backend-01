@@ -8,10 +8,10 @@ from datetime import date, timedelta
 from decimal import Decimal
 from django.core.exceptions import ValidationError
 
-from bills.models import Bill
-from households.models import Household
-from categories.models import Category
-from accounts.models import Account
+from apps.bills.models import Bill
+from apps.households.models import Household
+from apps.categories.models import Category
+from apps.accounts.models import Account
 
 
 @pytest.mark.django_db

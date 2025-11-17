@@ -7,13 +7,13 @@ from typing import Any, Dict
 from django.db import transaction
 from django.utils import timezone
 
-from households.models import Household, Membership
-from transactions.models import Transaction
-from budgets.models import Budget
-from goals.models import Goal
-from accounts.models import Account
-from audit.services import log_action
-from users.models import User
+from apps.households.models import Household, Membership
+from apps.transactions.models import Transaction
+from apps.budgets.models import Budget
+from apps.goals.models import Goal
+from apps.accounts.models import Account
+from apps.audit.services import log_action
+from apps.users.models import User
 
 
 class HouseholdAccessError(ValueError):

@@ -5,9 +5,9 @@ from decimal import Decimal
 
 import pytest
 
-from goals.models import Goal, GoalProgress
-from households.models import Household
-from users.models import User
+from apps.goals.models import Goal, GoalProgress
+from apps.households.models import Household
+from apps.users.models import User
 
 
 @pytest.mark.django_db

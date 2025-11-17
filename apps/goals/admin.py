@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin, TabularInline
 
-from goals.models import Goal, GoalProgress
+from apps.goals.models import Goal, GoalProgress
 
 
 class GoalProgressInline(TabularInline):

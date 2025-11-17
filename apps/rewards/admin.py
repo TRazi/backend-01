@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 
-from rewards.models import Reward
+from apps.rewards.models import Reward
 
 
 @admin.register(Reward)

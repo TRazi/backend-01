@@ -9,11 +9,11 @@ from decimal import Decimal
 from django.utils import timezone
 from django.core.exceptions import ValidationError
 
-from budgets.models import Budget, BudgetItem
-from households.models import Household
-from categories.models import Category
-from accounts.models import Account
-from transactions.models import Transaction
+from apps.budgets.models import Budget, BudgetItem
+from apps.households.models import Household
+from apps.categories.models import Category
+from apps.accounts.models import Account
+from apps.transactions.models import Transaction
 
 
 @pytest.mark.django_db

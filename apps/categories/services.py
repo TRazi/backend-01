@@ -2,8 +2,8 @@
 from typing import List
 from django.db import transaction
 
-from categories.models import Category
-from households.models import Household
+from apps.categories.models import Category
+from apps.households.models import Household
 
 
 DEFAULT_CATEGORIES = [

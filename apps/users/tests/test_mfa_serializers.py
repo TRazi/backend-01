@@ -9,9 +9,9 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import make_password
 from django.test import RequestFactory
 from rest_framework.exceptions import ValidationError, AuthenticationFailed
-from users.serializers_auth import MFATokenObtainPairSerializer
-from users.models import UserMFADevice
-from users.services.mfa import generate_backup_codes
+from apps.users.serializers_auth import MFATokenObtainPairSerializer
+from apps.users.models import UserMFADevice
+from apps.users.services.mfa import generate_backup_codes
 
 User = get_user_model()
 

@@ -6,7 +6,7 @@ import pytest
 from django.contrib.auth import get_user_model
 from django.test import RequestFactory
 
-from audit.models import AuditLog, FailedLoginAttempt
+from apps.audit.models import AuditLog, FailedLoginAttempt
 
 
 def get_user_model_lazy():

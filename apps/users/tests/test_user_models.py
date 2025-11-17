@@ -6,8 +6,8 @@ Tests model validation, email normalization, methods, and properties.
 import pytest
 from django.core.exceptions import ValidationError
 from django.db import IntegrityError
-from users.models import User, UserMFADevice
-from households.models import Household
+from apps.users.models import User, UserMFADevice
+from apps.households.models import Household
 
 
 @pytest.mark.django_db

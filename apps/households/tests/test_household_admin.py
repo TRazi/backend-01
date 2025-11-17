@@ -3,9 +3,9 @@ import pytest
 from django.contrib.admin.sites import AdminSite
 from django.test import RequestFactory
 
-from households.admin import HouseholdAdmin, MembershipAdmin, MembershipInline
-from households.models import Household, Membership
-from users.models import User
+from apps.households.admin import HouseholdAdmin, MembershipAdmin, MembershipInline
+from apps.households.models import Household, Membership
+from apps.users.models import User
 
 
 @pytest.mark.django_db

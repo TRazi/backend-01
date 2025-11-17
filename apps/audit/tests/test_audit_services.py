@@ -7,7 +7,7 @@ from unittest.mock import Mock
 from datetime import datetime
 from django.utils import timezone
 
-from audit.services import (
+from apps.audit.services import (
     _get_ip_address,
     _get_user_agent,
     _get_request_context,
@@ -16,9 +16,9 @@ from audit.services import (
     log_model_change,
     log_data_export,
 )
-from audit.models import AuditLog, DataExportLog
-from households.models import Household
-from users.models import User
+from apps.audit.models import AuditLog, DataExportLog
+from apps.households.models import Household
+from apps.users.models import User
 
 
 @pytest.mark.unit

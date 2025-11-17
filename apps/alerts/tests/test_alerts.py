@@ -9,18 +9,18 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
-from alerts.models import Alert
-from alerts.serializers import AlertSerializer, AlertDismissSerializer
-from alerts.enums import (
+from apps.alerts.models import Alert
+from apps.alerts.serializers import AlertSerializer, AlertDismissSerializer
+from apps.alerts.enums import (
     ALERT_TYPE_CHOICES,
     ALERT_PRIORITY_CHOICES,
     ALERT_STATUS_CHOICES,
 )
-from households.models import Household
-from budgets.models import Budget
-from accounts.models import Account
-from goals.models import Goal
-from users.models import User
+from apps.households.models import Household
+from apps.budgets.models import Budget
+from apps.accounts.models import Account
+from apps.goals.models import Goal
+from apps.users.models import User
 
 
 @pytest.mark.django_db

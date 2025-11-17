@@ -14,7 +14,7 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from unittest.mock import patch
 
-from users.models import EmailVerification
+from apps.users.models import EmailVerification
 
 User = get_user_model()
 

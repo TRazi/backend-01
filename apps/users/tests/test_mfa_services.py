@@ -9,7 +9,7 @@ import pyotp
 from django.contrib.auth import get_user_model
 from django.utils import timezone
 
-from users.services.mfa import (
+from apps.users.services.mfa import (
     get_or_create_mfa_device,
     generate_provisioning_uri,
     verify_totp_code,
@@ -19,7 +19,7 @@ from users.services.mfa import (
     disable_mfa,
     _generate_backup_code,
 )
-from users.models import UserMFADevice
+from apps.users.models import UserMFADevice
 
 User = get_user_model()
 

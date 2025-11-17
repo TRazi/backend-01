@@ -12,7 +12,7 @@ from django.contrib.auth.signals import (
     user_logged_out,
     user_login_failed,
 )
-from audit.models import AuditLog, FailedLoginAttempt
+from apps.audit.models import AuditLog, FailedLoginAttempt
 
 User = get_user_model()
 

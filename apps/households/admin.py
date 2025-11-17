@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin, TabularInline
 
-from households.models import Household, Membership
+from apps.households.models import Household, Membership
 
 
 class MembershipInline(TabularInline):

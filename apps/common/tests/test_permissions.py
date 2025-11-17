@@ -9,15 +9,15 @@ from unittest.mock import Mock
 from django.contrib.auth import get_user_model
 from django.utils import timezone
 
-from bills.permissions import IsBillHouseholdMember
-from goals.permissions import IsGoalHouseholdMember, IsGoalProgressHouseholdMember
-from lessons.permissions import IsAuthenticatedReadOnly
-from organisations.permissions import IsAdminOnly
-from rewards.permissions import IsRewardOwnerOrAdmin
-from bills.models import Bill
-from goals.models import Goal, GoalProgress
-from households.models import Household
-from rewards.models import Reward
+from apps.bills.permissions import IsBillHouseholdMember
+from apps.goals.permissions import IsGoalHouseholdMember, IsGoalProgressHouseholdMember
+from apps.lessons.permissions import IsAuthenticatedReadOnly
+from apps.organisations.permissions import IsAdminOnly
+from apps.rewards.permissions import IsRewardOwnerOrAdmin
+from apps.bills.models import Bill
+from apps.goals.models import Goal, GoalProgress
+from apps.households.models import Household
+from apps.rewards.models import Reward
 
 User = get_user_model()
 

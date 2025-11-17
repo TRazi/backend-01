@@ -3,10 +3,10 @@ import pytest
 from django.contrib.admin.sites import AdminSite
 from django.test import RequestFactory
 
-from alerts.admin import AlertAdmin
-from alerts.models import Alert
-from households.models import Household
-from users.models import User
+from apps.alerts.admin import AlertAdmin
+from apps.alerts.models import Alert
+from apps.households.models import Household
+from apps.users.models import User
 
 
 @pytest.mark.django_db

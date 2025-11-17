@@ -3,8 +3,8 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from django.db.models import Sum, Count
 
-from common.models import BaseModel
-from categories.enums import CATEGORY_TYPE_CHOICES
+from apps.common.models import BaseModel
+from apps.categories.enums import CATEGORY_TYPE_CHOICES
 
 
 class Category(BaseModel):

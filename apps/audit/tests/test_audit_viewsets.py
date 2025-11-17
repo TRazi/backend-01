@@ -6,8 +6,8 @@ import pytest
 from rest_framework.test import APIClient
 from rest_framework import status
 
-from users.models import User
-from audit.models import AuditLog
+from apps.users.models import User
+from apps.audit.models import AuditLog
 
 
 @pytest.mark.django_db

@@ -8,7 +8,7 @@ from django.urls import reverse
 from django.utils.safestring import mark_safe
 import json
 
-from audit.models import AuditLog, FailedLoginAttempt, DataExportLog
+from apps.audit.models import AuditLog, FailedLoginAttempt, DataExportLog
 
 # Template constants
 PRE_FORMATTED_TEMPLATE = "<pre>{}</pre>"

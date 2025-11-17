@@ -8,8 +8,8 @@ from datetime import date, timedelta
 from decimal import Decimal
 from django.utils import timezone
 
-from goals.models import Goal, GoalProgress
-from households.models import Household
+from apps.goals.models import Goal, GoalProgress
+from apps.households.models import Household
 
 
 @pytest.mark.django_db

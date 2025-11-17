@@ -6,8 +6,8 @@ Tracks all significant actions with before/after state and request context.
 from django.db import models
 from django.contrib.auth import get_user_model
 
-from common.models import BaseModel
-from audit.enums import ACTION_CHOICES, EXPORT_TYPE_CHOICES
+from apps.common.models import BaseModel
+from apps.audit.enums import ACTION_CHOICES, EXPORT_TYPE_CHOICES
 
 
 def get_user_model_lazy():

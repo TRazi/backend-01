@@ -8,10 +8,10 @@ from rest_framework import status
 from decimal import Decimal
 from datetime import date
 
-from users.models import User
-from households.models import Household
-from budgets.models import Budget, BudgetItem
-from categories.models import Category
+from apps.users.models import User
+from apps.households.models import Household
+from apps.budgets.models import Budget, BudgetItem
+from apps.categories.models import Category
 
 
 @pytest.mark.django_db

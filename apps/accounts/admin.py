@@ -2,7 +2,7 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 
-from accounts.models import Account
+from apps.accounts.models import Account
 
 
 @admin.register(Account)

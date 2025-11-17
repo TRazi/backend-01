@@ -10,11 +10,11 @@ from django.utils import timezone
 from decimal import Decimal
 from datetime import timedelta
 
-from bills.admin import BillAdmin
-from bills.models import Bill
-from households.models import Household
-from categories.models import Category
-from accounts.models import Account
+from apps.bills.admin import BillAdmin
+from apps.bills.models import Bill
+from apps.households.models import Household
+from apps.categories.models import Category
+from apps.accounts.models import Account
 
 User = get_user_model()
 

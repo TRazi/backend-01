@@ -4,8 +4,8 @@ from django.db import models
 from django.core.validators import MinValueValidator
 from django.core.exceptions import ValidationError
 
-from common.models import BaseModel
-from accounts.enums import ACCOUNT_TYPE_CHOICES
+from apps.common.models import BaseModel
+from apps.accounts.enums import ACCOUNT_TYPE_CHOICES
 
 
 class Account(BaseModel):

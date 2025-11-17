@@ -4,10 +4,10 @@ import pytest
 from unittest.mock import Mock
 from django.contrib.auth import get_user_model
 
-from budgets.models import Budget, BudgetItem
-from budgets.permissions import IsBudgetHouseholdMember, IsBudgetItemHouseholdMember
-from households.models import Household
-from categories.models import Category
+from apps.budgets.models import Budget, BudgetItem
+from apps.budgets.permissions import IsBudgetHouseholdMember, IsBudgetItemHouseholdMember
+from apps.households.models import Household
+from apps.categories.models import Category
 
 User = get_user_model()
 

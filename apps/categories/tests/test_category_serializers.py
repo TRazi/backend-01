@@ -8,13 +8,13 @@ from decimal import Decimal
 from unittest.mock import Mock
 from django.contrib.auth import get_user_model
 
-from categories.models import Category
-from categories.serializers import (
+from apps.categories.models import Category
+from apps.categories.serializers import (
     CategorySerializer,
     CategoryCreateSerializer,
     CategoryUpdateSerializer,
 )
-from households.models import Household, Membership
+from apps.households.models import Household, Membership
 
 User = get_user_model()
 

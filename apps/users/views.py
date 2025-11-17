@@ -12,8 +12,8 @@ from rest_framework.permissions import AllowAny
 from django.utils.decorators import method_decorator
 from django_ratelimit.decorators import ratelimit
 
-from users.serializers import UserRegistrationSerializer
-from audit.services import log_action
+from apps.users.serializers import UserRegistrationSerializer
+from apps.audit.services import log_action
 
 
 class UserRegistrationView(APIView):

@@ -5,10 +5,10 @@ from django.contrib.admin.sites import AdminSite
 from django.test import RequestFactory
 from django.utils import timezone
 
-from goals.admin import GoalAdmin, GoalProgressAdmin, GoalProgressInline
-from goals.models import Goal, GoalProgress
-from households.models import Household
-from users.models import User
+from apps.goals.admin import GoalAdmin, GoalProgressAdmin, GoalProgressInline
+from apps.goals.models import Goal, GoalProgress
+from apps.households.models import Household
+from apps.users.models import User
 
 
 @pytest.mark.django_db

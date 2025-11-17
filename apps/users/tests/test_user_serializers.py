@@ -9,15 +9,15 @@ from unittest.mock import patch, MagicMock
 from rest_framework.test import APIRequestFactory
 from django.contrib.auth import get_user_model
 
-from users.serializers import UserSerializer
-from users.serializers_auth import MFATokenObtainPairSerializer
-from users.serializers_mfa import (
+from apps.users.serializers import UserSerializer
+from apps.users.serializers_auth import MFATokenObtainPairSerializer
+from apps.users.serializers_mfa import (
     MFABeginSetupSerializer,
     MFAConfirmSetupSerializer,
     MFABackupCodeVerifySerializer,
 )
-from users.models import UserMFADevice
-from households.models import Household
+from apps.users.models import UserMFADevice
+from apps.households.models import Household
 
 User = get_user_model()
 

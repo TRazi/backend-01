@@ -7,20 +7,20 @@ from datetime import datetime
 from decimal import Decimal
 from django.utils import timezone
 
-from privacy.services import (
+from apps.privacy.services import (
     _get_household_for_user,
     _serialize_transaction,
     _serialize_budget,
     _serialize_goal,
     HouseholdAccessError,
 )
-from households.models import Household, Membership
-from transactions.models import Transaction
-from budgets.models import Budget
-from goals.models import Goal
-from accounts.models import Account
-from categories.models import Category
-from users.models import User
+from apps.households.models import Household, Membership
+from apps.transactions.models import Transaction
+from apps.budgets.models import Budget
+from apps.goals.models import Goal
+from apps.accounts.models import Account
+from apps.categories.models import Category
+from apps.users.models import User
 
 
 @pytest.mark.django_db

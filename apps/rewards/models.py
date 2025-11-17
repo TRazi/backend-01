@@ -2,8 +2,8 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 
-from common.models import BaseModel
-from rewards.enums import REWARD_TYPE_CHOICES
+from apps.common.models import BaseModel
+from apps.rewards.enums import REWARD_TYPE_CHOICES
 
 
 class Reward(BaseModel):

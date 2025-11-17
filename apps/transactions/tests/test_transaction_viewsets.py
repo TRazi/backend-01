@@ -8,11 +8,11 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from decimal import Decimal
 
-from users.models import User
-from households.models import Household
-from accounts.models import Account
-from categories.models import Category
-from transactions.models import Transaction, TransactionTag
+from apps.users.models import User
+from apps.households.models import Household
+from apps.accounts.models import Account
+from apps.categories.models import Category
+from apps.transactions.models import Transaction, TransactionTag
 
 
 @pytest.mark.django_db

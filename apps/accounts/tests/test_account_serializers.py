@@ -5,10 +5,10 @@ from unittest.mock import Mock
 
 import pytest
 
-from accounts.models import Account
-from accounts.serializers import AccountSerializer
-from households.models import Household
-from users.models import User
+from apps.accounts.models import Account
+from apps.accounts.serializers import AccountSerializer
+from apps.households.models import Household
+from apps.users.models import User
 
 
 @pytest.mark.django_db

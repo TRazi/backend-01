@@ -4,13 +4,13 @@ Tests for households service functions.
 
 import pytest
 
-from households.models import Household, Membership
-from households.services import (
+from apps.households.models import Household, Membership
+from apps.households.services import (
     membership_create,
     membership_set_primary,
     membership_deactivate,
 )
-from users.models import User
+from apps.users.models import User
 from django.core.exceptions import ValidationError
 
 

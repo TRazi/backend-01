@@ -9,8 +9,8 @@ from decimal import Decimal
 from django.utils import timezone
 from datetime import timedelta
 
-from users.models import User
-from rewards.models import Reward
+from apps.users.models import User
+from apps.rewards.models import Reward
 
 
 @pytest.mark.django_db

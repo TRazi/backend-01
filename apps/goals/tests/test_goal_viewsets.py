@@ -9,9 +9,9 @@ from decimal import Decimal
 from datetime import timedelta
 from django.utils import timezone
 
-from users.models import User
-from households.models import Household
-from goals.models import Goal, GoalProgress
+from apps.users.models import User
+from apps.households.models import Household
+from apps.goals.models import Goal, GoalProgress
 
 
 @pytest.mark.django_db

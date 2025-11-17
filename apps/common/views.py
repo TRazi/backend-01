@@ -13,7 +13,7 @@ from rest_framework import status
 from django.views.decorators.http import require_POST
 from django.contrib.auth import logout as django_logout
 from django.http import HttpResponseRedirect
-from common.throttles import SessionPingThrottle
+from apps.common.throttles import SessionPingThrottle
 
 
 class SessionPingView(APIView):

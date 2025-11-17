@@ -10,12 +10,12 @@ from django.utils import timezone
 from decimal import Decimal
 from datetime import timedelta
 
-from budgets.admin import BudgetAdmin, BudgetItemAdmin, BudgetItemInline
-from budgets.models import Budget, BudgetItem
-from households.models import Household
-from categories.models import Category
-from accounts.models import Account
-from transactions.models import Transaction
+from apps.budgets.admin import BudgetAdmin, BudgetItemAdmin, BudgetItemInline
+from apps.budgets.models import Budget, BudgetItem
+from apps.households.models import Household
+from apps.categories.models import Category
+from apps.accounts.models import Account
+from apps.transactions.models import Transaction
 
 User = get_user_model()
 

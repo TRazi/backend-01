@@ -9,8 +9,8 @@ from decimal import Decimal
 from django.core.exceptions import ValidationError
 from django.utils import timezone
 
-from goals.models import Goal
-from households.models import Household
+from apps.goals.models import Goal
+from apps.households.models import Household
 
 
 @pytest.mark.django_db

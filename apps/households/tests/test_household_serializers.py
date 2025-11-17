@@ -5,14 +5,14 @@ Tests for household serializers.
 import pytest
 from unittest.mock import Mock
 
-from households.models import Household, Membership
-from households.serializers import (
+from apps.households.models import Household, Membership
+from apps.households.serializers import (
     HouseholdSerializer,
     HouseholdCreateSerializer,
     MembershipSerializer,
     MembershipCreateSerializer,
 )
-from users.models import User
+from apps.users.models import User
 
 
 @pytest.mark.django_db
