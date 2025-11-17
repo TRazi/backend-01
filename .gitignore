@@ -1,6 +1,153 @@
+# IDE & Editor
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+
+# Virtual Environments
 .venv/
+venv/
+env/
+ENV/
+.env/
+
+# Python
 /pytest_cache/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# OS
 .DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Security - Environment & Secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+.env.development
+.env.security.template
+*.pem
+*.key
+*.crt
+*.cert
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+known_hosts
+
+# AWS & Cloud Credentials
+*.aws/credentials
+*.aws/config
+.aws/
+aws_config
+aws_credentials
+
+# Database
+*.sqlite
+*.sqlite3
+db.sqlite3
+*.db
+*.rdb
+dump.rdb
+
+# Logs
+logs/
+*.log
+*.logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# IDE Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Testing
+test-results/
+test-reports/
+.tox/
+
+# Static files (optional)
+staticfiles/
+static/
+
+# Media uploads
+media/
+uploads/
+
+# Celery
+celerybeat-schedule
+celery_log.txt
+
+# Docker
+.dockerignore
+
+# Node modules (if using frontend tools)
+node_modules/
+npm-debug.log
+
+# Private keys and secrets
+secrets/
+.secrets/
+private/
+.private/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.backup
+*~
+
+# OS specific
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# IDE specific
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
