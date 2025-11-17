@@ -241,7 +241,7 @@ class BillAttachment(BaseModel):
     )
 
     file = models.FileField(
-        upload_to="bills/%Y/%m/",
+        upload_to="bills/user_%s/%%Y/%%m/",
         help_text="Bill or invoice document",
     )
 

@@ -136,7 +136,7 @@ class TransactionViewSet(viewsets.ModelViewSet):
         instance.delete()
 
     @action(detail=True, methods=["post"], url_path="link-transfer")
-    def link_transfer(self, request, pk=None):
+    def link_transfer(self, request, uuid=None):
         """
         Create linked transfer transaction.
 
@@ -229,7 +229,7 @@ class TransactionViewSet(viewsets.ModelViewSet):
             )
 
     @action(detail=True, methods=["post"], url_path="tags")
-    def add_tags(self, request, pk=None):
+    def add_tags(self, request, uuid=None):
         """
         Add tags to transaction by name.
 
@@ -270,7 +270,7 @@ class TransactionViewSet(viewsets.ModelViewSet):
         )
 
     @action(detail=True, methods=["post"], url_path="remove-tag")
-    def remove_tag(self, request, pk=None):
+    def remove_tag(self, request, uuid=None):
         """
         Remove tag from transaction.
 
@@ -480,8 +480,17 @@ class TransactionViewSet(viewsets.ModelViewSet):
             400: Validation errors
         """
         from config.utils.ocr_service import get_textract_service
+        from common.permissions import IsTransactionOwnerOrHouseholdAdmin
 
         transaction = self.get_object()
+        
+        # Check permission - user must own the transaction's account household
+        permission = IsTransactionOwnerOrHouseholdAdmin()
+        if not permission.has_object_permission(request, self, transaction):
+            return Response(
+                {"detail": "You don't have permission to upload to this transaction."},
+                status=status.HTTP_403_FORBIDDEN,
+            )
 
         serializer = TransactionAttachmentUploadSerializer(
             data=request.data, context={"request": request}

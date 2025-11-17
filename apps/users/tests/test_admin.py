@@ -45,6 +45,7 @@ class TestUserAdmin:
         """Test admin list_display contains expected fields."""
         expected_fields = [
             "email",
+            "username",
             "first_name",
             "last_name",
             "household",
@@ -74,6 +75,7 @@ class TestUserAdmin:
         """Test admin search_fields are configured."""
         expected_search = [
             "email",
+            "username",
             "first_name",
             "last_name",
             "phone_number",
@@ -97,13 +99,13 @@ class TestUserAdmin:
 
     def test_admin_readonly_fields(self):
         """Test readonly_fields are configured correctly."""
-        expected_readonly = ["created_at", "updated_at", "last_login"]
+        expected_readonly = ["uuid", "created_at", "updated_at", "last_login"]
 
         assert self.admin.readonly_fields == expected_readonly
 
     def test_admin_fieldsets_structure(self):
         """Test fieldsets are properly structured."""
-        assert len(self.admin.fieldsets) == 5
+        assert len(self.admin.fieldsets) == 6
 
         # Check Authentication section
         auth_fields = self.admin.fieldsets[0][1]["fields"]

@@ -27,9 +27,9 @@ class AccountViewSet(viewsets.ModelViewSet):
         return AccountSerializer
 
     @action(detail=True, methods=["post"], url_path="close")
-    def close_account(self, request, pk=None):
+    def close_account(self, request, uuid=None):
         """
-        POST /accounts/<id>/close/
+        POST /accounts/<uuid>/close/
         Mark an account as closed (exclude from totals).
         """
         account = self.get_object()

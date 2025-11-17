@@ -11,6 +11,7 @@ class AccountSerializer(serializers.ModelSerializer):
     class Meta:
         model = Account
         fields = [
+            "id",
             "uuid",
             "name",
             "account_type",
@@ -24,6 +25,7 @@ class AccountSerializer(serializers.ModelSerializer):
             "account_display_name",
         ]
         read_only_fields = [
+            "id",
             "uuid",
             "balance",
             "created_at",

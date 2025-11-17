@@ -12,6 +12,18 @@ CSP_UNSAFE_INLINE = "'unsafe-inline'"
 CSP_UNSAFE_EVAL = "'unsafe-eval'"
 CSP_DATA = "data:"
 
+# AWS S3 URL for static/media files
+AWS_BUCKET = os.getenv("AWS_S3_BUCKET_NAME") or os.getenv("AWS_STORAGE_BUCKET_NAME")
+AWS_REGION = os.getenv("AWS_REGION", "ap-southeast-2")
+if AWS_BUCKET:
+    # Use regional S3 URL format: https://bucket.s3-region.amazonaws.com
+    S3_URL = f"https://{AWS_BUCKET}.s3-{AWS_REGION}.amazonaws.com"
+    # Also allow non-regional format as fallback
+    S3_URL_ALT = f"https://{AWS_BUCKET}.s3.amazonaws.com"
+else:
+    S3_URL = None
+    S3_URL_ALT = None
+
 
 class CustomCSPMiddleware:
     """
@@ -35,16 +47,24 @@ class CustomCSPMiddleware:
         # Build CSP header based on route
         if is_admin_route:
             # Admin CSP - Relaxed for Unfold (allows inline scripts/styles)
+            style_src = [CSP_SELF, CSP_UNSAFE_INLINE, "https://fonts.googleapis.com"]
+            script_src = [CSP_SELF, CSP_UNSAFE_INLINE, CSP_UNSAFE_EVAL]
+            font_src = [CSP_SELF, CSP_DATA, "https://fonts.gstatic.com"]
+            img_src = [CSP_SELF, CSP_DATA]
+            
+            # Add S3 URLs if configured
+            if S3_URL:
+                style_src.extend([S3_URL, S3_URL_ALT])
+                script_src.extend([S3_URL, S3_URL_ALT])
+                font_src.extend([S3_URL, S3_URL_ALT])
+                img_src.extend([S3_URL, S3_URL_ALT])
+            
             csp_directives = {
                 "default-src": [CSP_SELF],
-                "script-src": [CSP_SELF, CSP_UNSAFE_INLINE, CSP_UNSAFE_EVAL],
-                "style-src": [
-                    CSP_SELF,
-                    CSP_UNSAFE_INLINE,
-                    "https://fonts.googleapis.com",
-                ],
-                "img-src": [CSP_SELF, CSP_DATA],
-                "font-src": [CSP_SELF, CSP_DATA, "https://fonts.gstatic.com"],
+                "script-src": script_src,
+                "style-src": style_src,
+                "img-src": img_src,
+                "font-src": font_src,
                 "connect-src": (
                     [CSP_SELF, "ws:", "wss:"] if self.is_debug else [CSP_SELF]
                 ),
@@ -56,12 +76,24 @@ class CustomCSPMiddleware:
             }
         else:
             # API/Public CSP - Strict (NO unsafe-inline, NO unsafe-eval)
+            style_src = [CSP_SELF]
+            script_src = [CSP_SELF]
+            font_src = [CSP_SELF]
+            img_src = [CSP_SELF, CSP_DATA]
+            
+            # Add S3 URLs if configured
+            if S3_URL:
+                style_src.extend([S3_URL, S3_URL_ALT])
+                script_src.extend([S3_URL, S3_URL_ALT])
+                font_src.extend([S3_URL, S3_URL_ALT])
+                img_src.extend([S3_URL, S3_URL_ALT])
+            
             csp_directives = {
                 "default-src": [CSP_SELF],
-                "script-src": [CSP_SELF],
-                "style-src": [CSP_SELF],
-                "img-src": [CSP_SELF, CSP_DATA],
-                "font-src": [CSP_SELF],
+                "script-src": script_src,
+                "style-src": style_src,
+                "img-src": img_src,
+                "font-src": font_src,
                 "connect-src": (
                     [CSP_SELF, "ws:", "wss:"] if self.is_debug else [CSP_SELF]
                 ),

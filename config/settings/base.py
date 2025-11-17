@@ -56,9 +56,12 @@ CUSTOM_APPS = [
     "lessons",
     "reports",
     "privacy",
+    # "apps.ml",  # Temporarily disabled - requires clean venv with proper numpy/statsmodels
 ]
 
 THIRD_PARTY_APPS = [
+    "boto3",
+    "storages",
     "corsheaders",
     "rest_framework",
     "drf_spectacular",
@@ -66,7 +69,7 @@ THIRD_PARTY_APPS = [
     "django_celery_results",
 ]
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + CUSTOM_APPS
+INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PARTY_APPS 
 
 AUTHENTICATION_BACKENDS = [
     "apps.users.backends.EmailOrUsernameBackend",  # Custom backend: email or username
@@ -84,7 +87,10 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "axes.middleware.AxesMiddleware",
-    "config.middleware.csp_custom.CustomCSPMiddleware",  # New
+    "config.middleware.request_timeout.RequestTimeoutMiddleware",  # Track request duration
+    "config.middleware.request_timeout.RequestSizeLimitMiddleware",  # Enforce size limits
+    "config.middleware.request_signing.RequestSigningMiddleware",  # Verify request signatures
+    "config.middleware.csp_custom.CustomCSPMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "config.middleware.security.CookieSecurityMiddleware",
     #
@@ -172,17 +178,40 @@ LOCALE_PATHS = [BASE_DIR / "locale"]
 
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
-# Additional locations of static files
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
-# WhiteNoise configuration
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# Media files (User uploads)
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
-# Note: WhiteNoise headers can be customized via middleware instead
-# WHITENOISE_ADD_HEADERS_FUNCTION requires a callable, not a string path
+# Media files (User uploads)
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+        "OPTIONS": {
+            "bucket_name": env("AWS_S3_BUCKET_NAME", default=""),
+            "region_name": env("AWS_REGION", default="ap-southeast-2"),
+            "access_key": env("AWS_ACCESS_KEY_ID", default=""),
+            "secret_key": env("AWS_SECRET_ACCESS_KEY", default=""),
+            "custom_domain": f"{env('AWS_S3_BUCKET_NAME', default='')}.s3.amazonaws.com",
+            "location": "media",
+        },
+    },
+    "staticfiles": {
+        "BACKEND": "storages.backends.s3boto3.S3StaticStorage",
+        "OPTIONS": {
+            "bucket_name": env("AWS_S3_BUCKET_NAME", default=""),
+            "region_name": env("AWS_REGION", default="ap-southeast-2"),
+            "access_key": env("AWS_ACCESS_KEY_ID", default=""),
+            "secret_key": env("AWS_SECRET_ACCESS_KEY", default=""),
+            "custom_domain": f"{env('AWS_S3_BUCKET_NAME', default='')}.s3.amazonaws.com",
+            "location": "static",
+        },
+    }
+}
+
 
 
 # Default primary key field type
@@ -335,23 +364,30 @@ CELERY_TASK_ROUTES = {
 # Frontend URL (for email verification links)
 FRONTEND_URL = env("FRONTEND_URL", default="http://localhost:3000")
 
-# AWS Configuration
-AWS_ACCESS_KEY_ID = env("AWS_ACCESS_KEY_ID", default="")
-AWS_SECRET_ACCESS_KEY = env("AWS_SECRET_ACCESS_KEY", default="")
-AWS_REGION = env("AWS_REGION", default="ap-southeast-2")  # Sydney - closest to NZ
-AWS_S3_BUCKET_NAME = env("AWS_S3_BUCKET_NAME", default="")
+# ==============================================================================
+# API SECURITY - REQUEST SIGNING & TIMEOUTS
+# ==============================================================================
 
-# AWS Textract Settings
-AWS_TEXTRACT_ENABLED = env.bool("AWS_TEXTRACT_ENABLED", default=False)
-AWS_TEXTRACT_TIMEOUT = env.int("AWS_TEXTRACT_TIMEOUT", default=30)  # seconds
-AWS_TEXTRACT_MAX_FILE_SIZE = env.int(
-    "AWS_TEXTRACT_MAX_FILE_SIZE", default=10485760
-)  # 10MB
+# Generate key with: python -c "import secrets; print(secrets.token_hex(32))"
+API_SIGNING_KEY = env("API_SIGNING_KEY", default=None)
 
-# Receipt Storage Settings
-RECEIPT_STORAGE_ENABLED = env.bool("RECEIPT_STORAGE_ENABLED", default=True)
-RECEIPT_RETENTION_DAYS = env.int(
-    "RECEIPT_RETENTION_DAYS", default=365
-)  # 12 months as per spec
-RECEIPT_MAX_SIZE_MB = env.int("RECEIPT_MAX_SIZE_MB", default=10)
-RECEIPT_ALLOWED_FORMATS = ["jpg", "jpeg", "png", "pdf"]
+# Enable request signing verification on sensitive endpoints
+# Set to True in production, False for development
+API_REQUEST_SIGNING_ENABLED = env.bool("API_REQUEST_SIGNING_ENABLED", default=False)
+
+# Request timeout enforcement
+REQUEST_TIMEOUT_SECONDS = env.int("REQUEST_TIMEOUT_SECONDS", default=30)
+SLOW_REQUEST_THRESHOLD_SECONDS = env.int("SLOW_REQUEST_THRESHOLD_SECONDS", default=10)
+TIMEOUT_EXEMPT_PATHS = [
+    "/health/",
+    "/status/",
+    "/api/v1/auth/login/",  # Auth endpoint may be slower
+]
+
+# Request size limits
+MAX_REQUEST_SIZE_MB = env.int("MAX_REQUEST_SIZE_MB", default=10)
+MAX_JSON_BODY_SIZE = env.int("MAX_JSON_BODY_SIZE", default=1048576)  # 1MB
+
+# ==============================================================================
+
+from config.addon.aws import *  # noqa: F401, F403

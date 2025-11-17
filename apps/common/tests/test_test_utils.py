@@ -179,9 +179,9 @@ class TestCreateTestHousehold(TestCase):
     def test_creates_household_with_kwargs(self):
         """Creates household with additional kwargs."""
         household = create_test_household(
-            name="School", household_type="sch", budget_cycle="w"
+            name="School", household_type="edu", budget_cycle="w"
         )
 
         self.assertEqual(household.name, "School")
-        self.assertEqual(household.household_type, "sch")
+        self.assertEqual(household.household_type, "edu")
         self.assertEqual(household.budget_cycle, "w")

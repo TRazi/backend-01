@@ -1,0 +1,2924 @@
+[
+{
+  "model": "households.household",
+  "pk": 1,
+  "fields": {
+    "created_at": "2022-12-04T21:18:40.304Z",
+    "updated_at": "2025-11-17T01:23:36.955Z",
+    "uuid": "d2b55f0e-b5be-41b7-9ec1-6c7eb560685c",
+    "name": "The Walker Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-04-21T21:18:41.542Z",
+    "updated_at": "2025-11-17T01:23:36.958Z",
+    "uuid": "28b2561f-d6e1-4ff2-b69e-417e1331354c",
+    "name": "The Ryan Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-03-30T21:18:41.990Z",
+    "updated_at": "2025-11-17T01:23:36.960Z",
+    "uuid": "6f61be38-cf38-40cf-9d4c-5d4fbe6b9b65",
+    "name": "The O'Sullivan Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 4,
+  "fields": {
+    "created_at": "2022-12-28T21:18:43.247Z",
+    "updated_at": "2025-11-17T01:23:36.962Z",
+    "uuid": "93fc0c56-73fd-4295-b863-47c25219befe",
+    "name": "The Wright Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-10-21T21:18:43.652Z",
+    "updated_at": "2025-11-17T01:23:36.964Z",
+    "uuid": "912af466-37c8-442f-a2df-3354e4fe7c2c",
+    "name": "The Heke Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 6,
+  "fields": {
+    "created_at": "2023-05-19T21:18:44.489Z",
+    "updated_at": "2025-11-17T01:23:36.966Z",
+    "uuid": "074198ed-6f1a-43ad-8168-19d07fa57bc4",
+    "name": "The O'Brien Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 7,
+  "fields": {
+    "created_at": "2023-08-02T21:18:45.962Z",
+    "updated_at": "2025-11-17T01:23:36.969Z",
+    "uuid": "0c1199d2-1155-4b87-8d8f-ccc9d46b81b6",
+    "name": "The Hill Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 8,
+  "fields": {
+    "created_at": "2023-04-13T21:18:46.392Z",
+    "updated_at": "2025-11-17T01:23:36.972Z",
+    "uuid": "5b268fa7-85b0-4ee6-8188-3cc44b5b13ee",
+    "name": "The Cooper Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 9,
+  "fields": {
+    "created_at": "2024-04-07T21:18:47.616Z",
+    "updated_at": "2025-11-17T01:23:36.974Z",
+    "uuid": "ab6799e5-09fa-4667-840c-a9c2367da541",
+    "name": "The Walker Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 10,
+  "fields": {
+    "created_at": "2024-10-24T21:18:48.452Z",
+    "updated_at": "2025-11-17T01:23:36.975Z",
+    "uuid": "47644127-b638-40d0-aa98-38f3f6ad406d",
+    "name": "The McCarthy Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 11,
+  "fields": {
+    "created_at": "2023-12-19T21:18:49.301Z",
+    "updated_at": "2025-11-17T01:23:36.977Z",
+    "uuid": "389222ae-5a36-4931-ad3d-1b7aa89b9129",
+    "name": "The Thomas Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 12,
+  "fields": {
+    "created_at": "2024-10-17T21:18:50.112Z",
+    "updated_at": "2025-11-17T01:23:36.979Z",
+    "uuid": "dbc82203-91c7-4659-9ac7-2b35b64de7af",
+    "name": "The Kelly Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 13,
+  "fields": {
+    "created_at": "2023-05-07T21:18:50.534Z",
+    "updated_at": "2025-11-17T01:23:36.981Z",
+    "uuid": "5f2a041f-f72c-44d3-be00-7723a34d2bae",
+    "name": "The Harris Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 14,
+  "fields": {
+    "created_at": "2024-03-15T21:18:51.352Z",
+    "updated_at": "2025-11-17T01:23:36.983Z",
+    "uuid": "e49e3e66-e974-4e3b-b18e-118bba835a82",
+    "name": "The Rangi Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 15,
+  "fields": {
+    "created_at": "2022-12-04T21:18:52.612Z",
+    "updated_at": "2025-11-17T01:23:36.985Z",
+    "uuid": "5746da75-bc06-4a39-a02e-efebeea2136d",
+    "name": "The Wright Family",
+    "household_type": "fam",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 16,
+  "fields": {
+    "created_at": "2023-05-15T21:18:53.031Z",
+    "updated_at": "2025-11-17T01:23:36.987Z",
+    "uuid": "cc530e1e-040b-4d41-b31d-ea976b0f3262",
+    "name": "Maia & Lucas's Place",
+    "household_type": "couple",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 17,
+  "fields": {
+    "created_at": "2022-12-12T21:18:53.845Z",
+    "updated_at": "2025-11-17T01:23:36.988Z",
+    "uuid": "102897b8-f031-49b1-9da7-c2bbf2bee437",
+    "name": "Aria & Mia's Place",
+    "household_type": "couple",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 18,
+  "fields": {
+    "created_at": "2023-06-11T21:18:55.121Z",
+    "updated_at": "2025-11-17T01:23:36.990Z",
+    "uuid": "09c3ed86-098d-4166-9bdc-6af7962ee959",
+    "name": "Isabella & Tane's Place",
+    "household_type": "couple",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 19,
+  "fields": {
+    "created_at": "2024-11-01T21:18:55.592Z",
+    "updated_at": "2025-11-17T01:23:36.991Z",
+    "uuid": "9e8a57b1-97bf-4ce7-b249-b0dc7ee08df0",
+    "name": "Emma & William's Place",
+    "household_type": "couple",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 20,
+  "fields": {
+    "created_at": "2023-08-10T21:18:56.421Z",
+    "updated_at": "2025-11-17T01:23:36.993Z",
+    "uuid": "16feace7-be57-444c-9e0b-96a03a495865",
+    "name": "Cooper & Maia's Place",
+    "household_type": "couple",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 21,
+  "fields": {
+    "created_at": "2023-02-23T21:18:57.696Z",
+    "updated_at": "2025-11-17T01:23:36.995Z",
+    "uuid": "d709e1a0-e915-4f88-95f9-fc73abe646ed",
+    "name": "Anika & Mason's Place",
+    "household_type": "couple",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 22,
+  "fields": {
+    "created_at": "2025-02-23T21:18:58.537Z",
+    "updated_at": "2025-11-17T01:23:36.996Z",
+    "uuid": "db587f6e-20c2-40b6-8b57-1204a855ce63",
+    "name": "Samuel & Charlie's Place",
+    "household_type": "couple",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 23,
+  "fields": {
+    "created_at": "2024-06-17T21:18:59.387Z",
+    "updated_at": "2025-11-17T01:23:36.998Z",
+    "uuid": "ecc895bb-8d7e-49d2-95f1-9be25617d39f",
+    "name": "Walker Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 24,
+  "fields": {
+    "created_at": "2024-04-09T21:18:59.800Z",
+    "updated_at": "2025-11-17T01:23:37.000Z",
+    "uuid": "444496ff-8967-421d-8cc5-569319156d68",
+    "name": "Walsh Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 25,
+  "fields": {
+    "created_at": "2025-01-06T21:19:00.215Z",
+    "updated_at": "2025-11-17T01:23:37.002Z",
+    "uuid": "763d7186-56ae-45c6-97d3-047f35d5f525",
+    "name": "O'Connor Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 26,
+  "fields": {
+    "created_at": "2023-01-04T21:19:00.626Z",
+    "updated_at": "2025-11-17T01:23:37.004Z",
+    "uuid": "59011094-7d6c-4dc8-9d09-eef53984e4e8",
+    "name": "Anderson Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 27,
+  "fields": {
+    "created_at": "2024-07-14T21:19:01.047Z",
+    "updated_at": "2025-11-17T01:23:37.005Z",
+    "uuid": "98a4fb86-696a-4df3-bef4-e0c335f37de7",
+    "name": "O'Neill Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 28,
+  "fields": {
+    "created_at": "2024-07-08T21:19:01.464Z",
+    "updated_at": "2025-11-17T01:23:37.007Z",
+    "uuid": "76a43ac8-7780-48fe-88c0-8ecc736f3e26",
+    "name": "White Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 29,
+  "fields": {
+    "created_at": "2023-11-10T21:19:01.877Z",
+    "updated_at": "2025-11-17T01:23:37.009Z",
+    "uuid": "ca97cdbe-e89f-4b9b-9b72-bd81f352a6be",
+    "name": "Hill Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 30,
+  "fields": {
+    "created_at": "2023-09-07T21:19:02.325Z",
+    "updated_at": "2025-11-17T01:23:37.010Z",
+    "uuid": "94223e8a-2578-41a0-be8d-f537743c24e5",
+    "name": "Harris Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 31,
+  "fields": {
+    "created_at": "2025-01-20T21:19:02.735Z",
+    "updated_at": "2025-11-17T01:23:37.011Z",
+    "uuid": "fa46f4f6-d98b-4aec-bf25-75c9ccf8bd10",
+    "name": "Moore Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 32,
+  "fields": {
+    "created_at": "2025-01-02T21:19:03.153Z",
+    "updated_at": "2025-11-17T01:23:37.012Z",
+    "uuid": "4c02296a-c2b5-46c6-b29c-2ae916d81f75",
+    "name": "Wright Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 33,
+  "fields": {
+    "created_at": "2024-07-08T21:19:03.608Z",
+    "updated_at": "2025-11-17T01:23:37.014Z",
+    "uuid": "b54efcf3-6ddc-49bd-83ef-2fcd583cbbc5",
+    "name": "Harris Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 34,
+  "fields": {
+    "created_at": "2024-08-10T21:19:04.020Z",
+    "updated_at": "2025-11-17T01:23:37.015Z",
+    "uuid": "93cf0cf9-5be1-480b-9b34-8f1e4275850c",
+    "name": "Walsh Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 35,
+  "fields": {
+    "created_at": "2023-09-17T21:19:04.444Z",
+    "updated_at": "2025-11-17T01:23:37.017Z",
+    "uuid": "47ca0979-a75e-4a38-aff4-cb9712d23799",
+    "name": "Lewis Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 36,
+  "fields": {
+    "created_at": "2025-01-21T21:19:04.853Z",
+    "updated_at": "2025-11-17T01:23:37.019Z",
+    "uuid": "81d3b133-fa3b-4db7-9962-f2f2b3e53d57",
+    "name": "Hall Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 37,
+  "fields": {
+    "created_at": "2025-02-26T21:19:05.287Z",
+    "updated_at": "2025-11-17T01:23:37.020Z",
+    "uuid": "bcb6d361-2c20-4808-98e1-614e9553d888",
+    "name": "Taylor Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 38,
+  "fields": {
+    "created_at": "2023-10-12T21:19:06.510Z",
+    "updated_at": "2025-11-17T01:23:37.021Z",
+    "uuid": "60fd5181-8314-459d-89f8-b2584b44c7c3",
+    "name": "Tauranga Student Flat",
+    "household_type": "student",
+    "budget_cycle": "w"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 39,
+  "fields": {
+    "created_at": "2022-12-24T21:19:06.918Z",
+    "updated_at": "2025-11-17T01:23:37.023Z",
+    "uuid": "e962ae4c-f62e-4a58-8ba1-d5fed7b8ee49",
+    "name": "Tauranga Student Flat",
+    "household_type": "student",
+    "budget_cycle": "w"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 40,
+  "fields": {
+    "created_at": "2023-03-08T21:19:09.000Z",
+    "updated_at": "2025-11-17T01:23:37.024Z",
+    "uuid": "1b47127f-7e1f-4de8-b5da-6f4b2b019cc3",
+    "name": "Christchurch Student Flat",
+    "household_type": "student",
+    "budget_cycle": "w"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 41,
+  "fields": {
+    "created_at": "2023-12-22T21:19:11.938Z",
+    "updated_at": "2025-11-17T01:23:37.026Z",
+    "uuid": "3a4d7f5a-29e2-4b15-88b8-b6c355603b38",
+    "name": "Hamilton Student Flat",
+    "household_type": "student",
+    "budget_cycle": "w"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 42,
+  "fields": {
+    "created_at": "2023-05-07T21:19:12.366Z",
+    "updated_at": "2025-11-17T01:23:37.027Z",
+    "uuid": "e1acc23e-8c04-4856-a590-bc4fe188e3cc",
+    "name": "Tauranga Student Flat",
+    "household_type": "student",
+    "budget_cycle": "w"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 43,
+  "fields": {
+    "created_at": "2022-12-14T21:19:14.163Z",
+    "updated_at": "2025-11-17T01:23:37.028Z",
+    "uuid": "de9e0c14-2063-4c99-a161-e2f578c6a330",
+    "name": "Charlie's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 44,
+  "fields": {
+    "created_at": "2023-01-09T21:19:14.602Z",
+    "updated_at": "2025-11-17T01:23:37.030Z",
+    "uuid": "b16f542d-69a4-4d07-ba80-dd405b7d0eb5",
+    "name": "Thomas's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 45,
+  "fields": {
+    "created_at": "2024-11-01T21:19:15.102Z",
+    "updated_at": "2025-11-17T01:23:37.031Z",
+    "uuid": "50d75d08-ef14-4607-ad7d-81426554e18f",
+    "name": "Olivia's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 46,
+  "fields": {
+    "created_at": "2024-09-24T21:19:15.622Z",
+    "updated_at": "2025-11-17T01:23:37.033Z",
+    "uuid": "e30f896b-7d88-4b2e-85c7-baf814aa078b",
+    "name": "Charlotte's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 47,
+  "fields": {
+    "created_at": "2023-10-05T21:19:16.079Z",
+    "updated_at": "2025-11-17T01:23:37.035Z",
+    "uuid": "b8b33910-bb9c-4719-9aba-ea01543b1a27",
+    "name": "Zoe's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 48,
+  "fields": {
+    "created_at": "2024-04-12T21:19:16.528Z",
+    "updated_at": "2025-11-17T01:23:37.036Z",
+    "uuid": "d6aa2a58-ecb2-4f08-afbd-6c17755021b1",
+    "name": "Jack's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 49,
+  "fields": {
+    "created_at": "2025-04-14T21:19:16.969Z",
+    "updated_at": "2025-11-17T01:23:37.037Z",
+    "uuid": "a404eec7-7c98-485f-984c-2e3113794d3d",
+    "name": "Nikau's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 50,
+  "fields": {
+    "created_at": "2025-08-19T21:19:17.399Z",
+    "updated_at": "2025-11-17T01:23:37.039Z",
+    "uuid": "b83550e2-0fad-46c3-9eca-1034a39a0414",
+    "name": "Mason's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 51,
+  "fields": {
+    "created_at": "2023-06-26T21:19:17.853Z",
+    "updated_at": "2025-11-17T01:23:37.040Z",
+    "uuid": "bdfc1610-c515-4993-a3d6-995be86c6d01",
+    "name": "Zoe's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 52,
+  "fields": {
+    "created_at": "2024-10-02T21:19:18.284Z",
+    "updated_at": "2025-11-17T01:23:37.042Z",
+    "uuid": "df535560-d6bd-458e-a7ca-459acf3afcf4",
+    "name": "Sophie's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 53,
+  "fields": {
+    "created_at": "2023-09-13T21:19:18.693Z",
+    "updated_at": "2025-11-17T01:23:37.043Z",
+    "uuid": "b89c9da8-1456-4f3f-84cb-725ab6c2b8f5",
+    "name": "Ava's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 54,
+  "fields": {
+    "created_at": "2024-04-21T21:19:19.101Z",
+    "updated_at": "2025-11-17T01:23:37.044Z",
+    "uuid": "250f5d9b-6efc-47b4-8019-58f58336b904",
+    "name": "Ella's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 55,
+  "fields": {
+    "created_at": "2025-09-05T21:19:19.510Z",
+    "updated_at": "2025-11-17T01:23:37.046Z",
+    "uuid": "5a4bcd50-06bd-43f5-85ed-fa04adac1428",
+    "name": "Ella's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 56,
+  "fields": {
+    "created_at": "2023-01-11T21:19:19.985Z",
+    "updated_at": "2025-11-17T01:23:37.047Z",
+    "uuid": "1c1a6c83-efb4-48ac-86cb-a0d7c4a876e7",
+    "name": "Kahu's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 57,
+  "fields": {
+    "created_at": "2022-12-22T21:19:20.447Z",
+    "updated_at": "2025-11-17T01:23:37.049Z",
+    "uuid": "510cf660-e5e1-486d-be52-64458a4db92a",
+    "name": "Aria's Place",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 58,
+  "fields": {
+    "created_at": "2024-10-05T21:19:20.919Z",
+    "updated_at": "2025-11-17T01:23:37.051Z",
+    "uuid": "8c51cba9-a92c-483f-865d-96ba3dacfcc6",
+    "name": "Thompson Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 59,
+  "fields": {
+    "created_at": "2024-04-19T21:19:21.330Z",
+    "updated_at": "2025-11-17T01:23:37.052Z",
+    "uuid": "2e048451-380d-440b-94bc-fe05fd95e0e4",
+    "name": "Wilson Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 60,
+  "fields": {
+    "created_at": "2024-12-05T21:19:21.737Z",
+    "updated_at": "2025-11-17T01:23:37.054Z",
+    "uuid": "eff33303-5b56-413c-a9b9-2b71ffe5b2cc",
+    "name": "Tui Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 61,
+  "fields": {
+    "created_at": "2023-06-04T21:19:22.143Z",
+    "updated_at": "2025-11-17T01:23:37.056Z",
+    "uuid": "44c2e1c3-ac3b-4bbe-a978-d12d5bd18a41",
+    "name": "Harris Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.household",
+  "pk": 62,
+  "fields": {
+    "created_at": "2023-12-09T21:19:22.577Z",
+    "updated_at": "2025-11-17T01:23:37.057Z",
+    "uuid": "0399fe55-3725-42ad-80f4-5d23cda6f034",
+    "name": "Tauroa Household",
+    "household_type": "single",
+    "budget_cycle": "m"
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.040Z",
+    "updated_at": "2025-11-17T01:23:37.143Z",
+    "user": 1,
+    "household": 1,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.143Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.075Z",
+    "updated_at": "2025-11-17T01:23:37.142Z",
+    "user": 2,
+    "household": 1,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.142Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.143Z",
+    "updated_at": "2025-11-17T01:23:37.141Z",
+    "user": 3,
+    "household": 2,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.141Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.178Z",
+    "updated_at": "2025-11-17T01:23:37.141Z",
+    "user": 4,
+    "household": 2,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.141Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.246Z",
+    "updated_at": "2025-11-17T01:23:37.140Z",
+    "user": 5,
+    "household": 3,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.140Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.281Z",
+    "updated_at": "2025-11-17T01:23:37.139Z",
+    "user": 6,
+    "household": 3,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.139Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.349Z",
+    "updated_at": "2025-11-17T01:23:37.138Z",
+    "user": 7,
+    "household": 4,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.138Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.384Z",
+    "updated_at": "2025-11-17T01:23:37.137Z",
+    "user": 8,
+    "household": 4,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.137Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 9,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.452Z",
+    "updated_at": "2025-11-17T01:23:37.137Z",
+    "user": 9,
+    "household": 5,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.137Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 10,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.486Z",
+    "updated_at": "2025-11-17T01:23:37.136Z",
+    "user": 10,
+    "household": 5,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.136Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 11,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.555Z",
+    "updated_at": "2025-11-17T01:23:37.135Z",
+    "user": 11,
+    "household": 6,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.135Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 12,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.589Z",
+    "updated_at": "2025-11-17T01:23:37.134Z",
+    "user": 12,
+    "household": 6,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.134Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.660Z",
+    "updated_at": "2025-11-17T01:23:37.133Z",
+    "user": 13,
+    "household": 7,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.133Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 14,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.693Z",
+    "updated_at": "2025-11-17T01:23:37.131Z",
+    "user": 14,
+    "household": 7,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.131Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.763Z",
+    "updated_at": "2025-11-17T01:23:37.130Z",
+    "user": 15,
+    "household": 8,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.130Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.800Z",
+    "updated_at": "2025-11-17T01:23:37.130Z",
+    "user": 16,
+    "household": 8,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.130Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 17,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.868Z",
+    "updated_at": "2025-11-17T01:23:37.129Z",
+    "user": 17,
+    "household": 9,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.129Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 18,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.903Z",
+    "updated_at": "2025-11-17T01:23:37.128Z",
+    "user": 18,
+    "household": 9,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.128Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 19,
+  "fields": {
+    "created_at": "2025-11-16T21:19:23.978Z",
+    "updated_at": "2025-11-17T01:23:37.127Z",
+    "user": 19,
+    "household": 10,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.127Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 20,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.013Z",
+    "updated_at": "2025-11-17T01:23:37.127Z",
+    "user": 20,
+    "household": 10,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.127Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 21,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.079Z",
+    "updated_at": "2025-11-17T01:23:37.126Z",
+    "user": 21,
+    "household": 11,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.126Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 22,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.114Z",
+    "updated_at": "2025-11-17T01:23:37.125Z",
+    "user": 22,
+    "household": 11,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.125Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 23,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.181Z",
+    "updated_at": "2025-11-17T01:23:37.124Z",
+    "user": 23,
+    "household": 12,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.124Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 24,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.214Z",
+    "updated_at": "2025-11-17T01:23:37.124Z",
+    "user": 24,
+    "household": 12,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.124Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 25,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.281Z",
+    "updated_at": "2025-11-17T01:23:37.123Z",
+    "user": 25,
+    "household": 13,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.123Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 26,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.318Z",
+    "updated_at": "2025-11-17T01:23:37.122Z",
+    "user": 26,
+    "household": 13,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.122Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 27,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.385Z",
+    "updated_at": "2025-11-17T01:23:37.121Z",
+    "user": 27,
+    "household": 14,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.121Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 28,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.418Z",
+    "updated_at": "2025-11-17T01:23:37.120Z",
+    "user": 28,
+    "household": 14,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.120Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 29,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.487Z",
+    "updated_at": "2025-11-17T01:23:37.119Z",
+    "user": 29,
+    "household": 15,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.119Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 30,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.521Z",
+    "updated_at": "2025-11-17T01:23:37.118Z",
+    "user": 30,
+    "household": 15,
+    "organisation": null,
+    "membership_type": "fw",
+    "role": "parent",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.118Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 31,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.588Z",
+    "updated_at": "2025-11-17T01:23:37.117Z",
+    "user": 31,
+    "household": 16,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.117Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 32,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.621Z",
+    "updated_at": "2025-11-17T01:23:37.116Z",
+    "user": 32,
+    "household": 16,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.116Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 33,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.688Z",
+    "updated_at": "2025-11-17T01:23:37.115Z",
+    "user": 33,
+    "household": 17,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.115Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 34,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.723Z",
+    "updated_at": "2025-11-17T01:23:37.114Z",
+    "user": 34,
+    "household": 17,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.114Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 35,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.793Z",
+    "updated_at": "2025-11-17T01:23:37.114Z",
+    "user": 35,
+    "household": 18,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.114Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 36,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.828Z",
+    "updated_at": "2025-11-17T01:23:37.113Z",
+    "user": 36,
+    "household": 18,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.113Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 37,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.896Z",
+    "updated_at": "2025-11-17T01:23:37.112Z",
+    "user": 37,
+    "household": 19,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.112Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 38,
+  "fields": {
+    "created_at": "2025-11-16T21:19:24.957Z",
+    "updated_at": "2025-11-17T01:23:37.111Z",
+    "user": 38,
+    "household": 19,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.111Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 39,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.250Z",
+    "updated_at": "2025-11-17T01:23:37.111Z",
+    "user": 39,
+    "household": 20,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.111Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 40,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.325Z",
+    "updated_at": "2025-11-17T01:23:37.110Z",
+    "user": 40,
+    "household": 20,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.110Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 41,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.395Z",
+    "updated_at": "2025-11-17T01:23:37.109Z",
+    "user": 41,
+    "household": 21,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.109Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 42,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.430Z",
+    "updated_at": "2025-11-17T01:23:37.108Z",
+    "user": 42,
+    "household": 21,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.109Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 43,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.498Z",
+    "updated_at": "2025-11-17T01:23:37.108Z",
+    "user": 43,
+    "household": 22,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.108Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 44,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.532Z",
+    "updated_at": "2025-11-17T01:23:37.107Z",
+    "user": 44,
+    "household": 22,
+    "organisation": null,
+    "membership_type": "wp",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.107Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 45,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.602Z",
+    "updated_at": "2025-11-17T01:23:37.106Z",
+    "user": 46,
+    "household": 23,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.106Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 46,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.676Z",
+    "updated_at": "2025-11-17T01:23:37.105Z",
+    "user": 47,
+    "household": 24,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.105Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 47,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.744Z",
+    "updated_at": "2025-11-17T01:23:37.105Z",
+    "user": 48,
+    "household": 25,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.105Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 48,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.812Z",
+    "updated_at": "2025-11-17T01:23:37.104Z",
+    "user": 49,
+    "household": 26,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.104Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 49,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.880Z",
+    "updated_at": "2025-11-17T01:23:37.103Z",
+    "user": 50,
+    "household": 27,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.103Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 50,
+  "fields": {
+    "created_at": "2025-11-16T21:19:25.947Z",
+    "updated_at": "2025-11-17T01:23:37.102Z",
+    "user": 51,
+    "household": 28,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.102Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 51,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.015Z",
+    "updated_at": "2025-11-17T01:23:37.101Z",
+    "user": 52,
+    "household": 29,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.101Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 52,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.087Z",
+    "updated_at": "2025-11-17T01:23:37.100Z",
+    "user": 53,
+    "household": 30,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.100Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 53,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.153Z",
+    "updated_at": "2025-11-17T01:23:37.098Z",
+    "user": 54,
+    "household": 31,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.098Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 54,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.219Z",
+    "updated_at": "2025-11-17T01:23:37.098Z",
+    "user": 55,
+    "household": 32,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.098Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 55,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.295Z",
+    "updated_at": "2025-11-17T01:23:37.097Z",
+    "user": 56,
+    "household": 33,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.097Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 56,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.365Z",
+    "updated_at": "2025-11-17T01:23:37.096Z",
+    "user": 57,
+    "household": 34,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.096Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 57,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.430Z",
+    "updated_at": "2025-11-17T01:23:37.095Z",
+    "user": 58,
+    "household": 35,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.095Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 58,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.497Z",
+    "updated_at": "2025-11-17T01:23:37.094Z",
+    "user": 59,
+    "household": 36,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.094Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 59,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.565Z",
+    "updated_at": "2025-11-17T01:23:37.094Z",
+    "user": 60,
+    "household": 37,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.094Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 60,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.630Z",
+    "updated_at": "2025-11-17T01:23:37.093Z",
+    "user": 61,
+    "household": 38,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.093Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 61,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.663Z",
+    "updated_at": "2025-11-17T01:23:37.092Z",
+    "user": 62,
+    "household": 38,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.092Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 62,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.696Z",
+    "updated_at": "2025-11-17T01:23:37.091Z",
+    "user": 63,
+    "household": 38,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.091Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 63,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.762Z",
+    "updated_at": "2025-11-17T01:23:37.090Z",
+    "user": 64,
+    "household": 39,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.090Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 64,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.796Z",
+    "updated_at": "2025-11-17T01:23:37.089Z",
+    "user": 65,
+    "household": 39,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.089Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 65,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.830Z",
+    "updated_at": "2025-11-17T01:23:37.088Z",
+    "user": 66,
+    "household": 39,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.088Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 66,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.863Z",
+    "updated_at": "2025-11-17T01:23:37.087Z",
+    "user": 67,
+    "household": 39,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.087Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 67,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.897Z",
+    "updated_at": "2025-11-17T01:23:37.086Z",
+    "user": 68,
+    "household": 39,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.086Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 68,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.963Z",
+    "updated_at": "2025-11-17T01:23:37.085Z",
+    "user": 69,
+    "household": 40,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.085Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 69,
+  "fields": {
+    "created_at": "2025-11-16T21:19:26.998Z",
+    "updated_at": "2025-11-17T01:23:37.084Z",
+    "user": 70,
+    "household": 40,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.084Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 70,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.031Z",
+    "updated_at": "2025-11-17T01:23:37.083Z",
+    "user": 71,
+    "household": 40,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.083Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 71,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.094Z",
+    "updated_at": "2025-11-17T01:23:37.082Z",
+    "user": 72,
+    "household": 41,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.082Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 72,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.127Z",
+    "updated_at": "2025-11-17T01:23:37.081Z",
+    "user": 73,
+    "household": 41,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.081Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 73,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.160Z",
+    "updated_at": "2025-11-17T01:23:37.080Z",
+    "user": 74,
+    "household": 41,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.080Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 74,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.193Z",
+    "updated_at": "2025-11-17T01:23:37.079Z",
+    "user": 75,
+    "household": 41,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.079Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 75,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.229Z",
+    "updated_at": "2025-11-17T01:23:37.079Z",
+    "user": 76,
+    "household": 41,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.079Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 76,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.299Z",
+    "updated_at": "2025-11-17T01:23:37.078Z",
+    "user": 77,
+    "household": 42,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.078Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 77,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.333Z",
+    "updated_at": "2025-11-17T01:23:37.077Z",
+    "user": 78,
+    "household": 42,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.077Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 78,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.369Z",
+    "updated_at": "2025-11-17T01:23:37.076Z",
+    "user": 79,
+    "household": 42,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.076Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 79,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.403Z",
+    "updated_at": "2025-11-17T01:23:37.076Z",
+    "user": 80,
+    "household": 42,
+    "organisation": null,
+    "membership_type": "mm",
+    "role": "flatmate",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.076Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 80,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.473Z",
+    "updated_at": "2025-11-17T01:23:37.075Z",
+    "user": 81,
+    "household": 43,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.075Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 81,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.549Z",
+    "updated_at": "2025-11-17T01:23:37.074Z",
+    "user": 82,
+    "household": 44,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.074Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 82,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.620Z",
+    "updated_at": "2025-11-17T01:23:37.073Z",
+    "user": 83,
+    "household": 45,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.073Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 83,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.687Z",
+    "updated_at": "2025-11-17T01:23:37.073Z",
+    "user": 84,
+    "household": 46,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.073Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 84,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.755Z",
+    "updated_at": "2025-11-17T01:23:37.072Z",
+    "user": 85,
+    "household": 47,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.072Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 85,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.826Z",
+    "updated_at": "2025-11-17T01:23:37.071Z",
+    "user": 86,
+    "household": 48,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.071Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 86,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.896Z",
+    "updated_at": "2025-11-17T01:23:37.070Z",
+    "user": 87,
+    "household": 49,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.070Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 87,
+  "fields": {
+    "created_at": "2025-11-16T21:19:27.964Z",
+    "updated_at": "2025-11-17T01:23:37.069Z",
+    "user": 88,
+    "household": 50,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.069Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 88,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.034Z",
+    "updated_at": "2025-11-17T01:23:37.069Z",
+    "user": 89,
+    "household": 51,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.069Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 89,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.103Z",
+    "updated_at": "2025-11-17T01:23:37.068Z",
+    "user": 90,
+    "household": 52,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.068Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 90,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.170Z",
+    "updated_at": "2025-11-17T01:23:37.067Z",
+    "user": 91,
+    "household": 53,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.067Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 91,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.239Z",
+    "updated_at": "2025-11-17T01:23:37.066Z",
+    "user": 92,
+    "household": 54,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.066Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 92,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.311Z",
+    "updated_at": "2025-11-17T01:23:37.065Z",
+    "user": 93,
+    "household": 55,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.065Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 93,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.378Z",
+    "updated_at": "2025-11-17T01:23:37.064Z",
+    "user": 94,
+    "household": 56,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.064Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 94,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.448Z",
+    "updated_at": "2025-11-17T01:23:37.063Z",
+    "user": 95,
+    "household": 57,
+    "organisation": null,
+    "membership_type": "if",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.063Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 95,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.517Z",
+    "updated_at": "2025-11-17T01:23:37.062Z",
+    "user": 96,
+    "household": 58,
+    "organisation": 1,
+    "membership_type": "ww",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.063Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 96,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.586Z",
+    "updated_at": "2025-11-17T01:23:37.062Z",
+    "user": 97,
+    "household": 59,
+    "organisation": 2,
+    "membership_type": "ww",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.062Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 97,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.655Z",
+    "updated_at": "2025-11-17T01:23:37.061Z",
+    "user": 98,
+    "household": 60,
+    "organisation": 3,
+    "membership_type": "ww",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.061Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 98,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.726Z",
+    "updated_at": "2025-11-17T01:23:37.060Z",
+    "user": 99,
+    "household": 61,
+    "organisation": 4,
+    "membership_type": "ww",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.060Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+},
+{
+  "model": "households.membership",
+  "pk": 99,
+  "fields": {
+    "created_at": "2025-11-16T21:19:28.804Z",
+    "updated_at": "2025-11-17T01:23:37.059Z",
+    "user": 100,
+    "household": 62,
+    "organisation": 5,
+    "membership_type": "ww",
+    "role": "admin",
+    "status": "active",
+    "is_active": true,
+    "start_date": "2025-11-17T01:23:37.059Z",
+    "ended_at": null,
+    "is_primary": true,
+    "billing_cycle": null,
+    "next_billing_date": null,
+    "amount": null,
+    "payment_status": null
+  }
+}
+]

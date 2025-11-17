@@ -253,7 +253,7 @@ class TransactionAttachment(BaseModel):
     )
 
     file = models.ImageField(
-        upload_to="receipts/%Y/%m/",
+        upload_to="receipts/user_%s/%%Y/%%m/",
         help_text="Receipt or invoice image",
     )
 

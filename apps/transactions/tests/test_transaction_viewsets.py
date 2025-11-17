@@ -269,7 +269,7 @@ class TestTransactionViewSetUpdate:
             "date": timezone.now().isoformat(),
         }
 
-        response = client.put(f"/api/v1/transactions/{transaction.id}/", data)
+        response = client.put(f"/api/v1/transactions/{transaction.uuid}/", data)
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data["description"] == "New description"
@@ -348,7 +348,7 @@ class TestTransactionViewSetDelete:
 
         client = APIClient()
         client.force_authenticate(user=user)
-        response = client.delete(f"/api/v1/transactions/{transaction.id}/")
+        response = client.delete(f"/api/v1/transactions/{transaction.uuid}/")
 
         assert response.status_code == status.HTTP_204_NO_CONTENT
         assert not Transaction.objects.filter(id=transaction.id).exists()
@@ -388,7 +388,7 @@ class TestTransactionLinkTransferAction:
         data = {"destination_account": dest_account.id, "amount": "100.00"}
 
         response = client.post(
-            f"/api/v1/transactions/{source_tx.id}/link-transfer/", data
+            f"/api/v1/transactions/{source_tx.uuid}/link-transfer/", data
         )
 
         assert response.status_code == status.HTTP_201_CREATED
@@ -431,7 +431,7 @@ class TestTransactionLinkTransferAction:
 
         data = {"destination_account": dest_account.id}
         response = client.post(
-            f"/api/v1/transactions/{source_tx.id}/link-transfer/", data
+            f"/api/v1/transactions/{source_tx.uuid}/link-transfer/", data
         )
 
         assert response.status_code == status.HTTP_400_BAD_REQUEST
@@ -465,7 +465,7 @@ class TestTransactionLinkTransferAction:
 
         data = {"destination_account": dest_account.id}
         response = client.post(
-            f"/api/v1/transactions/{source_tx.id}/link-transfer/", data, format="json"
+            f"/api/v1/transactions/{source_tx.uuid}/link-transfer/", data, format="json"
         )
 
         assert response.status_code == status.HTTP_201_CREATED
@@ -502,7 +502,7 @@ class TestTransactionTagActions:
 
         data = {"tags": ["groceries", "essential"]}
         response = client.post(
-            f"/api/v1/transactions/{transaction.id}/tags/", data, format="json"
+            f"/api/v1/transactions/{transaction.uuid}/tags/", data, format="json"
         )
 
         assert response.status_code == status.HTTP_200_OK
@@ -534,7 +534,7 @@ class TestTransactionTagActions:
 
         data = {"tags": ["new-tag"]}
         response = client.post(
-            f"/api/v1/transactions/{transaction.id}/tags/", data, format="json"
+            f"/api/v1/transactions/{transaction.uuid}/tags/", data, format="json"
         )
 
         assert response.status_code == status.HTTP_200_OK
@@ -566,7 +566,7 @@ class TestTransactionTagActions:
         client.force_authenticate(user=user)
 
         data = {"tags": "not-a-list"}
-        response = client.post(f"/api/v1/transactions/{transaction.id}/tags/", data)
+        response = client.post(f"/api/v1/transactions/{transaction.uuid}/tags/", data)
 
         assert response.status_code == status.HTTP_400_BAD_REQUEST
 
@@ -597,7 +597,7 @@ class TestTransactionTagActions:
 
         data = {"tag_id": tag.id}
         response = client.post(
-            f"/api/v1/transactions/{transaction.id}/remove-tag/", data
+            f"/api/v1/transactions/{transaction.uuid}/remove-tag/", data
         )
 
         assert response.status_code == status.HTTP_200_OK
@@ -627,7 +627,7 @@ class TestTransactionTagActions:
         client = APIClient()
         client.force_authenticate(user=user)
 
-        response = client.post(f"/api/v1/transactions/{transaction.id}/remove-tag/", {})
+        response = client.post(f"/api/v1/transactions/{transaction.uuid}/remove-tag/", {})
 
         assert response.status_code == status.HTTP_400_BAD_REQUEST
 

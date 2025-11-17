@@ -141,11 +141,11 @@ def test_generate_spending_report_basic():
         to_date=to_date,
     )
 
-    assert result["summary"]["total_spent"] == "150"
+    assert result["summary"]["total_spent"] == "150.00"
     assert result["summary"]["category_count"] == 1
     assert len(result["by_category"]) == 1
     assert result["by_category"][0]["category_name"] == "Groceries"
-    assert result["by_category"][0]["spent"] == "150"
+    assert result["by_category"][0]["spent"] == "150.00"
     assert result["by_category"][0]["percentage_of_total"] == pytest.approx(100.0)
 
 
@@ -221,7 +221,7 @@ def test_generate_spending_report_with_category_filter():
         category_id=category1.id,
     )
 
-    assert result["summary"]["total_spent"] == "100"
+    assert result["summary"]["total_spent"] == "100.00"
     assert result["summary"]["category_count"] == 1
     assert result["by_category"][0]["category_name"] == "Groceries"
 
@@ -298,7 +298,7 @@ def test_generate_spending_report_multiple_categories():
         to_date=to_date,
     )
 
-    assert result["summary"]["total_spent"] == "100"
+    assert result["summary"]["total_spent"] == "100.00"
     assert result["summary"]["category_count"] == 2
 
     # Check percentages
@@ -374,7 +374,7 @@ def test_generate_spending_report_excludes_non_expenses():
     )
 
     # Only expense should be counted
-    assert result["summary"]["total_spent"] == "100"
+    assert result["summary"]["total_spent"] == "100.00"
 
 
 @pytest.mark.django_db

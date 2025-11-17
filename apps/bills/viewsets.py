@@ -235,8 +235,16 @@ class BillViewSet(viewsets.ModelViewSet):
             400: Validation errors
         """
         from config.utils.ocr_service import get_textract_service
+        from common.permissions import IsBillOwnerOrHouseholdAdmin
 
         bill = self.get_object()
+        
+        # Check permission - user must own the bill's account household
+        if not (request.user.is_superuser or bill.account.household == request.user.household):
+            return Response(
+                {"detail": "You don't have permission to upload to this bill."},
+                status=status.HTTP_403_FORBIDDEN,
+            )
 
         serializer = BillAttachmentUploadSerializer(
             data=request.data, context={"request": request}

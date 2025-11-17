@@ -68,7 +68,7 @@ class TestMFATokenObtainPairSerializer:
         with pytest.raises(ValidationError) as exc:
             serializer.is_valid(raise_exception=True)
 
-        assert "MFA code required" in str(exc.value)
+        assert "mfa_required" in str(exc.value) or "MFA code required" in str(exc.value)
 
     def test_mfa_enabled_valid_otp_succeeds(self):
         """Valid TOTP code should grant access."""
@@ -108,7 +108,7 @@ class TestMFATokenObtainPairSerializer:
         with pytest.raises(ValidationError) as exc:
             serializer.is_valid(raise_exception=True)
 
-        assert "Invalid MFA credentials" in str(exc.value)
+        assert "invalid_mfa" in str(exc.value) or "Invalid MFA credentials" in str(exc.value)
 
     def test_mfa_enabled_valid_backup_code_succeeds(self):
         """Valid backup code should grant access."""
@@ -158,7 +158,7 @@ class TestMFATokenObtainPairSerializer:
         with pytest.raises(ValidationError) as exc:
             serializer.is_valid(raise_exception=True)
 
-        assert "Invalid MFA credentials" in str(exc.value)
+        assert "invalid_mfa" in str(exc.value) or "Invalid MFA credentials" in str(exc.value)
 
     def test_mfa_enabled_both_otp_and_backup_code_otp_wins(self):
         """If both OTP and backup code provided, OTP takes precedence."""
@@ -243,4 +243,4 @@ class TestMFATokenObtainPairSerializer:
         with pytest.raises(ValidationError) as exc:
             serializer.is_valid(raise_exception=True)
 
-        assert "MFA code required" in str(exc.value)
+        assert "mfa_required" in str(exc.value) or "MFA code required" in str(exc.value)

@@ -47,7 +47,7 @@ def test_household_create_serializer():
     request = Mock()
     request.user = user
 
-    data = {"name": "New Household"}
+    data = {"name": "New Household", "household_type": "fam", "budget_cycle": "m"}
     serializer = HouseholdCreateSerializer(data=data, context={"request": request})
 
     assert serializer.is_valid()
@@ -185,7 +185,7 @@ def test_household_create_with_different_budgets():
     request.user = user
 
     # Test creating a household
-    data = {"name": "Test Household"}
+    data = {"name": "Test Household", "household_type": "fam", "budget_cycle": "m"}
     serializer = HouseholdCreateSerializer(data=data, context={"request": request})
 
     assert serializer.is_valid()

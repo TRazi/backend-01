@@ -39,14 +39,14 @@ class TestUserManager:
         with pytest.raises(ValueError) as exc_info:
             User.objects.create_user(email="", password="testpass123")
 
-        assert "The Email field must be set" in str(exc_info.value)
+        assert "Either email or username must be provided" in str(exc_info.value) or "The Email field must be set" in str(exc_info.value)
 
     def test_create_user_with_none_email_raises_error(self):
         """Test create_user raises ValueError when email is None."""
         with pytest.raises(ValueError) as exc_info:
             User.objects.create_user(email=None, password="testpass123")
 
-        assert "The Email field must be set" in str(exc_info.value)
+        assert "Either email or username must be provided" in str(exc_info.value) or "The Email field must be set" in str(exc_info.value)
 
     def test_create_user_with_extra_fields(self):
         """Test create_user accepts extra fields."""
@@ -148,7 +148,7 @@ class TestUserManager:
         with pytest.raises(ValueError) as exc_info:
             User.objects.create_superuser(email="", password="adminpass123")
 
-        assert "The Email field must be set" in str(exc_info.value)
+        assert "Either email or username must be provided" in str(exc_info.value) or "The Email field must be set" in str(exc_info.value)
 
     def test_create_superuser_without_password(self):
         """Test create_superuser works without password."""

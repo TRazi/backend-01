@@ -1,0 +1,6698 @@
+[
+{
+  "model": "budgets.budget",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-11-16T21:19:35.436Z",
+    "updated_at": "2025-11-17T01:24:19.896Z",
+    "household": 1,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2224.80",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-11-16T21:19:35.453Z",
+    "updated_at": "2025-11-17T01:24:19.972Z",
+    "household": 1,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4854.71",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-11-16T21:19:35.470Z",
+    "updated_at": "2025-11-17T01:24:20.035Z",
+    "household": 1,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3483.98",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-11-16T21:19:35.486Z",
+    "updated_at": "2025-11-17T01:24:20.091Z",
+    "household": 1,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3314.86",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-11-16T21:19:35.503Z",
+    "updated_at": "2025-11-17T01:24:20.153Z",
+    "household": 1,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2977.00",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-11-16T21:19:35.519Z",
+    "updated_at": "2025-11-17T01:24:20.215Z",
+    "household": 1,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4895.55",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.636Z",
+    "updated_at": "2025-11-17T01:24:19.896Z",
+    "household": 2,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2895.27",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.653Z",
+    "updated_at": "2025-11-17T01:24:19.971Z",
+    "household": 2,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4030.11",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 9,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.669Z",
+    "updated_at": "2025-11-17T01:24:20.034Z",
+    "household": 2,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2908.72",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 10,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.686Z",
+    "updated_at": "2025-11-17T01:24:20.090Z",
+    "household": 2,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2335.88",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 11,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.703Z",
+    "updated_at": "2025-11-17T01:24:20.152Z",
+    "household": 2,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2551.46",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 12,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.718Z",
+    "updated_at": "2025-11-17T01:24:20.214Z",
+    "household": 2,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3537.60",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.150Z",
+    "updated_at": "2025-11-17T01:24:19.895Z",
+    "household": 3,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2210.07",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 14,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.166Z",
+    "updated_at": "2025-11-17T01:24:19.970Z",
+    "household": 3,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3489.60",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.184Z",
+    "updated_at": "2025-11-17T01:24:20.033Z",
+    "household": 3,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3737.25",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.200Z",
+    "updated_at": "2025-11-17T01:24:20.089Z",
+    "household": 3,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3001.01",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 17,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.216Z",
+    "updated_at": "2025-11-17T01:24:20.150Z",
+    "household": 3,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2793.78",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 18,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.233Z",
+    "updated_at": "2025-11-17T01:24:20.213Z",
+    "household": 3,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3614.32",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 19,
+  "fields": {
+    "created_at": "2025-11-16T21:20:01.929Z",
+    "updated_at": "2025-11-17T01:24:19.894Z",
+    "household": 4,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2346.96",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 20,
+  "fields": {
+    "created_at": "2025-11-16T21:20:01.945Z",
+    "updated_at": "2025-11-17T01:24:19.968Z",
+    "household": 4,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2548.96",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 21,
+  "fields": {
+    "created_at": "2025-11-16T21:20:01.961Z",
+    "updated_at": "2025-11-17T01:24:20.032Z",
+    "household": 4,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3241.51",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 22,
+  "fields": {
+    "created_at": "2025-11-16T21:20:01.977Z",
+    "updated_at": "2025-11-17T01:24:20.088Z",
+    "household": 4,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3038.58",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 23,
+  "fields": {
+    "created_at": "2025-11-16T21:20:01.994Z",
+    "updated_at": "2025-11-17T01:24:20.149Z",
+    "household": 4,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2476.53",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 24,
+  "fields": {
+    "created_at": "2025-11-16T21:20:02.010Z",
+    "updated_at": "2025-11-17T01:24:20.213Z",
+    "household": 4,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3992.23",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 25,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.476Z",
+    "updated_at": "2025-11-17T01:24:19.893Z",
+    "household": 5,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4190.34",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 26,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.492Z",
+    "updated_at": "2025-11-17T01:24:19.966Z",
+    "household": 5,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2148.02",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 27,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.509Z",
+    "updated_at": "2025-11-17T01:24:20.031Z",
+    "household": 5,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2086.33",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 28,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.525Z",
+    "updated_at": "2025-11-17T01:24:20.087Z",
+    "household": 5,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2513.56",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 29,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.541Z",
+    "updated_at": "2025-11-17T01:24:20.148Z",
+    "household": 5,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3463.03",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 30,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.558Z",
+    "updated_at": "2025-11-17T01:24:20.212Z",
+    "household": 5,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3601.39",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 31,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.005Z",
+    "updated_at": "2025-11-17T01:24:19.892Z",
+    "household": 6,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4748.23",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 32,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.021Z",
+    "updated_at": "2025-11-17T01:24:19.965Z",
+    "household": 6,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2720.97",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 33,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.037Z",
+    "updated_at": "2025-11-17T01:24:20.030Z",
+    "household": 6,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2467.92",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 34,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.054Z",
+    "updated_at": "2025-11-17T01:24:20.086Z",
+    "household": 6,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4803.40",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 35,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.069Z",
+    "updated_at": "2025-11-17T01:24:20.148Z",
+    "household": 6,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4659.76",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 36,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.086Z",
+    "updated_at": "2025-11-17T01:24:20.211Z",
+    "household": 6,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2068.73",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 37,
+  "fields": {
+    "created_at": "2025-11-16T21:20:31.329Z",
+    "updated_at": "2025-11-17T01:24:19.891Z",
+    "household": 7,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4366.31",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 38,
+  "fields": {
+    "created_at": "2025-11-16T21:20:31.346Z",
+    "updated_at": "2025-11-17T01:24:19.965Z",
+    "household": 7,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2285.99",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 39,
+  "fields": {
+    "created_at": "2025-11-16T21:20:31.362Z",
+    "updated_at": "2025-11-17T01:24:20.030Z",
+    "household": 7,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2065.30",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 40,
+  "fields": {
+    "created_at": "2025-11-16T21:20:31.378Z",
+    "updated_at": "2025-11-17T01:24:20.084Z",
+    "household": 7,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4601.30",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 41,
+  "fields": {
+    "created_at": "2025-11-16T21:20:31.395Z",
+    "updated_at": "2025-11-17T01:24:20.147Z",
+    "household": 7,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2466.23",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 42,
+  "fields": {
+    "created_at": "2025-11-16T21:20:31.411Z",
+    "updated_at": "2025-11-17T01:24:20.210Z",
+    "household": 7,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4581.39",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 43,
+  "fields": {
+    "created_at": "2025-11-16T21:20:36.770Z",
+    "updated_at": "2025-11-17T01:24:19.890Z",
+    "household": 8,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2148.59",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 44,
+  "fields": {
+    "created_at": "2025-11-16T21:20:36.785Z",
+    "updated_at": "2025-11-17T01:24:19.964Z",
+    "household": 8,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2390.02",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 45,
+  "fields": {
+    "created_at": "2025-11-16T21:20:36.803Z",
+    "updated_at": "2025-11-17T01:24:20.029Z",
+    "household": 8,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4863.84",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 46,
+  "fields": {
+    "created_at": "2025-11-16T21:20:36.818Z",
+    "updated_at": "2025-11-17T01:24:20.083Z",
+    "household": 8,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3079.44",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 47,
+  "fields": {
+    "created_at": "2025-11-16T21:20:36.835Z",
+    "updated_at": "2025-11-17T01:24:20.146Z",
+    "household": 8,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2865.29",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 48,
+  "fields": {
+    "created_at": "2025-11-16T21:20:36.851Z",
+    "updated_at": "2025-11-17T01:24:20.210Z",
+    "household": 8,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2917.38",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 49,
+  "fields": {
+    "created_at": "2025-11-16T21:20:40.869Z",
+    "updated_at": "2025-11-17T01:24:19.889Z",
+    "household": 9,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2621.17",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 50,
+  "fields": {
+    "created_at": "2025-11-16T21:20:40.885Z",
+    "updated_at": "2025-11-17T01:24:19.963Z",
+    "household": 9,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4168.31",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 51,
+  "fields": {
+    "created_at": "2025-11-16T21:20:40.901Z",
+    "updated_at": "2025-11-17T01:24:20.028Z",
+    "household": 9,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3284.42",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 52,
+  "fields": {
+    "created_at": "2025-11-16T21:20:40.918Z",
+    "updated_at": "2025-11-17T01:24:20.082Z",
+    "household": 9,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4605.58",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 53,
+  "fields": {
+    "created_at": "2025-11-16T21:20:40.935Z",
+    "updated_at": "2025-11-17T01:24:20.145Z",
+    "household": 9,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4290.12",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 54,
+  "fields": {
+    "created_at": "2025-11-16T21:20:40.951Z",
+    "updated_at": "2025-11-17T01:24:20.209Z",
+    "household": 9,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4510.82",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 55,
+  "fields": {
+    "created_at": "2025-11-16T21:20:45.658Z",
+    "updated_at": "2025-11-17T01:24:19.888Z",
+    "household": 10,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4802.15",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 56,
+  "fields": {
+    "created_at": "2025-11-16T21:20:45.674Z",
+    "updated_at": "2025-11-17T01:24:19.961Z",
+    "household": 10,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3461.90",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 57,
+  "fields": {
+    "created_at": "2025-11-16T21:20:45.691Z",
+    "updated_at": "2025-11-17T01:24:20.027Z",
+    "household": 10,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2466.60",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 58,
+  "fields": {
+    "created_at": "2025-11-16T21:20:45.707Z",
+    "updated_at": "2025-11-17T01:24:20.081Z",
+    "household": 10,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2438.94",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 59,
+  "fields": {
+    "created_at": "2025-11-16T21:20:45.724Z",
+    "updated_at": "2025-11-17T01:24:20.144Z",
+    "household": 10,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2060.09",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 60,
+  "fields": {
+    "created_at": "2025-11-16T21:20:45.741Z",
+    "updated_at": "2025-11-17T01:24:20.208Z",
+    "household": 10,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3596.62",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 61,
+  "fields": {
+    "created_at": "2025-11-16T21:20:53.946Z",
+    "updated_at": "2025-11-17T01:24:19.885Z",
+    "household": 11,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4284.92",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 62,
+  "fields": {
+    "created_at": "2025-11-16T21:20:53.962Z",
+    "updated_at": "2025-11-17T01:24:19.960Z",
+    "household": 11,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2216.54",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 63,
+  "fields": {
+    "created_at": "2025-11-16T21:20:53.978Z",
+    "updated_at": "2025-11-17T01:24:20.027Z",
+    "household": 11,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4437.73",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 64,
+  "fields": {
+    "created_at": "2025-11-16T21:20:53.994Z",
+    "updated_at": "2025-11-17T01:24:20.080Z",
+    "household": 11,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3384.55",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 65,
+  "fields": {
+    "created_at": "2025-11-16T21:20:54.009Z",
+    "updated_at": "2025-11-17T01:24:20.144Z",
+    "household": 11,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4722.29",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 66,
+  "fields": {
+    "created_at": "2025-11-16T21:20:54.025Z",
+    "updated_at": "2025-11-17T01:24:20.207Z",
+    "household": 11,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4008.76",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 67,
+  "fields": {
+    "created_at": "2025-11-16T21:21:05.082Z",
+    "updated_at": "2025-11-17T01:24:19.883Z",
+    "household": 12,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2260.95",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 68,
+  "fields": {
+    "created_at": "2025-11-16T21:21:05.098Z",
+    "updated_at": "2025-11-17T01:24:19.959Z",
+    "household": 12,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3964.76",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 69,
+  "fields": {
+    "created_at": "2025-11-16T21:21:05.115Z",
+    "updated_at": "2025-11-17T01:24:20.026Z",
+    "household": 12,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4233.05",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 70,
+  "fields": {
+    "created_at": "2025-11-16T21:21:05.131Z",
+    "updated_at": "2025-11-17T01:24:20.079Z",
+    "household": 12,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3108.89",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 71,
+  "fields": {
+    "created_at": "2025-11-16T21:21:05.147Z",
+    "updated_at": "2025-11-17T01:24:20.143Z",
+    "household": 12,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4904.93",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 72,
+  "fields": {
+    "created_at": "2025-11-16T21:21:05.163Z",
+    "updated_at": "2025-11-17T01:24:20.206Z",
+    "household": 12,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4884.03",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 73,
+  "fields": {
+    "created_at": "2025-11-16T21:21:11.268Z",
+    "updated_at": "2025-11-17T01:24:19.882Z",
+    "household": 13,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "3977.70",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 74,
+  "fields": {
+    "created_at": "2025-11-16T21:21:11.285Z",
+    "updated_at": "2025-11-17T01:24:19.958Z",
+    "household": 13,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3066.53",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 75,
+  "fields": {
+    "created_at": "2025-11-16T21:21:11.302Z",
+    "updated_at": "2025-11-17T01:24:20.025Z",
+    "household": 13,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3282.82",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 76,
+  "fields": {
+    "created_at": "2025-11-16T21:21:11.319Z",
+    "updated_at": "2025-11-17T01:24:20.079Z",
+    "household": 13,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3961.41",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 77,
+  "fields": {
+    "created_at": "2025-11-16T21:21:11.336Z",
+    "updated_at": "2025-11-17T01:24:20.142Z",
+    "household": 13,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2502.79",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 78,
+  "fields": {
+    "created_at": "2025-11-16T21:21:11.352Z",
+    "updated_at": "2025-11-17T01:24:20.205Z",
+    "household": 13,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2697.08",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 79,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.739Z",
+    "updated_at": "2025-11-17T01:24:19.881Z",
+    "household": 14,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2750.32",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 80,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.756Z",
+    "updated_at": "2025-11-17T01:24:19.956Z",
+    "household": 14,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2143.01",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 81,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.771Z",
+    "updated_at": "2025-11-17T01:24:20.024Z",
+    "household": 14,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4078.56",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 82,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.787Z",
+    "updated_at": "2025-11-17T01:24:20.078Z",
+    "household": 14,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4655.37",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 83,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.804Z",
+    "updated_at": "2025-11-17T01:24:20.141Z",
+    "household": 14,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2049.85",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 84,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.820Z",
+    "updated_at": "2025-11-17T01:24:20.204Z",
+    "household": 14,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2480.32",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 85,
+  "fields": {
+    "created_at": "2025-11-16T21:21:26.229Z",
+    "updated_at": "2025-11-17T01:24:19.880Z",
+    "household": 15,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4408.88",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 86,
+  "fields": {
+    "created_at": "2025-11-16T21:21:26.244Z",
+    "updated_at": "2025-11-17T01:24:19.953Z",
+    "household": 15,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2965.96",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 87,
+  "fields": {
+    "created_at": "2025-11-16T21:21:26.261Z",
+    "updated_at": "2025-11-17T01:24:20.023Z",
+    "household": 15,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3111.74",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 88,
+  "fields": {
+    "created_at": "2025-11-16T21:21:26.277Z",
+    "updated_at": "2025-11-17T01:24:20.077Z",
+    "household": 15,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4346.48",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 89,
+  "fields": {
+    "created_at": "2025-11-16T21:21:26.293Z",
+    "updated_at": "2025-11-17T01:24:20.140Z",
+    "household": 15,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3487.33",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 90,
+  "fields": {
+    "created_at": "2025-11-16T21:21:26.310Z",
+    "updated_at": "2025-11-17T01:24:20.202Z",
+    "household": 15,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4750.70",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 91,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.238Z",
+    "updated_at": "2025-11-17T01:24:19.879Z",
+    "household": 16,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2157.12",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 92,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.254Z",
+    "updated_at": "2025-11-17T01:24:19.950Z",
+    "household": 16,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2186.96",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 93,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.271Z",
+    "updated_at": "2025-11-17T01:24:20.023Z",
+    "household": 16,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2257.52",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 94,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.286Z",
+    "updated_at": "2025-11-17T01:24:20.076Z",
+    "household": 16,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3655.62",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 95,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.303Z",
+    "updated_at": "2025-11-17T01:24:20.140Z",
+    "household": 16,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2780.44",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 96,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.319Z",
+    "updated_at": "2025-11-17T01:24:20.200Z",
+    "household": 16,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2530.56",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 97,
+  "fields": {
+    "created_at": "2025-11-16T21:21:40.922Z",
+    "updated_at": "2025-11-17T01:24:19.878Z",
+    "household": 17,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "3686.29",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 98,
+  "fields": {
+    "created_at": "2025-11-16T21:21:40.939Z",
+    "updated_at": "2025-11-17T01:24:19.949Z",
+    "household": 17,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4935.94",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 99,
+  "fields": {
+    "created_at": "2025-11-16T21:21:40.956Z",
+    "updated_at": "2025-11-17T01:24:20.022Z",
+    "household": 17,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3645.52",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 100,
+  "fields": {
+    "created_at": "2025-11-16T21:21:40.973Z",
+    "updated_at": "2025-11-17T01:24:20.076Z",
+    "household": 17,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3010.66",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 101,
+  "fields": {
+    "created_at": "2025-11-16T21:21:40.989Z",
+    "updated_at": "2025-11-17T01:24:20.139Z",
+    "household": 17,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3810.97",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 102,
+  "fields": {
+    "created_at": "2025-11-16T21:21:41.005Z",
+    "updated_at": "2025-11-17T01:24:20.199Z",
+    "household": 17,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4684.19",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 103,
+  "fields": {
+    "created_at": "2025-11-16T21:21:51.254Z",
+    "updated_at": "2025-11-17T01:24:19.877Z",
+    "household": 18,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2437.02",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 104,
+  "fields": {
+    "created_at": "2025-11-16T21:21:51.270Z",
+    "updated_at": "2025-11-17T01:24:19.948Z",
+    "household": 18,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4769.07",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 105,
+  "fields": {
+    "created_at": "2025-11-16T21:21:51.286Z",
+    "updated_at": "2025-11-17T01:24:20.021Z",
+    "household": 18,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4676.28",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 106,
+  "fields": {
+    "created_at": "2025-11-16T21:21:51.302Z",
+    "updated_at": "2025-11-17T01:24:20.075Z",
+    "household": 18,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4496.59",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 107,
+  "fields": {
+    "created_at": "2025-11-16T21:21:51.318Z",
+    "updated_at": "2025-11-17T01:24:20.138Z",
+    "household": 18,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4412.39",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 108,
+  "fields": {
+    "created_at": "2025-11-16T21:21:51.335Z",
+    "updated_at": "2025-11-17T01:24:20.198Z",
+    "household": 18,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4619.73",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 109,
+  "fields": {
+    "created_at": "2025-11-16T21:21:56.790Z",
+    "updated_at": "2025-11-17T01:24:19.876Z",
+    "household": 19,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2288.53",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 110,
+  "fields": {
+    "created_at": "2025-11-16T21:21:56.807Z",
+    "updated_at": "2025-11-17T01:24:19.947Z",
+    "household": 19,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4906.34",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 111,
+  "fields": {
+    "created_at": "2025-11-16T21:21:56.825Z",
+    "updated_at": "2025-11-17T01:24:20.020Z",
+    "household": 19,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4259.76",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 112,
+  "fields": {
+    "created_at": "2025-11-16T21:21:56.841Z",
+    "updated_at": "2025-11-17T01:24:20.074Z",
+    "household": 19,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2723.99",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 113,
+  "fields": {
+    "created_at": "2025-11-16T21:21:56.859Z",
+    "updated_at": "2025-11-17T01:24:20.136Z",
+    "household": 19,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3540.37",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 114,
+  "fields": {
+    "created_at": "2025-11-16T21:21:56.875Z",
+    "updated_at": "2025-11-17T01:24:20.197Z",
+    "household": 19,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3764.78",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 115,
+  "fields": {
+    "created_at": "2025-11-16T21:22:05.543Z",
+    "updated_at": "2025-11-17T01:24:19.875Z",
+    "household": 20,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2069.34",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 116,
+  "fields": {
+    "created_at": "2025-11-16T21:22:05.559Z",
+    "updated_at": "2025-11-17T01:24:19.946Z",
+    "household": 20,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4844.72",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 117,
+  "fields": {
+    "created_at": "2025-11-16T21:22:05.575Z",
+    "updated_at": "2025-11-17T01:24:20.019Z",
+    "household": 20,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2289.04",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 118,
+  "fields": {
+    "created_at": "2025-11-16T21:22:05.591Z",
+    "updated_at": "2025-11-17T01:24:20.073Z",
+    "household": 20,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4974.40",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 119,
+  "fields": {
+    "created_at": "2025-11-16T21:22:05.607Z",
+    "updated_at": "2025-11-17T01:24:20.134Z",
+    "household": 20,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2522.30",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 120,
+  "fields": {
+    "created_at": "2025-11-16T21:22:05.624Z",
+    "updated_at": "2025-11-17T01:24:20.196Z",
+    "household": 20,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4648.45",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 121,
+  "fields": {
+    "created_at": "2025-11-16T21:22:13.616Z",
+    "updated_at": "2025-11-17T01:24:19.873Z",
+    "household": 21,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2966.18",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 122,
+  "fields": {
+    "created_at": "2025-11-16T21:22:13.632Z",
+    "updated_at": "2025-11-17T01:24:19.945Z",
+    "household": 21,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2676.32",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 123,
+  "fields": {
+    "created_at": "2025-11-16T21:22:13.648Z",
+    "updated_at": "2025-11-17T01:24:20.019Z",
+    "household": 21,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3222.09",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 124,
+  "fields": {
+    "created_at": "2025-11-16T21:22:13.665Z",
+    "updated_at": "2025-11-17T01:24:20.072Z",
+    "household": 21,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3383.04",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 125,
+  "fields": {
+    "created_at": "2025-11-16T21:22:13.682Z",
+    "updated_at": "2025-11-17T01:24:20.133Z",
+    "household": 21,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3168.76",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 126,
+  "fields": {
+    "created_at": "2025-11-16T21:22:13.697Z",
+    "updated_at": "2025-11-17T01:24:20.195Z",
+    "household": 21,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3917.86",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 127,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.631Z",
+    "updated_at": "2025-11-17T01:24:19.870Z",
+    "household": 22,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4129.05",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 128,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.646Z",
+    "updated_at": "2025-11-17T01:24:19.944Z",
+    "household": 22,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3241.42",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 129,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.663Z",
+    "updated_at": "2025-11-17T01:24:20.017Z",
+    "household": 22,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2048.12",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 130,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.679Z",
+    "updated_at": "2025-11-17T01:24:20.072Z",
+    "household": 22,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2136.45",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 131,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.695Z",
+    "updated_at": "2025-11-17T01:24:20.132Z",
+    "household": 22,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4004.78",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 132,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.711Z",
+    "updated_at": "2025-11-17T01:24:20.194Z",
+    "household": 22,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3859.60",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 133,
+  "fields": {
+    "created_at": "2025-11-16T21:22:24.097Z",
+    "updated_at": "2025-11-17T01:24:19.867Z",
+    "household": 23,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4733.13",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 134,
+  "fields": {
+    "created_at": "2025-11-16T21:22:24.113Z",
+    "updated_at": "2025-11-17T01:24:19.943Z",
+    "household": 23,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3931.05",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 135,
+  "fields": {
+    "created_at": "2025-11-16T21:22:24.130Z",
+    "updated_at": "2025-11-17T01:24:20.016Z",
+    "household": 23,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3257.03",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 136,
+  "fields": {
+    "created_at": "2025-11-16T21:22:24.147Z",
+    "updated_at": "2025-11-17T01:24:20.071Z",
+    "household": 23,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4573.67",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 137,
+  "fields": {
+    "created_at": "2025-11-16T21:22:24.163Z",
+    "updated_at": "2025-11-17T01:24:20.131Z",
+    "household": 23,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3472.03",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 138,
+  "fields": {
+    "created_at": "2025-11-16T21:22:24.180Z",
+    "updated_at": "2025-11-17T01:24:20.193Z",
+    "household": 23,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2176.73",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 139,
+  "fields": {
+    "created_at": "2025-11-16T21:22:33.449Z",
+    "updated_at": "2025-11-17T01:24:19.866Z",
+    "household": 24,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4076.71",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 140,
+  "fields": {
+    "created_at": "2025-11-16T21:22:33.466Z",
+    "updated_at": "2025-11-17T01:24:19.943Z",
+    "household": 24,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3399.57",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 141,
+  "fields": {
+    "created_at": "2025-11-16T21:22:33.483Z",
+    "updated_at": "2025-11-17T01:24:20.016Z",
+    "household": 24,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4602.34",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 142,
+  "fields": {
+    "created_at": "2025-11-16T21:22:33.499Z",
+    "updated_at": "2025-11-17T01:24:20.070Z",
+    "household": 24,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3343.13",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 143,
+  "fields": {
+    "created_at": "2025-11-16T21:22:33.515Z",
+    "updated_at": "2025-11-17T01:24:20.130Z",
+    "household": 24,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2009.65",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 144,
+  "fields": {
+    "created_at": "2025-11-16T21:22:33.530Z",
+    "updated_at": "2025-11-17T01:24:20.191Z",
+    "household": 24,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3278.94",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 145,
+  "fields": {
+    "created_at": "2025-11-16T21:22:43.517Z",
+    "updated_at": "2025-11-17T01:24:19.866Z",
+    "household": 25,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4773.31",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 146,
+  "fields": {
+    "created_at": "2025-11-16T21:22:43.534Z",
+    "updated_at": "2025-11-17T01:24:19.942Z",
+    "household": 25,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4296.39",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 147,
+  "fields": {
+    "created_at": "2025-11-16T21:22:43.551Z",
+    "updated_at": "2025-11-17T01:24:20.015Z",
+    "household": 25,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3353.13",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 148,
+  "fields": {
+    "created_at": "2025-11-16T21:22:43.568Z",
+    "updated_at": "2025-11-17T01:24:20.068Z",
+    "household": 25,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4719.91",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 149,
+  "fields": {
+    "created_at": "2025-11-16T21:22:43.585Z",
+    "updated_at": "2025-11-17T01:24:20.129Z",
+    "household": 25,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3330.46",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 150,
+  "fields": {
+    "created_at": "2025-11-16T21:22:43.600Z",
+    "updated_at": "2025-11-17T01:24:20.190Z",
+    "household": 25,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3296.22",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 151,
+  "fields": {
+    "created_at": "2025-11-16T21:22:48.830Z",
+    "updated_at": "2025-11-17T01:24:19.865Z",
+    "household": 26,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2400.52",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 152,
+  "fields": {
+    "created_at": "2025-11-16T21:22:48.846Z",
+    "updated_at": "2025-11-17T01:24:19.941Z",
+    "household": 26,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4731.38",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 153,
+  "fields": {
+    "created_at": "2025-11-16T21:22:48.863Z",
+    "updated_at": "2025-11-17T01:24:20.014Z",
+    "household": 26,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3543.57",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 154,
+  "fields": {
+    "created_at": "2025-11-16T21:22:48.879Z",
+    "updated_at": "2025-11-17T01:24:20.067Z",
+    "household": 26,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4334.73",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 155,
+  "fields": {
+    "created_at": "2025-11-16T21:22:48.895Z",
+    "updated_at": "2025-11-17T01:24:20.129Z",
+    "household": 26,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3152.53",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 156,
+  "fields": {
+    "created_at": "2025-11-16T21:22:48.912Z",
+    "updated_at": "2025-11-17T01:24:20.190Z",
+    "household": 26,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2832.86",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 157,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.058Z",
+    "updated_at": "2025-11-17T01:24:19.864Z",
+    "household": 27,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2456.79",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 158,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.074Z",
+    "updated_at": "2025-11-17T01:24:19.940Z",
+    "household": 27,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2923.35",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 159,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.091Z",
+    "updated_at": "2025-11-17T01:24:20.013Z",
+    "household": 27,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2126.87",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 160,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.107Z",
+    "updated_at": "2025-11-17T01:24:20.066Z",
+    "household": 27,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3010.72",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 161,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.124Z",
+    "updated_at": "2025-11-17T01:24:20.128Z",
+    "household": 27,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4267.25",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 162,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.141Z",
+    "updated_at": "2025-11-17T01:24:20.189Z",
+    "household": 27,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4122.11",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 163,
+  "fields": {
+    "created_at": "2025-11-16T21:22:59.256Z",
+    "updated_at": "2025-11-17T01:24:19.863Z",
+    "household": 28,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4665.43",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 164,
+  "fields": {
+    "created_at": "2025-11-16T21:22:59.272Z",
+    "updated_at": "2025-11-17T01:24:19.939Z",
+    "household": 28,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3372.95",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 165,
+  "fields": {
+    "created_at": "2025-11-16T21:22:59.289Z",
+    "updated_at": "2025-11-17T01:24:20.012Z",
+    "household": 28,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3578.20",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 166,
+  "fields": {
+    "created_at": "2025-11-16T21:22:59.306Z",
+    "updated_at": "2025-11-17T01:24:20.065Z",
+    "household": 28,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4496.03",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 167,
+  "fields": {
+    "created_at": "2025-11-16T21:22:59.322Z",
+    "updated_at": "2025-11-17T01:24:20.127Z",
+    "household": 28,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2556.04",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 168,
+  "fields": {
+    "created_at": "2025-11-16T21:22:59.339Z",
+    "updated_at": "2025-11-17T01:24:20.188Z",
+    "household": 28,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3785.72",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 169,
+  "fields": {
+    "created_at": "2025-11-16T21:23:03.548Z",
+    "updated_at": "2025-11-17T01:24:19.862Z",
+    "household": 29,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2777.05",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 170,
+  "fields": {
+    "created_at": "2025-11-16T21:23:03.564Z",
+    "updated_at": "2025-11-17T01:24:19.938Z",
+    "household": 29,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4928.42",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 171,
+  "fields": {
+    "created_at": "2025-11-16T21:23:03.581Z",
+    "updated_at": "2025-11-17T01:24:20.011Z",
+    "household": 29,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4956.44",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 172,
+  "fields": {
+    "created_at": "2025-11-16T21:23:03.597Z",
+    "updated_at": "2025-11-17T01:24:20.064Z",
+    "household": 29,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4263.23",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 173,
+  "fields": {
+    "created_at": "2025-11-16T21:23:03.614Z",
+    "updated_at": "2025-11-17T01:24:20.126Z",
+    "household": 29,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3517.00",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 174,
+  "fields": {
+    "created_at": "2025-11-16T21:23:03.631Z",
+    "updated_at": "2025-11-17T01:24:20.187Z",
+    "household": 29,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3708.45",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 175,
+  "fields": {
+    "created_at": "2025-11-16T21:23:10.911Z",
+    "updated_at": "2025-11-17T01:24:19.861Z",
+    "household": 30,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2887.34",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 176,
+  "fields": {
+    "created_at": "2025-11-16T21:23:10.927Z",
+    "updated_at": "2025-11-17T01:24:19.936Z",
+    "household": 30,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4870.15",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 177,
+  "fields": {
+    "created_at": "2025-11-16T21:23:10.951Z",
+    "updated_at": "2025-11-17T01:24:20.010Z",
+    "household": 30,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3424.65",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 178,
+  "fields": {
+    "created_at": "2025-11-16T21:23:10.968Z",
+    "updated_at": "2025-11-17T01:24:20.064Z",
+    "household": 30,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2954.46",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 179,
+  "fields": {
+    "created_at": "2025-11-16T21:23:10.985Z",
+    "updated_at": "2025-11-17T01:24:20.125Z",
+    "household": 30,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3442.24",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 180,
+  "fields": {
+    "created_at": "2025-11-16T21:23:11.001Z",
+    "updated_at": "2025-11-17T01:24:20.185Z",
+    "household": 30,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4717.43",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 181,
+  "fields": {
+    "created_at": "2025-11-16T21:23:19.100Z",
+    "updated_at": "2025-11-17T01:24:19.861Z",
+    "household": 31,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4069.56",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 182,
+  "fields": {
+    "created_at": "2025-11-16T21:23:19.116Z",
+    "updated_at": "2025-11-17T01:24:19.934Z",
+    "household": 31,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3514.98",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 183,
+  "fields": {
+    "created_at": "2025-11-16T21:23:19.133Z",
+    "updated_at": "2025-11-17T01:24:20.009Z",
+    "household": 31,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3487.86",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 184,
+  "fields": {
+    "created_at": "2025-11-16T21:23:19.149Z",
+    "updated_at": "2025-11-17T01:24:20.063Z",
+    "household": 31,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2977.79",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 185,
+  "fields": {
+    "created_at": "2025-11-16T21:23:19.165Z",
+    "updated_at": "2025-11-17T01:24:20.124Z",
+    "household": 31,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4329.72",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 186,
+  "fields": {
+    "created_at": "2025-11-16T21:23:19.181Z",
+    "updated_at": "2025-11-17T01:24:20.183Z",
+    "household": 31,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4157.77",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 187,
+  "fields": {
+    "created_at": "2025-11-16T21:23:25.740Z",
+    "updated_at": "2025-11-17T01:24:19.860Z",
+    "household": 32,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4974.66",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 188,
+  "fields": {
+    "created_at": "2025-11-16T21:23:25.821Z",
+    "updated_at": "2025-11-17T01:24:19.933Z",
+    "household": 32,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4109.59",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 189,
+  "fields": {
+    "created_at": "2025-11-16T21:23:25.903Z",
+    "updated_at": "2025-11-17T01:24:20.008Z",
+    "household": 32,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4156.65",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 190,
+  "fields": {
+    "created_at": "2025-11-16T21:23:25.983Z",
+    "updated_at": "2025-11-17T01:24:20.062Z",
+    "household": 32,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2181.56",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 191,
+  "fields": {
+    "created_at": "2025-11-16T21:23:26.070Z",
+    "updated_at": "2025-11-17T01:24:20.123Z",
+    "household": 32,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2267.77",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 192,
+  "fields": {
+    "created_at": "2025-11-16T21:23:26.152Z",
+    "updated_at": "2025-11-17T01:24:20.183Z",
+    "household": 32,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4429.70",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 193,
+  "fields": {
+    "created_at": "2025-11-16T21:23:35.965Z",
+    "updated_at": "2025-11-17T01:24:19.859Z",
+    "household": 33,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2360.67",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 194,
+  "fields": {
+    "created_at": "2025-11-16T21:23:35.981Z",
+    "updated_at": "2025-11-17T01:24:19.932Z",
+    "household": 33,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2271.24",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 195,
+  "fields": {
+    "created_at": "2025-11-16T21:23:35.998Z",
+    "updated_at": "2025-11-17T01:24:20.007Z",
+    "household": 33,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3475.97",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 196,
+  "fields": {
+    "created_at": "2025-11-16T21:23:36.014Z",
+    "updated_at": "2025-11-17T01:24:20.061Z",
+    "household": 33,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4625.87",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 197,
+  "fields": {
+    "created_at": "2025-11-16T21:23:36.031Z",
+    "updated_at": "2025-11-17T01:24:20.122Z",
+    "household": 33,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4111.61",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 198,
+  "fields": {
+    "created_at": "2025-11-16T21:23:36.048Z",
+    "updated_at": "2025-11-17T01:24:20.182Z",
+    "household": 33,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4387.84",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 199,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.367Z",
+    "updated_at": "2025-11-17T01:24:19.857Z",
+    "household": 34,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4387.74",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 200,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.383Z",
+    "updated_at": "2025-11-17T01:24:19.931Z",
+    "household": 34,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2855.10",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 201,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.399Z",
+    "updated_at": "2025-11-17T01:24:20.006Z",
+    "household": 34,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3644.25",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 202,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.416Z",
+    "updated_at": "2025-11-17T01:24:20.060Z",
+    "household": 34,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4013.53",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 203,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.435Z",
+    "updated_at": "2025-11-17T01:24:20.121Z",
+    "household": 34,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4977.64",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 204,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.455Z",
+    "updated_at": "2025-11-17T01:24:20.181Z",
+    "household": 34,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3355.97",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 205,
+  "fields": {
+    "created_at": "2025-11-16T21:23:51.898Z",
+    "updated_at": "2025-11-17T01:24:19.856Z",
+    "household": 35,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2660.02",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 206,
+  "fields": {
+    "created_at": "2025-11-16T21:23:51.916Z",
+    "updated_at": "2025-11-17T01:24:19.931Z",
+    "household": 35,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3309.03",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 207,
+  "fields": {
+    "created_at": "2025-11-16T21:23:51.933Z",
+    "updated_at": "2025-11-17T01:24:20.005Z",
+    "household": 35,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3592.76",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 208,
+  "fields": {
+    "created_at": "2025-11-16T21:23:51.951Z",
+    "updated_at": "2025-11-17T01:24:20.060Z",
+    "household": 35,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4386.95",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 209,
+  "fields": {
+    "created_at": "2025-11-16T21:23:51.971Z",
+    "updated_at": "2025-11-17T01:24:20.120Z",
+    "household": 35,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4003.33",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 210,
+  "fields": {
+    "created_at": "2025-11-16T21:23:51.989Z",
+    "updated_at": "2025-11-17T01:24:20.180Z",
+    "household": 35,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3721.93",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 211,
+  "fields": {
+    "created_at": "2025-11-16T21:24:00.366Z",
+    "updated_at": "2025-11-17T01:24:19.853Z",
+    "household": 36,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2763.36",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 212,
+  "fields": {
+    "created_at": "2025-11-16T21:24:00.382Z",
+    "updated_at": "2025-11-17T01:24:19.930Z",
+    "household": 36,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4318.28",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 213,
+  "fields": {
+    "created_at": "2025-11-16T21:24:00.399Z",
+    "updated_at": "2025-11-17T01:24:20.004Z",
+    "household": 36,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2509.82",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 214,
+  "fields": {
+    "created_at": "2025-11-16T21:24:00.416Z",
+    "updated_at": "2025-11-17T01:24:20.059Z",
+    "household": 36,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4326.99",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 215,
+  "fields": {
+    "created_at": "2025-11-16T21:24:00.433Z",
+    "updated_at": "2025-11-17T01:24:20.119Z",
+    "household": 36,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2255.24",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 216,
+  "fields": {
+    "created_at": "2025-11-16T21:24:00.449Z",
+    "updated_at": "2025-11-17T01:24:20.179Z",
+    "household": 36,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3516.44",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 217,
+  "fields": {
+    "created_at": "2025-11-16T21:24:04.890Z",
+    "updated_at": "2025-11-17T01:24:19.851Z",
+    "household": 37,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2527.75",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 218,
+  "fields": {
+    "created_at": "2025-11-16T21:24:04.907Z",
+    "updated_at": "2025-11-17T01:24:19.929Z",
+    "household": 37,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3518.92",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 219,
+  "fields": {
+    "created_at": "2025-11-16T21:24:04.924Z",
+    "updated_at": "2025-11-17T01:24:20.003Z",
+    "household": 37,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3914.22",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 220,
+  "fields": {
+    "created_at": "2025-11-16T21:24:04.940Z",
+    "updated_at": "2025-11-17T01:24:20.058Z",
+    "household": 37,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2928.42",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 221,
+  "fields": {
+    "created_at": "2025-11-16T21:24:04.957Z",
+    "updated_at": "2025-11-17T01:24:20.118Z",
+    "household": 37,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4231.63",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 222,
+  "fields": {
+    "created_at": "2025-11-16T21:24:04.974Z",
+    "updated_at": "2025-11-17T01:24:20.178Z",
+    "household": 37,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3513.18",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 223,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.630Z",
+    "updated_at": "2025-11-17T01:24:19.849Z",
+    "household": 38,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4929.01",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 224,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.645Z",
+    "updated_at": "2025-11-17T01:24:19.928Z",
+    "household": 38,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2524.07",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 225,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.662Z",
+    "updated_at": "2025-11-17T01:24:20.001Z",
+    "household": 38,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2325.25",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 226,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.678Z",
+    "updated_at": "2025-11-17T01:24:20.057Z",
+    "household": 38,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3141.20",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 227,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.693Z",
+    "updated_at": "2025-11-17T01:24:20.116Z",
+    "household": 38,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3692.07",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 228,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.711Z",
+    "updated_at": "2025-11-17T01:24:20.177Z",
+    "household": 38,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3795.41",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 229,
+  "fields": {
+    "created_at": "2025-11-16T21:24:17.013Z",
+    "updated_at": "2025-11-17T01:24:19.846Z",
+    "household": 39,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4963.36",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 230,
+  "fields": {
+    "created_at": "2025-11-16T21:24:17.030Z",
+    "updated_at": "2025-11-17T01:24:19.927Z",
+    "household": 39,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2670.80",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 231,
+  "fields": {
+    "created_at": "2025-11-16T21:24:17.048Z",
+    "updated_at": "2025-11-17T01:24:20.000Z",
+    "household": 39,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3449.71",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 232,
+  "fields": {
+    "created_at": "2025-11-16T21:24:17.064Z",
+    "updated_at": "2025-11-17T01:24:20.056Z",
+    "household": 39,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4825.34",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 233,
+  "fields": {
+    "created_at": "2025-11-16T21:24:17.081Z",
+    "updated_at": "2025-11-17T01:24:20.115Z",
+    "household": 39,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2836.79",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 234,
+  "fields": {
+    "created_at": "2025-11-16T21:24:17.097Z",
+    "updated_at": "2025-11-17T01:24:20.176Z",
+    "household": 39,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3334.53",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 235,
+  "fields": {
+    "created_at": "2025-11-16T21:24:27.145Z",
+    "updated_at": "2025-11-17T01:24:19.845Z",
+    "household": 40,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4712.73",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 236,
+  "fields": {
+    "created_at": "2025-11-16T21:24:27.161Z",
+    "updated_at": "2025-11-17T01:24:19.927Z",
+    "household": 40,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2985.93",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 237,
+  "fields": {
+    "created_at": "2025-11-16T21:24:27.178Z",
+    "updated_at": "2025-11-17T01:24:19.999Z",
+    "household": 40,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2207.61",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 238,
+  "fields": {
+    "created_at": "2025-11-16T21:24:27.194Z",
+    "updated_at": "2025-11-17T01:24:20.056Z",
+    "household": 40,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4715.15",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 239,
+  "fields": {
+    "created_at": "2025-11-16T21:24:27.211Z",
+    "updated_at": "2025-11-17T01:24:20.114Z",
+    "household": 40,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3784.57",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 240,
+  "fields": {
+    "created_at": "2025-11-16T21:24:27.228Z",
+    "updated_at": "2025-11-17T01:24:20.175Z",
+    "household": 40,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2187.40",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 241,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.562Z",
+    "updated_at": "2025-11-17T01:24:19.843Z",
+    "household": 41,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2217.93",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 242,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.578Z",
+    "updated_at": "2025-11-17T01:24:19.926Z",
+    "household": 41,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2200.46",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 243,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.595Z",
+    "updated_at": "2025-11-17T01:24:19.998Z",
+    "household": 41,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4699.02",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 244,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.612Z",
+    "updated_at": "2025-11-17T01:24:20.055Z",
+    "household": 41,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3256.32",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 245,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.628Z",
+    "updated_at": "2025-11-17T01:24:20.113Z",
+    "household": 41,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3503.22",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 246,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.645Z",
+    "updated_at": "2025-11-17T01:24:20.174Z",
+    "household": 41,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4000.32",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 247,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.014Z",
+    "updated_at": "2025-11-17T01:24:19.842Z",
+    "household": 42,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4513.60",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 248,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.031Z",
+    "updated_at": "2025-11-17T01:24:19.925Z",
+    "household": 42,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3738.95",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 249,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.047Z",
+    "updated_at": "2025-11-17T01:24:19.997Z",
+    "household": 42,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2572.98",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 250,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.064Z",
+    "updated_at": "2025-11-17T01:24:20.054Z",
+    "household": 42,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2163.54",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 251,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.080Z",
+    "updated_at": "2025-11-17T01:24:20.112Z",
+    "household": 42,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4780.23",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 252,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.097Z",
+    "updated_at": "2025-11-17T01:24:20.173Z",
+    "household": 42,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2203.39",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 253,
+  "fields": {
+    "created_at": "2025-11-16T21:24:50.181Z",
+    "updated_at": "2025-11-17T01:24:19.839Z",
+    "household": 43,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4384.97",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 254,
+  "fields": {
+    "created_at": "2025-11-16T21:24:50.198Z",
+    "updated_at": "2025-11-17T01:24:19.924Z",
+    "household": 43,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4071.37",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 255,
+  "fields": {
+    "created_at": "2025-11-16T21:24:50.214Z",
+    "updated_at": "2025-11-17T01:24:19.996Z",
+    "household": 43,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2276.67",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 256,
+  "fields": {
+    "created_at": "2025-11-16T21:24:50.231Z",
+    "updated_at": "2025-11-17T01:24:20.052Z",
+    "household": 43,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3204.82",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 257,
+  "fields": {
+    "created_at": "2025-11-16T21:24:50.248Z",
+    "updated_at": "2025-11-17T01:24:20.111Z",
+    "household": 43,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4436.93",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 258,
+  "fields": {
+    "created_at": "2025-11-16T21:24:50.264Z",
+    "updated_at": "2025-11-17T01:24:20.173Z",
+    "household": 43,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3336.16",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 259,
+  "fields": {
+    "created_at": "2025-11-16T21:24:59.071Z",
+    "updated_at": "2025-11-17T01:24:19.837Z",
+    "household": 44,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2643.85",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 260,
+  "fields": {
+    "created_at": "2025-11-16T21:24:59.088Z",
+    "updated_at": "2025-11-17T01:24:19.922Z",
+    "household": 44,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3673.39",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 261,
+  "fields": {
+    "created_at": "2025-11-16T21:24:59.104Z",
+    "updated_at": "2025-11-17T01:24:19.995Z",
+    "household": 44,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3023.86",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 262,
+  "fields": {
+    "created_at": "2025-11-16T21:24:59.121Z",
+    "updated_at": "2025-11-17T01:24:20.051Z",
+    "household": 44,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3916.42",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 263,
+  "fields": {
+    "created_at": "2025-11-16T21:24:59.137Z",
+    "updated_at": "2025-11-17T01:24:20.110Z",
+    "household": 44,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2315.96",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 264,
+  "fields": {
+    "created_at": "2025-11-16T21:24:59.153Z",
+    "updated_at": "2025-11-17T01:24:20.172Z",
+    "household": 44,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3363.92",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 265,
+  "fields": {
+    "created_at": "2025-11-16T21:25:03.606Z",
+    "updated_at": "2025-11-17T01:24:19.835Z",
+    "household": 45,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4581.24",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 266,
+  "fields": {
+    "created_at": "2025-11-16T21:25:03.623Z",
+    "updated_at": "2025-11-17T01:24:19.921Z",
+    "household": 45,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3462.45",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 267,
+  "fields": {
+    "created_at": "2025-11-16T21:25:03.640Z",
+    "updated_at": "2025-11-17T01:24:19.994Z",
+    "household": 45,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3781.53",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 268,
+  "fields": {
+    "created_at": "2025-11-16T21:25:03.657Z",
+    "updated_at": "2025-11-17T01:24:20.050Z",
+    "household": 45,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2866.88",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 269,
+  "fields": {
+    "created_at": "2025-11-16T21:25:03.675Z",
+    "updated_at": "2025-11-17T01:24:20.110Z",
+    "household": 45,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4569.18",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 270,
+  "fields": {
+    "created_at": "2025-11-16T21:25:03.692Z",
+    "updated_at": "2025-11-17T01:24:20.171Z",
+    "household": 45,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2792.40",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 271,
+  "fields": {
+    "created_at": "2025-11-16T21:25:11.467Z",
+    "updated_at": "2025-11-17T01:24:19.833Z",
+    "household": 46,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2317.22",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 272,
+  "fields": {
+    "created_at": "2025-11-16T21:25:11.483Z",
+    "updated_at": "2025-11-17T01:24:19.919Z",
+    "household": 46,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4477.88",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 273,
+  "fields": {
+    "created_at": "2025-11-16T21:25:11.499Z",
+    "updated_at": "2025-11-17T01:24:19.993Z",
+    "household": 46,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2598.68",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 274,
+  "fields": {
+    "created_at": "2025-11-16T21:25:11.516Z",
+    "updated_at": "2025-11-17T01:24:20.049Z",
+    "household": 46,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3567.56",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 275,
+  "fields": {
+    "created_at": "2025-11-16T21:25:11.532Z",
+    "updated_at": "2025-11-17T01:24:20.109Z",
+    "household": 46,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3235.43",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 276,
+  "fields": {
+    "created_at": "2025-11-16T21:25:11.549Z",
+    "updated_at": "2025-11-17T01:24:20.170Z",
+    "household": 46,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4964.26",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 277,
+  "fields": {
+    "created_at": "2025-11-16T21:25:20.701Z",
+    "updated_at": "2025-11-17T01:24:19.832Z",
+    "household": 47,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4202.15",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 278,
+  "fields": {
+    "created_at": "2025-11-16T21:25:20.718Z",
+    "updated_at": "2025-11-17T01:24:19.917Z",
+    "household": 47,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2938.98",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 279,
+  "fields": {
+    "created_at": "2025-11-16T21:25:20.735Z",
+    "updated_at": "2025-11-17T01:24:19.992Z",
+    "household": 47,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4443.18",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 280,
+  "fields": {
+    "created_at": "2025-11-16T21:25:20.751Z",
+    "updated_at": "2025-11-17T01:24:20.048Z",
+    "household": 47,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4491.92",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 281,
+  "fields": {
+    "created_at": "2025-11-16T21:25:20.768Z",
+    "updated_at": "2025-11-17T01:24:20.108Z",
+    "household": 47,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3497.76",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 282,
+  "fields": {
+    "created_at": "2025-11-16T21:25:20.784Z",
+    "updated_at": "2025-11-17T01:24:20.168Z",
+    "household": 47,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3838.55",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 283,
+  "fields": {
+    "created_at": "2025-11-16T21:25:26.004Z",
+    "updated_at": "2025-11-17T01:24:19.831Z",
+    "household": 48,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "3589.05",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 284,
+  "fields": {
+    "created_at": "2025-11-16T21:25:26.020Z",
+    "updated_at": "2025-11-17T01:24:19.915Z",
+    "household": 48,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2319.48",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 285,
+  "fields": {
+    "created_at": "2025-11-16T21:25:26.037Z",
+    "updated_at": "2025-11-17T01:24:19.991Z",
+    "household": 48,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2142.59",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 286,
+  "fields": {
+    "created_at": "2025-11-16T21:25:26.054Z",
+    "updated_at": "2025-11-17T01:24:20.047Z",
+    "household": 48,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3643.21",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 287,
+  "fields": {
+    "created_at": "2025-11-16T21:25:26.070Z",
+    "updated_at": "2025-11-17T01:24:20.107Z",
+    "household": 48,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3069.79",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 288,
+  "fields": {
+    "created_at": "2025-11-16T21:25:26.087Z",
+    "updated_at": "2025-11-17T01:24:20.167Z",
+    "household": 48,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3435.24",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 289,
+  "fields": {
+    "created_at": "2025-11-16T21:25:30.336Z",
+    "updated_at": "2025-11-17T01:24:19.830Z",
+    "household": 49,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2808.33",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 290,
+  "fields": {
+    "created_at": "2025-11-16T21:25:30.352Z",
+    "updated_at": "2025-11-17T01:24:19.914Z",
+    "household": 49,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4469.83",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 291,
+  "fields": {
+    "created_at": "2025-11-16T21:25:30.368Z",
+    "updated_at": "2025-11-17T01:24:19.990Z",
+    "household": 49,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3446.31",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 292,
+  "fields": {
+    "created_at": "2025-11-16T21:25:30.385Z",
+    "updated_at": "2025-11-17T01:24:20.046Z",
+    "household": 49,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4498.56",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 293,
+  "fields": {
+    "created_at": "2025-11-16T21:25:30.401Z",
+    "updated_at": "2025-11-17T01:24:20.106Z",
+    "household": 49,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2593.04",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 294,
+  "fields": {
+    "created_at": "2025-11-16T21:25:30.417Z",
+    "updated_at": "2025-11-17T01:24:20.166Z",
+    "household": 49,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4308.03",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 295,
+  "fields": {
+    "created_at": "2025-11-16T21:25:35.696Z",
+    "updated_at": "2025-11-17T01:24:19.828Z",
+    "household": 50,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "3098.66",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 296,
+  "fields": {
+    "created_at": "2025-11-16T21:25:35.713Z",
+    "updated_at": "2025-11-17T01:24:19.913Z",
+    "household": 50,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2108.15",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 297,
+  "fields": {
+    "created_at": "2025-11-16T21:25:35.728Z",
+    "updated_at": "2025-11-17T01:24:19.989Z",
+    "household": 50,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2746.83",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 298,
+  "fields": {
+    "created_at": "2025-11-16T21:25:35.744Z",
+    "updated_at": "2025-11-17T01:24:20.046Z",
+    "household": 50,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3266.82",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 299,
+  "fields": {
+    "created_at": "2025-11-16T21:25:35.760Z",
+    "updated_at": "2025-11-17T01:24:20.105Z",
+    "household": 50,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3199.16",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 300,
+  "fields": {
+    "created_at": "2025-11-16T21:25:35.776Z",
+    "updated_at": "2025-11-17T01:24:20.165Z",
+    "household": 50,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4075.68",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 301,
+  "fields": {
+    "created_at": "2025-11-16T21:25:43.287Z",
+    "updated_at": "2025-11-17T01:24:19.827Z",
+    "household": 51,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2379.53",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 302,
+  "fields": {
+    "created_at": "2025-11-16T21:25:43.304Z",
+    "updated_at": "2025-11-17T01:24:19.912Z",
+    "household": 51,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4472.54",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 303,
+  "fields": {
+    "created_at": "2025-11-16T21:25:43.321Z",
+    "updated_at": "2025-11-17T01:24:19.987Z",
+    "household": 51,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2457.85",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 304,
+  "fields": {
+    "created_at": "2025-11-16T21:25:43.338Z",
+    "updated_at": "2025-11-17T01:24:20.045Z",
+    "household": 51,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3539.28",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 305,
+  "fields": {
+    "created_at": "2025-11-16T21:25:43.354Z",
+    "updated_at": "2025-11-17T01:24:20.104Z",
+    "household": 51,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4865.82",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 306,
+  "fields": {
+    "created_at": "2025-11-16T21:25:43.371Z",
+    "updated_at": "2025-11-17T01:24:20.163Z",
+    "household": 51,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2335.77",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 307,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.730Z",
+    "updated_at": "2025-11-17T01:24:19.826Z",
+    "household": 52,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "3403.09",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 308,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.746Z",
+    "updated_at": "2025-11-17T01:24:19.911Z",
+    "household": 52,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3586.05",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 309,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.763Z",
+    "updated_at": "2025-11-17T01:24:19.986Z",
+    "household": 52,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3179.55",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 310,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.780Z",
+    "updated_at": "2025-11-17T01:24:20.044Z",
+    "household": 52,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2817.52",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 311,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.801Z",
+    "updated_at": "2025-11-17T01:24:20.102Z",
+    "household": 52,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2313.57",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 312,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.818Z",
+    "updated_at": "2025-11-17T01:24:20.162Z",
+    "household": 52,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3264.84",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 313,
+  "fields": {
+    "created_at": "2025-11-16T21:26:04.163Z",
+    "updated_at": "2025-11-17T01:24:19.825Z",
+    "household": 53,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4700.80",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 314,
+  "fields": {
+    "created_at": "2025-11-16T21:26:04.179Z",
+    "updated_at": "2025-11-17T01:24:19.910Z",
+    "household": 53,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2162.65",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 315,
+  "fields": {
+    "created_at": "2025-11-16T21:26:04.195Z",
+    "updated_at": "2025-11-17T01:24:19.984Z",
+    "household": 53,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3772.90",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 316,
+  "fields": {
+    "created_at": "2025-11-16T21:26:04.211Z",
+    "updated_at": "2025-11-17T01:24:20.043Z",
+    "household": 53,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4263.71",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 317,
+  "fields": {
+    "created_at": "2025-11-16T21:26:04.228Z",
+    "updated_at": "2025-11-17T01:24:20.100Z",
+    "household": 53,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4310.94",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 318,
+  "fields": {
+    "created_at": "2025-11-16T21:26:04.245Z",
+    "updated_at": "2025-11-17T01:24:20.161Z",
+    "household": 53,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3546.05",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 319,
+  "fields": {
+    "created_at": "2025-11-16T21:26:14.331Z",
+    "updated_at": "2025-11-17T01:24:19.823Z",
+    "household": 54,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2877.67",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 320,
+  "fields": {
+    "created_at": "2025-11-16T21:26:14.348Z",
+    "updated_at": "2025-11-17T01:24:19.909Z",
+    "household": 54,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3810.06",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 321,
+  "fields": {
+    "created_at": "2025-11-16T21:26:14.365Z",
+    "updated_at": "2025-11-17T01:24:19.983Z",
+    "household": 54,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3221.59",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 322,
+  "fields": {
+    "created_at": "2025-11-16T21:26:14.381Z",
+    "updated_at": "2025-11-17T01:24:20.042Z",
+    "household": 54,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2404.10",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 323,
+  "fields": {
+    "created_at": "2025-11-16T21:26:14.398Z",
+    "updated_at": "2025-11-17T01:24:20.099Z",
+    "household": 54,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3388.76",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 324,
+  "fields": {
+    "created_at": "2025-11-16T21:26:14.414Z",
+    "updated_at": "2025-11-17T01:24:20.160Z",
+    "household": 54,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4754.52",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 325,
+  "fields": {
+    "created_at": "2025-11-16T21:26:21.685Z",
+    "updated_at": "2025-11-17T01:24:19.821Z",
+    "household": 55,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2833.79",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 326,
+  "fields": {
+    "created_at": "2025-11-16T21:26:21.702Z",
+    "updated_at": "2025-11-17T01:24:19.908Z",
+    "household": 55,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2795.71",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 327,
+  "fields": {
+    "created_at": "2025-11-16T21:26:21.719Z",
+    "updated_at": "2025-11-17T01:24:19.982Z",
+    "household": 55,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "4294.34",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 328,
+  "fields": {
+    "created_at": "2025-11-16T21:26:21.736Z",
+    "updated_at": "2025-11-17T01:24:20.041Z",
+    "household": 55,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2702.36",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 329,
+  "fields": {
+    "created_at": "2025-11-16T21:26:21.752Z",
+    "updated_at": "2025-11-17T01:24:20.098Z",
+    "household": 55,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4405.24",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 330,
+  "fields": {
+    "created_at": "2025-11-16T21:26:21.768Z",
+    "updated_at": "2025-11-17T01:24:20.159Z",
+    "household": 55,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4971.40",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 331,
+  "fields": {
+    "created_at": "2025-11-16T21:26:32.171Z",
+    "updated_at": "2025-11-17T01:24:19.820Z",
+    "household": 56,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2649.10",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 332,
+  "fields": {
+    "created_at": "2025-11-16T21:26:32.187Z",
+    "updated_at": "2025-11-17T01:24:19.907Z",
+    "household": 56,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4008.90",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 333,
+  "fields": {
+    "created_at": "2025-11-16T21:26:32.205Z",
+    "updated_at": "2025-11-17T01:24:19.981Z",
+    "household": 56,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2806.30",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 334,
+  "fields": {
+    "created_at": "2025-11-16T21:26:32.228Z",
+    "updated_at": "2025-11-17T01:24:20.041Z",
+    "household": 56,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3937.65",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 335,
+  "fields": {
+    "created_at": "2025-11-16T21:26:32.245Z",
+    "updated_at": "2025-11-17T01:24:20.097Z",
+    "household": 56,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3756.55",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 336,
+  "fields": {
+    "created_at": "2025-11-16T21:26:32.261Z",
+    "updated_at": "2025-11-17T01:24:20.159Z",
+    "household": 56,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "3293.00",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 337,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.111Z",
+    "updated_at": "2025-11-17T01:24:19.818Z",
+    "household": 57,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4677.28",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 338,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.128Z",
+    "updated_at": "2025-11-17T01:24:19.906Z",
+    "household": 57,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "2489.31",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 339,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.145Z",
+    "updated_at": "2025-11-17T01:24:19.980Z",
+    "household": 57,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2146.97",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 340,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.161Z",
+    "updated_at": "2025-11-17T01:24:20.040Z",
+    "household": 57,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "3016.00",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 341,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.178Z",
+    "updated_at": "2025-11-17T01:24:20.096Z",
+    "household": 57,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4962.44",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 342,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.194Z",
+    "updated_at": "2025-11-17T01:24:20.158Z",
+    "household": 57,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2493.91",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 343,
+  "fields": {
+    "created_at": "2025-11-16T21:26:46.399Z",
+    "updated_at": "2025-11-17T01:24:19.816Z",
+    "household": 58,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2231.17",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 344,
+  "fields": {
+    "created_at": "2025-11-16T21:26:46.416Z",
+    "updated_at": "2025-11-17T01:24:19.905Z",
+    "household": 58,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4996.35",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 345,
+  "fields": {
+    "created_at": "2025-11-16T21:26:46.433Z",
+    "updated_at": "2025-11-17T01:24:19.978Z",
+    "household": 58,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2023.40",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 346,
+  "fields": {
+    "created_at": "2025-11-16T21:26:46.450Z",
+    "updated_at": "2025-11-17T01:24:20.039Z",
+    "household": 58,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4520.01",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 347,
+  "fields": {
+    "created_at": "2025-11-16T21:26:46.467Z",
+    "updated_at": "2025-11-17T01:24:20.095Z",
+    "household": 58,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2307.49",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 348,
+  "fields": {
+    "created_at": "2025-11-16T21:26:46.483Z",
+    "updated_at": "2025-11-17T01:24:20.157Z",
+    "household": 58,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2890.43",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 349,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.141Z",
+    "updated_at": "2025-11-17T01:24:19.815Z",
+    "household": 59,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4344.31",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 350,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.157Z",
+    "updated_at": "2025-11-17T01:24:19.901Z",
+    "household": 59,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4063.58",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 351,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.174Z",
+    "updated_at": "2025-11-17T01:24:19.977Z",
+    "household": 59,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "3402.11",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 352,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.190Z",
+    "updated_at": "2025-11-17T01:24:20.038Z",
+    "household": 59,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4423.09",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 353,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.207Z",
+    "updated_at": "2025-11-17T01:24:20.094Z",
+    "household": 59,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2196.80",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 354,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.224Z",
+    "updated_at": "2025-11-17T01:24:20.156Z",
+    "household": 59,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "2714.61",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 355,
+  "fields": {
+    "created_at": "2025-11-16T21:27:04.757Z",
+    "updated_at": "2025-11-17T01:24:19.815Z",
+    "household": 60,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2009.38",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 356,
+  "fields": {
+    "created_at": "2025-11-16T21:27:04.773Z",
+    "updated_at": "2025-11-17T01:24:19.900Z",
+    "household": 60,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "3113.69",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 357,
+  "fields": {
+    "created_at": "2025-11-16T21:27:04.790Z",
+    "updated_at": "2025-11-17T01:24:19.975Z",
+    "household": 60,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2917.26",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 358,
+  "fields": {
+    "created_at": "2025-11-16T21:27:04.806Z",
+    "updated_at": "2025-11-17T01:24:20.037Z",
+    "household": 60,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2296.48",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 359,
+  "fields": {
+    "created_at": "2025-11-16T21:27:04.822Z",
+    "updated_at": "2025-11-17T01:24:20.093Z",
+    "household": 60,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "3449.30",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 360,
+  "fields": {
+    "created_at": "2025-11-16T21:27:04.838Z",
+    "updated_at": "2025-11-17T01:24:20.155Z",
+    "household": 60,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4380.38",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 361,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.656Z",
+    "updated_at": "2025-11-17T01:24:19.814Z",
+    "household": 61,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "4722.22",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 362,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.673Z",
+    "updated_at": "2025-11-17T01:24:19.898Z",
+    "household": 61,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4088.50",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 363,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.690Z",
+    "updated_at": "2025-11-17T01:24:19.974Z",
+    "household": 61,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2206.18",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 364,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.706Z",
+    "updated_at": "2025-11-17T01:24:20.037Z",
+    "household": 61,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "4198.99",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 365,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.722Z",
+    "updated_at": "2025-11-17T01:24:20.092Z",
+    "household": 61,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "2418.30",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 366,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.739Z",
+    "updated_at": "2025-11-17T01:24:20.155Z",
+    "household": 61,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4620.91",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 367,
+  "fields": {
+    "created_at": "2025-11-16T21:27:20.659Z",
+    "updated_at": "2025-11-17T01:24:19.812Z",
+    "household": 62,
+    "name": "November 2025 Budget",
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-30",
+    "cycle_type": "monthly",
+    "total_amount": "2321.56",
+    "status": "active",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 368,
+  "fields": {
+    "created_at": "2025-11-16T21:27:20.675Z",
+    "updated_at": "2025-11-17T01:24:19.897Z",
+    "household": 62,
+    "name": "October 2025 Budget",
+    "start_date": "2025-10-01",
+    "end_date": "2025-10-31",
+    "cycle_type": "monthly",
+    "total_amount": "4880.88",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 369,
+  "fields": {
+    "created_at": "2025-11-16T21:27:20.692Z",
+    "updated_at": "2025-11-17T01:24:19.974Z",
+    "household": 62,
+    "name": "September 2025 Budget",
+    "start_date": "2025-09-01",
+    "end_date": "2025-09-30",
+    "cycle_type": "monthly",
+    "total_amount": "2067.00",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 370,
+  "fields": {
+    "created_at": "2025-11-16T21:27:20.709Z",
+    "updated_at": "2025-11-17T01:24:20.036Z",
+    "household": 62,
+    "name": "August 2025 Budget",
+    "start_date": "2025-08-01",
+    "end_date": "2025-08-31",
+    "cycle_type": "monthly",
+    "total_amount": "2366.37",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 371,
+  "fields": {
+    "created_at": "2025-11-16T21:27:20.726Z",
+    "updated_at": "2025-11-17T01:24:20.092Z",
+    "household": 62,
+    "name": "July 2025 Budget",
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31",
+    "cycle_type": "monthly",
+    "total_amount": "4160.03",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+},
+{
+  "model": "budgets.budget",
+  "pk": 372,
+  "fields": {
+    "created_at": "2025-11-16T21:27:20.743Z",
+    "updated_at": "2025-11-17T01:24:20.154Z",
+    "household": 62,
+    "name": "June 2025 Budget",
+    "start_date": "2025-06-01",
+    "end_date": "2025-06-30",
+    "cycle_type": "monthly",
+    "total_amount": "4853.01",
+    "status": "completed",
+    "alert_threshold": "80.00",
+    "rollover_enabled": false,
+    "notes": ""
+  }
+}
+]

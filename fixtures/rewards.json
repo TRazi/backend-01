@@ -1,0 +1,2282 @@
+[
+{
+  "model": "rewards.reward",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-11-16T21:19:36.059Z",
+    "updated_at": "2025-11-17T01:24:20.845Z",
+    "user": 1,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-07-01T21:19:36.059Z",
+    "points": 23,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.868Z",
+    "updated_at": "2025-11-17T01:24:20.795Z",
+    "user": 3,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-12-04T21:19:45.868Z",
+    "points": 85,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.885Z",
+    "updated_at": "2025-11-17T01:24:20.786Z",
+    "user": 3,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-01-13T21:19:45.885Z",
+    "points": 65,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-11-16T21:19:45.901Z",
+    "updated_at": "2025-11-17T01:24:20.887Z",
+    "user": 3,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-02-07T21:19:45.901Z",
+    "points": 38,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.337Z",
+    "updated_at": "2025-11-17T01:24:20.809Z",
+    "user": 5,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-10-07T21:19:53.337Z",
+    "points": 56,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.354Z",
+    "updated_at": "2025-11-17T01:24:20.848Z",
+    "user": 5,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-06-29T21:19:53.353Z",
+    "points": 56,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-11-16T21:19:53.370Z",
+    "updated_at": "2025-11-17T01:24:20.760Z",
+    "user": 5,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-04-14T21:19:53.370Z",
+    "points": 21,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-11-16T21:20:02.162Z",
+    "updated_at": "2025-11-17T01:24:20.870Z",
+    "user": 7,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-04-23T21:20:02.162Z",
+    "points": 84,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 9,
+  "fields": {
+    "created_at": "2025-11-16T21:20:02.179Z",
+    "updated_at": "2025-11-17T01:24:20.712Z",
+    "user": 7,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-10-14T21:20:02.179Z",
+    "points": 54,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 10,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.672Z",
+    "updated_at": "2025-11-17T01:24:20.728Z",
+    "user": 9,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-08-17T21:20:12.672Z",
+    "points": 53,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 11,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.688Z",
+    "updated_at": "2025-11-17T01:24:20.715Z",
+    "user": 9,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-09-29T21:20:12.688Z",
+    "points": 82,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 12,
+  "fields": {
+    "created_at": "2025-11-16T21:20:12.705Z",
+    "updated_at": "2025-11-17T01:24:20.846Z",
+    "user": 9,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-06-30T21:20:12.705Z",
+    "points": 47,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 13,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.184Z",
+    "updated_at": "2025-11-17T01:24:20.886Z",
+    "user": 11,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-02-15T21:20:23.184Z",
+    "points": 56,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 14,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.200Z",
+    "updated_at": "2025-11-17T01:24:20.832Z",
+    "user": 11,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-08-03T21:20:23.200Z",
+    "points": 91,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 15,
+  "fields": {
+    "created_at": "2025-11-16T21:20:23.216Z",
+    "updated_at": "2025-11-17T01:24:20.889Z",
+    "user": 11,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-01-15T21:20:23.216Z",
+    "points": 46,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 16,
+  "fields": {
+    "created_at": "2025-11-16T21:20:31.512Z",
+    "updated_at": "2025-11-17T01:24:20.814Z",
+    "user": 13,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-09-18T21:20:31.511Z",
+    "points": 73,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 17,
+  "fields": {
+    "created_at": "2025-11-16T21:20:31.527Z",
+    "updated_at": "2025-11-17T01:24:20.840Z",
+    "user": 13,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-07-17T21:20:31.527Z",
+    "points": 28,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 18,
+  "fields": {
+    "created_at": "2025-11-16T21:20:37.005Z",
+    "updated_at": "2025-11-17T01:24:20.877Z",
+    "user": 15,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-03-12T21:20:37.005Z",
+    "points": 27,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 19,
+  "fields": {
+    "created_at": "2025-11-16T21:20:41.056Z",
+    "updated_at": "2025-11-17T01:24:20.763Z",
+    "user": 17,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-03-11T21:20:41.056Z",
+    "points": 35,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 20,
+  "fields": {
+    "created_at": "2025-11-16T21:20:41.073Z",
+    "updated_at": "2025-11-17T01:24:20.719Z",
+    "user": 17,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-09-18T21:20:41.072Z",
+    "points": 21,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 21,
+  "fields": {
+    "created_at": "2025-11-16T21:20:45.881Z",
+    "updated_at": "2025-11-17T01:24:20.720Z",
+    "user": 19,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-09-12T21:20:45.881Z",
+    "points": 58,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 22,
+  "fields": {
+    "created_at": "2025-11-16T21:20:54.125Z",
+    "updated_at": "2025-11-17T01:24:20.740Z",
+    "user": 21,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-07-09T21:20:54.125Z",
+    "points": 36,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 23,
+  "fields": {
+    "created_at": "2025-11-16T21:20:54.142Z",
+    "updated_at": "2025-11-17T01:24:20.818Z",
+    "user": 21,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-09-01T21:20:54.142Z",
+    "points": 83,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 24,
+  "fields": {
+    "created_at": "2025-11-16T21:20:54.158Z",
+    "updated_at": "2025-11-17T01:24:20.852Z",
+    "user": 21,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-06-06T21:20:54.158Z",
+    "points": 62,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 25,
+  "fields": {
+    "created_at": "2025-11-16T21:21:05.282Z",
+    "updated_at": "2025-11-17T01:24:20.710Z",
+    "user": 23,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-11-03T21:21:05.282Z",
+    "points": 100,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 26,
+  "fields": {
+    "created_at": "2025-11-16T21:21:05.298Z",
+    "updated_at": "2025-11-17T01:24:20.714Z",
+    "user": 23,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-10-01T21:21:05.298Z",
+    "points": 67,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 27,
+  "fields": {
+    "created_at": "2025-11-16T21:21:11.436Z",
+    "updated_at": "2025-11-17T01:24:20.824Z",
+    "user": 25,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-08-29T21:21:11.436Z",
+    "points": 22,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 28,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.904Z",
+    "updated_at": "2025-11-17T01:24:20.855Z",
+    "user": 27,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-06-03T21:21:21.904Z",
+    "points": 27,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 29,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.920Z",
+    "updated_at": "2025-11-17T01:24:20.778Z",
+    "user": 27,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-01-24T21:21:21.920Z",
+    "points": 16,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 30,
+  "fields": {
+    "created_at": "2025-11-16T21:21:21.936Z",
+    "updated_at": "2025-11-17T01:24:20.803Z",
+    "user": 27,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-10-29T21:21:21.936Z",
+    "points": 18,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 31,
+  "fields": {
+    "created_at": "2025-11-16T21:21:26.428Z",
+    "updated_at": "2025-11-17T01:24:20.727Z",
+    "user": 29,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-08-21T21:21:26.428Z",
+    "points": 98,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 32,
+  "fields": {
+    "created_at": "2025-11-16T21:21:26.444Z",
+    "updated_at": "2025-11-17T01:24:20.805Z",
+    "user": 29,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-10-15T21:21:26.444Z",
+    "points": 63,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 33,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.404Z",
+    "updated_at": "2025-11-17T01:24:20.793Z",
+    "user": 31,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-12-24T21:21:37.404Z",
+    "points": 58,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 34,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.421Z",
+    "updated_at": "2025-11-17T01:24:20.807Z",
+    "user": 31,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-10-08T21:21:37.421Z",
+    "points": 16,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 35,
+  "fields": {
+    "created_at": "2025-11-16T21:21:37.437Z",
+    "updated_at": "2025-11-17T01:24:20.757Z",
+    "user": 31,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-04-29T21:21:37.437Z",
+    "points": 76,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 36,
+  "fields": {
+    "created_at": "2025-11-16T21:21:41.138Z",
+    "updated_at": "2025-11-17T01:24:20.708Z",
+    "user": 33,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-11-06T21:21:41.138Z",
+    "points": 92,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 37,
+  "fields": {
+    "created_at": "2025-11-16T21:21:41.155Z",
+    "updated_at": "2025-11-17T01:24:20.891Z",
+    "user": 33,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2023-11-29T21:21:41.155Z",
+    "points": 26,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 38,
+  "fields": {
+    "created_at": "2025-11-16T21:21:41.171Z",
+    "updated_at": "2025-11-17T01:24:20.770Z",
+    "user": 33,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-02-17T21:21:41.171Z",
+    "points": 51,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 39,
+  "fields": {
+    "created_at": "2025-11-16T21:21:51.467Z",
+    "updated_at": "2025-11-17T01:24:20.752Z",
+    "user": 35,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-05-05T21:21:51.467Z",
+    "points": 28,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 40,
+  "fields": {
+    "created_at": "2025-11-16T21:21:51.490Z",
+    "updated_at": "2025-11-17T01:24:20.843Z",
+    "user": 35,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-07-04T21:21:51.490Z",
+    "points": 61,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 41,
+  "fields": {
+    "created_at": "2025-11-16T21:21:56.993Z",
+    "updated_at": "2025-11-17T01:24:20.857Z",
+    "user": 37,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-05-18T21:21:56.993Z",
+    "points": 86,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 42,
+  "fields": {
+    "created_at": "2025-11-16T21:21:57.010Z",
+    "updated_at": "2025-11-17T01:24:20.821Z",
+    "user": 37,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-08-31T21:21:57.009Z",
+    "points": 28,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 43,
+  "fields": {
+    "created_at": "2025-11-16T21:21:57.025Z",
+    "updated_at": "2025-11-17T01:24:20.837Z",
+    "user": 37,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-07-29T21:21:57.025Z",
+    "points": 50,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 44,
+  "fields": {
+    "created_at": "2025-11-16T21:22:05.759Z",
+    "updated_at": "2025-11-17T01:24:20.861Z",
+    "user": 39,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-05-06T21:22:05.759Z",
+    "points": 50,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 45,
+  "fields": {
+    "created_at": "2025-11-16T21:22:05.776Z",
+    "updated_at": "2025-11-17T01:24:20.716Z",
+    "user": 39,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-09-23T21:22:05.776Z",
+    "points": 76,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 46,
+  "fields": {
+    "created_at": "2025-11-16T21:22:13.972Z",
+    "updated_at": "2025-11-17T01:24:20.812Z",
+    "user": 41,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-09-24T21:22:13.972Z",
+    "points": 96,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 47,
+  "fields": {
+    "created_at": "2025-11-16T21:22:14.052Z",
+    "updated_at": "2025-11-17T01:24:20.849Z",
+    "user": 41,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-06-28T21:22:14.052Z",
+    "points": 22,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 48,
+  "fields": {
+    "created_at": "2025-11-16T21:22:14.126Z",
+    "updated_at": "2025-11-17T01:24:20.722Z",
+    "user": 41,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-09-02T21:22:14.125Z",
+    "points": 12,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 49,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.836Z",
+    "updated_at": "2025-11-17T01:24:20.879Z",
+    "user": 43,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-03-08T21:22:18.835Z",
+    "points": 65,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 50,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.852Z",
+    "updated_at": "2025-11-17T01:24:20.750Z",
+    "user": 43,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-05-30T21:22:18.852Z",
+    "points": 69,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 51,
+  "fields": {
+    "created_at": "2025-11-16T21:22:18.868Z",
+    "updated_at": "2025-11-17T01:24:20.775Z",
+    "user": 43,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-02-02T21:22:18.868Z",
+    "points": 93,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 52,
+  "fields": {
+    "created_at": "2025-11-16T21:22:24.297Z",
+    "updated_at": "2025-11-17T01:24:20.765Z",
+    "user": 46,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-02-23T21:22:24.297Z",
+    "points": 54,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 53,
+  "fields": {
+    "created_at": "2025-11-16T21:22:33.679Z",
+    "updated_at": "2025-11-17T01:24:20.826Z",
+    "user": 47,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-08-22T21:22:33.679Z",
+    "points": 92,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 54,
+  "fields": {
+    "created_at": "2025-11-16T21:22:33.696Z",
+    "updated_at": "2025-11-17T01:24:20.736Z",
+    "user": 47,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-07-17T21:22:33.696Z",
+    "points": 89,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 55,
+  "fields": {
+    "created_at": "2025-11-16T21:22:43.759Z",
+    "updated_at": "2025-11-17T01:24:20.788Z",
+    "user": 48,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-01-08T21:22:43.759Z",
+    "points": 59,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 56,
+  "fields": {
+    "created_at": "2025-11-16T21:22:43.775Z",
+    "updated_at": "2025-11-17T01:24:20.888Z",
+    "user": 48,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-01-29T21:22:43.775Z",
+    "points": 48,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 57,
+  "fields": {
+    "created_at": "2025-11-16T21:22:49.029Z",
+    "updated_at": "2025-11-17T01:24:20.892Z",
+    "user": 49,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2023-11-17T21:22:49.029Z",
+    "points": 87,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 58,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.258Z",
+    "updated_at": "2025-11-17T01:24:20.764Z",
+    "user": 50,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-02-28T21:22:54.258Z",
+    "points": 16,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 59,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.276Z",
+    "updated_at": "2025-11-17T01:24:20.724Z",
+    "user": 50,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-08-25T21:22:54.276Z",
+    "points": 60,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 60,
+  "fields": {
+    "created_at": "2025-11-16T21:22:54.291Z",
+    "updated_at": "2025-11-17T01:24:20.830Z",
+    "user": 50,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-08-12T21:22:54.291Z",
+    "points": 86,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 61,
+  "fields": {
+    "created_at": "2025-11-16T21:22:59.492Z",
+    "updated_at": "2025-11-17T01:24:20.810Z",
+    "user": 51,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-10-04T21:22:59.492Z",
+    "points": 98,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 62,
+  "fields": {
+    "created_at": "2025-11-16T21:23:04.436Z",
+    "updated_at": "2025-11-17T01:24:20.880Z",
+    "user": 52,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-03-04T21:23:04.436Z",
+    "points": 14,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 63,
+  "fields": {
+    "created_at": "2025-11-16T21:23:11.105Z",
+    "updated_at": "2025-11-17T01:24:20.828Z",
+    "user": 53,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-08-21T21:23:11.105Z",
+    "points": 60,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 64,
+  "fields": {
+    "created_at": "2025-11-16T21:23:11.121Z",
+    "updated_at": "2025-11-17T01:24:20.747Z",
+    "user": 53,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-06-02T21:23:11.121Z",
+    "points": 91,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 65,
+  "fields": {
+    "created_at": "2025-11-16T21:23:19.299Z",
+    "updated_at": "2025-11-17T01:24:20.704Z",
+    "user": 54,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-11-13T21:23:19.299Z",
+    "points": 52,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 66,
+  "fields": {
+    "created_at": "2025-11-16T21:23:26.479Z",
+    "updated_at": "2025-11-17T01:24:20.854Z",
+    "user": 55,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-06-05T21:23:26.479Z",
+    "points": 37,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 67,
+  "fields": {
+    "created_at": "2025-11-16T21:23:26.494Z",
+    "updated_at": "2025-11-17T01:24:20.806Z",
+    "user": 55,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-10-12T21:23:26.494Z",
+    "points": 96,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 68,
+  "fields": {
+    "created_at": "2025-11-16T21:23:26.510Z",
+    "updated_at": "2025-11-17T01:24:20.717Z",
+    "user": 55,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-09-18T21:23:26.510Z",
+    "points": 86,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 69,
+  "fields": {
+    "created_at": "2025-11-16T21:23:36.185Z",
+    "updated_at": "2025-11-17T01:24:20.773Z",
+    "user": 56,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-02-16T21:23:36.185Z",
+    "points": 19,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 70,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.556Z",
+    "updated_at": "2025-11-17T01:24:20.730Z",
+    "user": 57,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-08-12T21:23:44.556Z",
+    "points": 71,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 71,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.572Z",
+    "updated_at": "2025-11-17T01:24:20.816Z",
+    "user": 57,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-09-03T21:23:44.572Z",
+    "points": 87,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 72,
+  "fields": {
+    "created_at": "2025-11-16T21:23:44.588Z",
+    "updated_at": "2025-11-17T01:24:20.707Z",
+    "user": 57,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-11-09T21:23:44.588Z",
+    "points": 83,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 73,
+  "fields": {
+    "created_at": "2025-11-16T21:23:52.111Z",
+    "updated_at": "2025-11-17T01:24:20.867Z",
+    "user": 58,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-05-01T21:23:52.111Z",
+    "points": 72,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 74,
+  "fields": {
+    "created_at": "2025-11-16T21:23:52.128Z",
+    "updated_at": "2025-11-17T01:24:20.813Z",
+    "user": 58,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-09-22T21:23:52.128Z",
+    "points": 19,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 75,
+  "fields": {
+    "created_at": "2025-11-16T21:24:00.582Z",
+    "updated_at": "2025-11-17T01:24:20.842Z",
+    "user": 59,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-07-11T21:24:00.582Z",
+    "points": 76,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 76,
+  "fields": {
+    "created_at": "2025-11-16T21:24:00.605Z",
+    "updated_at": "2025-11-17T01:24:20.860Z",
+    "user": 59,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-05-09T21:24:00.605Z",
+    "points": 72,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 77,
+  "fields": {
+    "created_at": "2025-11-16T21:24:05.112Z",
+    "updated_at": "2025-11-17T01:24:20.835Z",
+    "user": 60,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-07-31T21:24:05.112Z",
+    "points": 47,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 78,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.795Z",
+    "updated_at": "2025-11-17T01:24:20.756Z",
+    "user": 61,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-05-01T21:24:12.795Z",
+    "points": 53,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 79,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.812Z",
+    "updated_at": "2025-11-17T01:24:20.726Z",
+    "user": 61,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-08-21T21:24:12.812Z",
+    "points": 60,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 80,
+  "fields": {
+    "created_at": "2025-11-16T21:24:12.828Z",
+    "updated_at": "2025-11-17T01:24:20.878Z",
+    "user": 61,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-03-10T21:24:12.828Z",
+    "points": 83,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 81,
+  "fields": {
+    "created_at": "2025-11-16T21:24:17.234Z",
+    "updated_at": "2025-11-17T01:24:20.761Z",
+    "user": 64,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-03-30T21:24:17.233Z",
+    "points": 26,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 82,
+  "fields": {
+    "created_at": "2025-11-16T21:24:17.251Z",
+    "updated_at": "2025-11-17T01:24:20.882Z",
+    "user": 64,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-02-23T21:24:17.251Z",
+    "points": 83,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 83,
+  "fields": {
+    "created_at": "2025-11-16T21:24:27.349Z",
+    "updated_at": "2025-11-17T01:24:20.873Z",
+    "user": 69,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-04-16T21:24:27.349Z",
+    "points": 79,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 84,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.794Z",
+    "updated_at": "2025-11-17T01:24:20.767Z",
+    "user": 72,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-02-19T21:24:32.794Z",
+    "points": 12,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 85,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.810Z",
+    "updated_at": "2025-11-17T01:24:20.754Z",
+    "user": 72,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-05-01T21:24:32.810Z",
+    "points": 53,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 86,
+  "fields": {
+    "created_at": "2025-11-16T21:24:32.827Z",
+    "updated_at": "2025-11-17T01:24:20.890Z",
+    "user": 72,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2023-12-26T21:24:32.827Z",
+    "points": 90,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 87,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.233Z",
+    "updated_at": "2025-11-17T01:24:20.780Z",
+    "user": 77,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-01-23T21:24:43.233Z",
+    "points": 77,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 88,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.249Z",
+    "updated_at": "2025-11-17T01:24:20.800Z",
+    "user": 77,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-10-31T21:24:43.249Z",
+    "points": 66,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 89,
+  "fields": {
+    "created_at": "2025-11-16T21:24:43.265Z",
+    "updated_at": "2025-11-17T01:24:20.745Z",
+    "user": 77,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-06-16T21:24:43.265Z",
+    "points": 82,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 90,
+  "fields": {
+    "created_at": "2025-11-16T21:24:50.406Z",
+    "updated_at": "2025-11-17T01:24:20.772Z",
+    "user": 81,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-02-16T21:24:50.406Z",
+    "points": 88,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 91,
+  "fields": {
+    "created_at": "2025-11-16T21:24:59.304Z",
+    "updated_at": "2025-11-17T01:24:20.865Z",
+    "user": 82,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-05-01T21:24:59.304Z",
+    "points": 82,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 92,
+  "fields": {
+    "created_at": "2025-11-16T21:25:03.832Z",
+    "updated_at": "2025-11-17T01:24:20.781Z",
+    "user": 83,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-01-21T21:25:03.832Z",
+    "points": 55,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 93,
+  "fields": {
+    "created_at": "2025-11-16T21:25:03.849Z",
+    "updated_at": "2025-11-17T01:24:20.729Z",
+    "user": 83,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-08-14T21:25:03.849Z",
+    "points": 65,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 94,
+  "fields": {
+    "created_at": "2025-11-16T21:25:11.666Z",
+    "updated_at": "2025-11-17T01:24:20.711Z",
+    "user": 84,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-10-23T21:25:11.666Z",
+    "points": 100,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 95,
+  "fields": {
+    "created_at": "2025-11-16T21:25:20.939Z",
+    "updated_at": "2025-11-17T01:24:20.875Z",
+    "user": 85,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-04-12T21:25:20.939Z",
+    "points": 69,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 96,
+  "fields": {
+    "created_at": "2025-11-16T21:25:26.190Z",
+    "updated_at": "2025-11-17T01:24:20.796Z",
+    "user": 86,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-11-25T21:25:26.190Z",
+    "points": 16,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 97,
+  "fields": {
+    "created_at": "2025-11-16T21:25:30.533Z",
+    "updated_at": "2025-11-17T01:24:20.798Z",
+    "user": 87,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-11-22T21:25:30.533Z",
+    "points": 30,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 98,
+  "fields": {
+    "created_at": "2025-11-16T21:25:35.946Z",
+    "updated_at": "2025-11-17T01:24:20.733Z",
+    "user": 88,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-07-20T21:25:35.945Z",
+    "points": 58,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 99,
+  "fields": {
+    "created_at": "2025-11-16T21:25:43.475Z",
+    "updated_at": "2025-11-17T01:24:20.742Z",
+    "user": 89,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-07-08T21:25:43.475Z",
+    "points": 76,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 100,
+  "fields": {
+    "created_at": "2025-11-16T21:25:43.491Z",
+    "updated_at": "2025-11-17T01:24:20.790Z",
+    "user": 89,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-12-25T21:25:43.491Z",
+    "points": 11,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 101,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.921Z",
+    "updated_at": "2025-11-17T01:24:20.863Z",
+    "user": 90,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-05-03T21:25:52.920Z",
+    "points": 92,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 102,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.936Z",
+    "updated_at": "2025-11-17T01:24:20.759Z",
+    "user": 90,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-04-18T21:25:52.936Z",
+    "points": 65,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 103,
+  "fields": {
+    "created_at": "2025-11-16T21:25:52.954Z",
+    "updated_at": "2025-11-17T01:24:20.839Z",
+    "user": 90,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-07-18T21:25:52.953Z",
+    "points": 64,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 104,
+  "fields": {
+    "created_at": "2025-11-16T21:26:04.418Z",
+    "updated_at": "2025-11-17T01:24:20.872Z",
+    "user": 91,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-04-18T21:26:04.418Z",
+    "points": 27,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 105,
+  "fields": {
+    "created_at": "2025-11-16T21:26:14.573Z",
+    "updated_at": "2025-11-17T01:24:20.850Z",
+    "user": 92,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-06-24T21:26:14.572Z",
+    "points": 68,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 106,
+  "fields": {
+    "created_at": "2025-11-16T21:26:21.886Z",
+    "updated_at": "2025-11-17T01:24:20.801Z",
+    "user": 93,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-10-29T21:26:21.886Z",
+    "points": 97,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 107,
+  "fields": {
+    "created_at": "2025-11-16T21:26:32.414Z",
+    "updated_at": "2025-11-17T01:24:20.789Z",
+    "user": 94,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-12-27T21:26:32.414Z",
+    "points": 30,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 108,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.311Z",
+    "updated_at": "2025-11-17T01:24:20.881Z",
+    "user": 95,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-02-29T21:26:39.311Z",
+    "points": 31,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 109,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.326Z",
+    "updated_at": "2025-11-17T01:24:20.738Z",
+    "user": 95,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-07-12T21:26:39.326Z",
+    "points": 73,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 110,
+  "fields": {
+    "created_at": "2025-11-16T21:26:39.342Z",
+    "updated_at": "2025-11-17T01:24:20.823Z",
+    "user": 95,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-08-30T21:26:39.342Z",
+    "points": 40,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 111,
+  "fields": {
+    "created_at": "2025-11-16T21:26:46.602Z",
+    "updated_at": "2025-11-17T01:24:20.730Z",
+    "user": 96,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-07-30T21:26:46.602Z",
+    "points": 64,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 112,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.325Z",
+    "updated_at": "2025-11-17T01:24:20.744Z",
+    "user": 97,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-06-20T21:26:54.325Z",
+    "points": 50,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 113,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.341Z",
+    "updated_at": "2025-11-17T01:24:20.838Z",
+    "user": 97,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2024-07-22T21:26:54.341Z",
+    "points": 88,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 114,
+  "fields": {
+    "created_at": "2025-11-16T21:26:54.357Z",
+    "updated_at": "2025-11-17T01:24:20.732Z",
+    "user": 97,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2025-07-26T21:26:54.357Z",
+    "points": 60,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 115,
+  "fields": {
+    "created_at": "2025-11-16T21:27:04.962Z",
+    "updated_at": "2025-11-17T01:24:20.783Z",
+    "user": 98,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2025-01-20T21:27:04.962Z",
+    "points": 39,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 116,
+  "fields": {
+    "created_at": "2025-11-16T21:27:04.980Z",
+    "updated_at": "2025-11-17T01:24:20.713Z",
+    "user": 98,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-10-11T21:27:04.980Z",
+    "points": 77,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 117,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.867Z",
+    "updated_at": "2025-11-17T01:24:20.858Z",
+    "user": 99,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-05-16T21:27:10.867Z",
+    "points": 69,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 118,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.883Z",
+    "updated_at": "2025-11-17T01:24:20.748Z",
+    "user": 99,
+    "reward_type": "budget_master",
+    "title": "Budget Master",
+    "description": "Earned for budget master",
+    "icon": "📊",
+    "badge_image": "",
+    "earned_on": "2025-05-31T21:27:10.883Z",
+    "points": 74,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 119,
+  "fields": {
+    "created_at": "2025-11-16T21:27:10.899Z",
+    "updated_at": "2025-11-17T01:24:20.876Z",
+    "user": 99,
+    "reward_type": "savings_star",
+    "title": "Savings Star",
+    "description": "Earned for savings star",
+    "icon": "⭐",
+    "badge_image": "",
+    "earned_on": "2024-03-12T21:27:10.899Z",
+    "points": 98,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+},
+{
+  "model": "rewards.reward",
+  "pk": 120,
+  "fields": {
+    "created_at": "2025-11-16T21:27:20.902Z",
+    "updated_at": "2025-11-17T01:24:20.883Z",
+    "user": 100,
+    "reward_type": "first_goal",
+    "title": "First Goal Created",
+    "description": "Earned for first goal created",
+    "icon": "🎯",
+    "badge_image": "",
+    "earned_on": "2024-02-15T21:27:20.902Z",
+    "points": 26,
+    "related_goal": null,
+    "related_budget": null,
+    "is_visible": true
+  }
+}
+]

@@ -18,8 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from common.views import SessionPingView, admin_logout
+from config.views.app import app_view
 
 urlpatterns = [
+    path("", app_view, name="app"),
     path("admin/", admin.site.urls),
     path("api/v1/", include("config.api_v1_urls")),
     # Session management endpoints

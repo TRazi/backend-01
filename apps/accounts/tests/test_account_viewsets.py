@@ -166,7 +166,7 @@ class TestAccountViewSetUpdate:
         client.force_authenticate(user=user)
 
         data = {"name": "New Name"}
-        response = client.patch(f"/api/v1/accounts/{account.id}/", data)
+        response = client.patch(f"/api/v1/accounts/{account.uuid}/", data)
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data["name"] == "New Name"
@@ -218,7 +218,7 @@ class TestAccountViewSetDelete:
 
         client = APIClient()
         client.force_authenticate(user=user)
-        response = client.delete(f"/api/v1/accounts/{account.id}/")
+        response = client.delete(f"/api/v1/accounts/{account.uuid}/")
 
         assert response.status_code == status.HTTP_204_NO_CONTENT
         assert not Account.objects.filter(id=account.id).exists()
@@ -246,7 +246,7 @@ class TestAccountCloseAction:
 
         client = APIClient()
         client.force_authenticate(user=user)
-        response = client.post(f"/api/v1/accounts/{account.id}/close/")
+        response = client.post(f"/api/v1/accounts/{account.uuid}/close/")
 
         assert response.status_code == status.HTTP_200_OK
         # Verify account was closed (excluded from totals)

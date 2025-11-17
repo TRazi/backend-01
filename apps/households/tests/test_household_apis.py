@@ -57,7 +57,7 @@ class TestHouseholdListCreateApi:
         client.force_authenticate(user=user)
         response = client.post(
             "/api/v1/households/households/",
-            {"name": "New Household"},
+            {"name": "New Household", "household_type": "fam", "budget_cycle": "m"},
         )
 
         assert response.status_code == status.HTTP_201_CREATED
@@ -80,7 +80,7 @@ class TestHouseholdListCreateApi:
 
         client = APIClient()
         client.force_authenticate(user=user)
-        response = client.post("/api/v1/households/households/", {"name": "Test"})
+        response = client.post("/api/v1/households/households/", {"name": "Test", "household_type": "fam", "budget_cycle": "m"})
 
         assert response.status_code == status.HTTP_201_CREATED
 
@@ -96,7 +96,7 @@ class TestHouseholdDetailApi:
 
         client = APIClient()
         client.force_authenticate(user=user)
-        response = client.get(f"/api/v1/households/households/{household.id}/")
+        response = client.get(f"/api/v1/households/households/{household.uuid}/")
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data["name"] == "Test Household"
@@ -109,7 +109,7 @@ class TestHouseholdDetailApi:
         client = APIClient()
         client.force_authenticate(user=user)
         response = client.patch(
-            f"/api/v1/households/households/{household.id}/",
+            f"/api/v1/households/households/{household.uuid}/",
             {"name": "New Name"},
         )
 
@@ -126,7 +126,7 @@ class TestHouseholdDetailApi:
 
         client = APIClient()
         client.force_authenticate(user=user)
-        response = client.delete(f"/api/v1/households/households/{household.id}/")
+        response = client.delete(f"/api/v1/households/households/{household.uuid}/")
 
         assert response.status_code == status.HTTP_204_NO_CONTENT
         assert not Household.objects.filter(id=household.id).exists()
@@ -136,7 +136,7 @@ class TestHouseholdDetailApi:
         household = Household.objects.create(name="Test Household")
 
         client = APIClient()
-        response = client.get(f"/api/v1/households/households/{household.id}/")
+        response = client.get(f"/api/v1/households/households/{household.uuid}/")
 
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
 

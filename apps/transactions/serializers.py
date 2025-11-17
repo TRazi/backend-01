@@ -17,8 +17,8 @@ class TransactionTagSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TransactionTag
-        fields = ["name", "color", "created_at", "updated_at"]
-        read_only_fields = ["created_at", "updated_at"]
+        fields = ["id", "uuid", "name", "color", "created_at", "updated_at"]
+        read_only_fields = ["id", "uuid", "created_at", "updated_at"]
 
 
 class TransactionSerializer(serializers.ModelSerializer):

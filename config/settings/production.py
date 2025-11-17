@@ -22,15 +22,6 @@ if env("DATABASE_URL", default=None):
         }
     }
 
-# Database connection pooling (if using PostgreSQL in production)
-# See: https://docs.djangoproject.com/en/5.2/ref/databases/#persistent-connections
-# DATABASES = {
-#     "default": {
-#         **dj_database_url.parse(env("DATABASE_URL")),
-#         "CONN_MAX_AGE": 600,  # 10 minutes persistent connections
-#         "CONN_HEALTH_CHECKS": True,  # Enable connection health checks
-#     }
-# }
 
 # Redis caches for production
 CACHES = {

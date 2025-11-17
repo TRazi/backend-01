@@ -62,10 +62,12 @@ CSP_INCLUDE_NONCE_IN = (
 CSP_EXCLUDE_URL_PREFIXES = ()
 
 # AWS S3 support (if configured)
-AWS_BUCKET = os.getenv("AWS_STORAGE_BUCKET_NAME")
+AWS_BUCKET = os.getenv("AWS_S3_BUCKET_NAME") or os.getenv("AWS_STORAGE_BUCKET_NAME")
+AWS_REGION = os.getenv("AWS_REGION", "ap-southeast-2")
 if AWS_BUCKET:
-    S3_URL = f"https://{AWS_BUCKET}.s3.amazonaws.com"
-    CSP_IMG_SRC = CSP_IMG_SRC + (S3_URL,)
-    CSP_STYLE_SRC = CSP_STYLE_SRC + (S3_URL,)
-    CSP_SCRIPT_SRC = CSP_SCRIPT_SRC + (S3_URL,)
-    CSP_FONT_SRC = CSP_FONT_SRC + (S3_URL,)
+    S3_URL = f"https://{AWS_BUCKET}.s3-{AWS_REGION}.amazonaws.com"
+    S3_URL_ALT = f"https://{AWS_BUCKET}.s3.amazonaws.com"
+    CSP_IMG_SRC = CSP_IMG_SRC + (S3_URL, S3_URL_ALT)
+    CSP_STYLE_SRC = CSP_STYLE_SRC + (S3_URL, S3_URL_ALT)
+    CSP_SCRIPT_SRC = CSP_SCRIPT_SRC + (S3_URL, S3_URL_ALT)
+    CSP_FONT_SRC = CSP_FONT_SRC + (S3_URL, S3_URL_ALT)
